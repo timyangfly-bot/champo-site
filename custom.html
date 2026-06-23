@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Custom Product Configurator | CHAMPO</title>
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.custom-layout{display:grid;grid-template-columns:320px 1fr;gap:40px;margin-top:40px}
+.custom-options{background:#f7f7f7;border-radius:8px;padding:20px}
+.custom-options h3{margin-top:20px;margin-bottom:10px;color:#1E3A5F}
+.custom-options label{display:block;margin:6px 0}
+.custom-preview{display:flex;align-items:center;justify-content:center;border:1px solid #ddd;border-radius:8px;background:#fff;min-height:420px}
+#previewCanvas{max-width:100%;height:auto}
+.custom-actions{margin-top:20px;display:flex;gap:10px}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container nav">
+<div class="logo">CHAMPO</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="categories/pet-seat-cover.html">Products</a>
+<a href="custom.html">Custom</a>
+<a href="index.html#factory">Factory</a>
+<a href="index.html#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<div class="container">
+<h1 style="margin-top:40px">Custom Product Configurator</h1>
+<p>Select options to preview your customized product.</p>
+
+<div class="custom-layout">
+
+<div class="custom-options">
+
+<h3>Product</h3>
+<label><input type="radio" name="product" value="seat-cover" checked> Pet Seat Cover</label>
+<label><input type="radio" name="product" value="hanging-bag"> Seat Hanging Bag</label>
+<label><input type="radio" name="product" value="storage-box"> Storage Box</label>
+
+<h3>Size</h3>
+<label><input type="radio" name="size" value="small"> Small</label>
+<label><input type="radio" name="size" value="medium" checked> Medium</label>
+<label><input type="radio" name="size" value="large"> Large</label>
+
+<h3>Fabric</h3>
+<label><input type="radio" name="fabric" value="oxford" checked> Oxford</label>
+<label><input type="radio" name="fabric" value="leather"> Leather</label>
+<label><input type="radio" name="fabric" value="nylon"> Nylon</label>
+
+<h3>Logo</h3>
+<label><input type="radio" name="logo" value="print" checked> Print</label>
+<label><input type="radio" name="logo" value="embroidery"> Embroidery</label>
+<label><input type="radio" name="logo" value="rubber"> Rubber Patch</label>
+
+<h3>Accessory</h3>
+<label><input type="radio" name="acc" value="strapA" checked> Strap A</label>
+<label><input type="radio" name="acc" value="strapB"> Strap B</label>
+
+<div class="custom-actions">
+<button onclick="generatePreview()">Generate Preview</button>
+<button onclick="alert('Inquiry feature coming soon')">Send Inquiry</button>
+</div>
+
+</div>
+
+<div class="custom-preview">
+<canvas id="previewCanvas" width="500" height="400"></canvas>
+</div>
+
+</div>
+</div>
+
+<script>
+function generatePreview(){
+const canvas=document.getElementById('previewCanvas');
+const ctx=canvas.getContext('2d');
+ctx.clearRect(0,0,canvas.width,canvas.height);
+ctx.fillStyle="#e9eef5";
+ctx.fillRect(0,0,canvas.width,canvas.height);
+ctx.fillStyle="#1E3A5F";
+ctx.font="20px Arial";
+ctx.fillText("Preview Placeholder",150,200);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Storage Box SB002 | Storage Box | CHAMPO</title>
+<link rel="stylesheet" href="../css/style.css">
+<style>
+.product-detail {
+  padding: 40px 0;
+}
+.product-header {
+  margin-bottom: 30px;
+}
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #666;
+  text-decoration: none;
+}
+.back-link:hover {
+  color: #F58A2B;
+}
+.product-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.product-images {
+  position: relative;
+}
+.product-main-image {
+  width: 100%;
+  height: 400px;
+  object-fit: contain;
+  border-radius: 8px;
+  background: #f9f9f9;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.product-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+.product-thumbnail {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.product-thumbnail:hover,
+.product-thumbnail.active {
+  border-color: #F58A2B;
+}
+.product-info h1 {
+  margin: 0 0 20px 0;
+  font-size: 28px;
+}
+.product-description {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+.product-specs {
+  margin-bottom: 25px;
+}
+.spec-item {
+  display: flex;
+  margin-bottom: 12px;
+}
+.spec-label {
+  font-weight: bold;
+  width: 120px;
+  color: #333;
+}
+.spec-value {
+  color: #666;
+}
+.product-features {
+  margin-bottom: 25px;
+}
+.feature-list {
+  list-style-type: none;
+  padding: 0;
+}
+.feature-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+.feature-list li:before {
+  content: "✓";
+  color: #F58A2B;
+  margin-right: 10px;
+}
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+.btn-inquiry {
+  background: #F58A2B;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn-catalog {
+  background: #1E3A5F;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 30px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+}
+.close {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #666;
+}
+.close:hover {
+  color: #000;
+}
+.inquiry-form {
+  margin-top: 20px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+  border-color: #F58A2B;
+  outline: none;
+}
+</style>
+</head>
+<body>
+
+<header class="header">
+<div class="container nav">
+<div class="logo">CHAMPO</div>
+<nav>
+<a href="/">Home</a>
+<div class="dropdown">
+<a href="../categories/storage-box.html">Products</a>
+<div class="dropdown-menu">
+
+<a href="../categories/child-seat-protection-pad.html">Child Seat Protection Pad</a>
+
+<a href="../categories/pet-seat-cover.html">Pet Seat Cover</a>
+
+<a href="../categories/seat-hanging-bag.html">Seat Hanging Bag</a>
+
+<a href="../categories/storage-box.html">Storage Box</a>
+
+<a href="../categories/tool-kit.html">Tool Kit</a>
+
+<a href="../categories/trunk-mat.html">Trunk Mat</a>
+
+</div>
+</div>
+<a href="../index.html#factory">Factory</a>
+<a href="../index.html#contact">Contact</a>
+<a href="../search.html">Search</a>
+</nav>
+<div class="nav-search">
+<input type="text" id="navSearch" placeholder="Search products..." autocomplete="off">
+<button onclick="performNavSearch()">🔍</button>
+</div>
+<a class="btn" href="#contact">Get Quote</a>
+</div>
+</header>
+
+<div class="container product-detail">
+<a href="../categories/storage-box.html" class="back-link">← Back to Storage Box</a>
+
+<div class="product-content">
+<div class="product-images">
+<img src="../images/products/storage-box/sb002/main.jpg" alt="Storage Box SB002" class="product-main-image" id="productMainImage">
+
+<div class="product-thumbnails">
+
+<img src="../images/products/storage-box/sb002/main.jpg" alt="Storage Box SB002" class="product-thumbnail active" 
+     onclick="document.getElementById('productMainImage').src='../images/products/storage-box/sb002/main.jpg'; setActiveThumbnail(this)">
+
+
+<img src="../images/products/storage-box/sb002/detail-1.jpg" alt="Storage Box SB002 variant 1" class="product-thumbnail" 
+     onclick="document.getElementById('productMainImage').src='../images/products/storage-box/sb002/detail-1.jpg'; setActiveThumbnail(this)">
+
+<img src="../images/products/storage-box/sb002/detail-2.jpg" alt="Storage Box SB002 variant 2" class="product-thumbnail" 
+     onclick="document.getElementById('productMainImage').src='../images/products/storage-box/sb002/detail-2.jpg'; setActiveThumbnail(this)">
+
+<img src="../images/products/storage-box/sb002/variant-1.jpg" alt="Storage Box SB002 variant 3" class="product-thumbnail" 
+     onclick="document.getElementById('productMainImage').src='../images/products/storage-box/sb002/variant-1.jpg'; setActiveThumbnail(this)">
+
+
+</div>
+
+</div>
+
+<div class="product-info">
+<h1>Storage Box SB002</h1>
+<p class="product-description">Large storage box with multiple compartments for trunk organization</p>
+
+
+<div class="product-features">
+<h3>Features</h3>
+<ul class="feature-list">
+
+<li>Large capacity</li>
+
+<li>Multiple compartments</li>
+
+<li>Foldable design</li>
+
+<li>Water-resistant</li>
+
+</ul>
+</div>
+
+
+<div class="product-specs">
+
+<div class="spec-item">
+<div class="spec-label">Colors:</div>
+<div class="spec-value">Black, Gray, Blue</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="spec-item">
+<div class="spec-label">Sizes:</div>
+<div class="spec-value">Large</div>
+</div>
+
+</div>
+
+<div class="cta-buttons">
+<button class="btn-inquiry" onclick="showInquiryForm()">Request Quote</button>
+<a class="btn-catalog" href="#contact">Download Catalog</a>
+</div>
+
+<!-- Inquiry Form Modal -->
+<div id="inquiryModal" class="modal" style="display:none;">
+<div class="modal-content">
+<span class="close" onclick="closeInquiryForm()">&times;</span>
+<h3>Request Quote for Storage Box SB002</h3>
+<form id="inquiryForm" class="inquiry-form">
+<input type="hidden" name="product" value="Storage Box SB002">
+<input type="hidden" name="product_id" value="SB002">
+<input type="hidden" name="category" value="Storage Box">
+<div class="form-group">
+<label>Name *</label>
+<input type="text" name="name" required>
+</div>
+<div class="form-group">
+<label>Email *</label>
+<input type="email" name="email" required>
+</div>
+<div class="form-group">
+<label>Company</label>
+<input type="text" name="company">
+</div>
+<div class="form-group">
+<label>Phone</label>
+<input type="tel" name="phone">
+</div>
+<div class="form-group">
+<label>Country</label>
+<input type="text" name="country">
+</div>
+<div class="form-group">
+<label>Quantity</label>
+<input type="number" name="quantity" min="1" value="100">
+</div>
+<div class="form-group">
+<label>Message</label>
+<textarea name="message" rows="4" placeholder="Please include any specific requirements..."></textarea>
+</div>
+<button type="submit" class="btn-inquiry">Submit Inquiry</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<footer>
+<p>© CHAMPO Car Storage Solutions</p>
+</footer>
+
+<script>
+function setActiveThumbnail(thumb) {
+  document.querySelectorAll('.product-thumbnail').forEach(t => t.classList.remove('active'));
+  thumb.classList.add('active');
+}
+
+function showInquiryForm() {
+  document.getElementById('inquiryModal').style.display = 'block';
+}
+
+function closeInquiryForm() {
+  document.getElementById('inquiryModal').style.display = 'none';
+}
+
+document.getElementById('inquiryForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const formData = new FormData(this);
+  const data = Object.fromEntries(formData);
+  
+  // Here you would normally send the data to a server
+  // For now, we'll just show a confirmation
+  alert('Thank you for your inquiry! We will contact you within 24 hours.');
+  closeInquiryForm();
+  
+  // Reset form
+  this.reset();
+});
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+  const modal = document.getElementById('inquiryModal');
+  if (event.target == modal) {
+    closeInquiryForm();
+  }
+}
+
+function performNavSearch() {
+  const searchTerm = document.getElementById('navSearch').value.trim();
+  if (searchTerm) {
+    window.location.href = `../search.html?q=${encodeURIComponent(searchTerm)}`;
+  }
+}
+
+document.getElementById('navSearch').addEventListener('keypress', function(e) {
+  if (e.key === 'Enter') {
+    performNavSearch();
+  }
+});
+</script>
+
+</body>
+</html>

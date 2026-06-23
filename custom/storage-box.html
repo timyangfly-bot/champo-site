@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Custom Storage Box | CHAMPO</title>
+<link rel="stylesheet" href="../css/style.css">
+<style>
+body{font-family:Arial,Helvetica,sans-serif}
+.custom-container{max-width:1000px;margin:auto;padding:40px 20px}
+.preview-section{border:1px solid #ddd;border-radius:8px;background:#fff;display:flex;align-items:center;justify-content:center;min-height:420px;margin-bottom:30px}
+.option-buttons{display:flex;gap:10px;margin-top:10px}
+.option-buttons button{padding:8px 16px;border:1px solid #ddd;background:#fff;cursor:pointer;border-radius:5px}
+.option-buttons button.active{background:#F58A2B;color:#fff;border-color:#F58A2B}
+.config-summary{margin-top:20px;background:#f7f7f7;padding:15px;border-radius:6px}
+.config-actions{margin-top:20px;display:flex;gap:10px}
+</style>
+</head>
+<body>
+
+<header>
+<div class="container nav">
+<div class="logo">CHAMPO</div>
+<nav>
+<a href="../index.html">Home</a>
+<a href="../categories/storage-box.html">Products</a>
+<a href="index.html">Custom</a>
+<a href="../index.html#factory">Factory</a>
+<a href="../index.html#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<div class="custom-container">
+<h1>Custom Storage Box</h1>
+
+<div class="preview-section">
+<canvas id="previewCanvas" width="500" height="400"></canvas>
+</div>
+
+<h3>Fabric</h3>
+<div class="option-buttons" id="fabricOptions">
+<button data-value="oxford" class="active">Oxford</button>
+<button data-value="leather">Leather</button>
+<button data-value="nylon">Nylon</button>
+</div>
+
+<h3>Logo</h3>
+<div class="option-buttons" id="logoOptions">
+<button data-value="print" class="active">Print</button>
+<button data-value="embroidery">Embroidery</button>
+<button data-value="rubber">Rubber</button>
+</div>
+
+<h3>Accessory</h3>
+<div class="option-buttons" id="accOptions">
+<button data-value="divider" class="active">Divider</button>
+<button data-value="lid">Lid</button>
+<button data-value="handle">Handle</button>
+</div>
+
+<div class="config-summary">
+<h3>Configuration</h3>
+<p id="summaryText"></p>
+</div>
+
+<div class="config-actions">
+<button onclick="downloadPreview()">Download Preview</button>
+<button onclick="sendInquiry()">Send Inquiry</button>
+</div>
+
+<h3 style="margin-top:40px">Request a Quote</h3>
+<form id="inquiryForm">
+<input type="text" placeholder="Your Name" required style="display:block;margin:8px 0;padding:8px;width:300px">
+<input type="email" placeholder="Email" required style="display:block;margin:8px 0;padding:8px;width:300px">
+<input type="text" placeholder="Company" style="display:block;margin:8px 0;padding:8px;width:300px">
+<textarea placeholder="Additional Requirements" style="display:block;margin:8px 0;padding:8px;width:300px;height:80px"></textarea>
+</form>
+
+</div>
+
+<script>
+let state={fabric:"oxford",logo:"print",acc:"divider"}
+
+function setOption(group,value){
+state[group]=value
+
+document.querySelectorAll("#"+group+"Options button").forEach(btn=>btn.classList.remove("active"))
+
+document.querySelector("#"+group+"Options button[data-value='"+value+"']").classList.add("active")
+
+updateSummary()
+generatePreview()
+}
+
+function bindOptions(){
+
+document.querySelectorAll("#fabricOptions button").forEach(btn=>{
+btn.onclick=()=>setOption("fabric",btn.dataset.value)
+})
+
+document.querySelectorAll("#logoOptions button").forEach(btn=>{
+btn.onclick=()=>setOption("logo",btn.dataset.value)
+})
+
+document.querySelectorAll("#accOptions button").forEach(btn=>{
+btn.onclick=()=>setOption("acc",btn.dataset.value)
+})
+
+}
+
+function updateSummary(){
+
+document.getElementById("summaryText").innerHTML=
+"Fabric: "+state.fabric+"<br>"+
+"Logo: "+state.logo+"<br>"+
+"Accessory: "+state.acc
+
+}
+
+function generatePreview(){
+const canvas=document.getElementById("previewCanvas")
+const ctx=canvas.getContext("2d")
+
+ctx.clearRect(0,0,canvas.width,canvas.height)
+ctx.fillStyle="#e9eef5"
+ctx.fillRect(0,0,canvas.width,canvas.height)
+ctx.fillStyle="#1E3A5F"
+ctx.font="20px Arial"
+ctx.fillText("Storage Box Preview",140,200)
+}
+
+function downloadPreview(){
+const canvas=document.getElementById("previewCanvas")
+const link=document.createElement("a")
+link.download="custom-storage-box.png"
+link.href=canvas.toDataURL()
+link.click()
+}
+
+function sendInquiry(){
+const name=document.querySelector('#inquiryForm input[type="text"]').value
+const email=document.querySelector('#inquiryForm input[type="email"]').value
+
+let msg="Custom Storage Box Inquiry\n\n"+
+"Name: "+name+"\n"+
+"Email: "+email+"\n\n"+
+"Fabric: "+state.fabric+"\n"+
+"Logo: "+state.logo+"\n"+
+"Accessory: "+state.acc
+
+alert(msg)
+}
+
+bindOptions()
+updateSummary()
+generatePreview()
+</script>
+
+</body>
+</html>
