@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Custom Product Configurator | CHAMPO</title>
-<link rel="stylesheet" href="../css/style.css">
+<link href="//css/style.css" rel="stylesheet"/>
 <style>
 .custom-layout{display:grid;grid-template-columns:320px 1fr;gap:40px;margin-top:40px}
 .custom-options{background:#f7f7f7;border-radius:8px;padding:20px}
@@ -14,9 +15,29 @@
 #previewCanvas{max-width:100%;height:auto}
 .custom-actions{margin-top:20px;display:flex;gap:10px}
 </style>
+<meta content="Custom Product Configurator | CHAMPO - premium automotive accessories from Champo." name="description"/><link href="https://champoauto.com/custom.html" rel="canonical"/>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"BreadcrumbList",
+ "itemListElement":[
+  {
+   "@type":"ListItem",
+   "position":1,
+   "name":"Home",
+   "item":"https://champoauto.com"
+  },
+  {
+   "@type":"ListItem",
+   "position":2,
+   "name":"Page",
+   "item":"https://champoauto.com/custom.html"
+  }
+ ]
+}
+</script>
 </head>
 <body>
-
 <header>
 <div class="container nav">
 <div class="logo">CHAMPO</div>
@@ -29,53 +50,40 @@
 </nav>
 </div>
 </header>
-
 <div class="container">
 <h1 style="margin-top:40px">Custom Product Configurator</h1>
 <p>Select options to preview your customized product.</p>
-
 <div class="custom-layout">
-
 <div class="custom-options">
-
 <h3>Product</h3>
-<label><input type="radio" name="product" value="seat-cover" checked> Pet Seat Cover</label>
-<label><input type="radio" name="product" value="hanging-bag"> Seat Hanging Bag</label>
-<label><input type="radio" name="product" value="storage-box"> Storage Box</label>
-
+<label><input checked="" name="product" type="radio" value="seat-cover"/> Pet Seat Cover</label>
+<label><input name="product" type="radio" value="hanging-bag"/> Seat Hanging Bag</label>
+<label><input name="product" type="radio" value="storage-box"/> Storage Box</label>
 <h3>Size</h3>
-<label><input type="radio" name="size" value="small"> Small</label>
-<label><input type="radio" name="size" value="medium" checked> Medium</label>
-<label><input type="radio" name="size" value="large"> Large</label>
-
+<label><input name="size" type="radio" value="small"/> Small</label>
+<label><input checked="" name="size" type="radio" value="medium"/> Medium</label>
+<label><input name="size" type="radio" value="large"/> Large</label>
 <h3>Fabric</h3>
-<label><input type="radio" name="fabric" value="oxford" checked> Oxford</label>
-<label><input type="radio" name="fabric" value="leather"> Leather</label>
-<label><input type="radio" name="fabric" value="nylon"> Nylon</label>
-
+<label><input checked="" name="fabric" type="radio" value="oxford"/> Oxford</label>
+<label><input name="fabric" type="radio" value="leather"/> Leather</label>
+<label><input name="fabric" type="radio" value="nylon"/> Nylon</label>
 <h3>Logo</h3>
-<label><input type="radio" name="logo" value="print" checked> Print</label>
-<label><input type="radio" name="logo" value="embroidery"> Embroidery</label>
-<label><input type="radio" name="logo" value="rubber"> Rubber Patch</label>
-
+<label><input checked="" name="logo" type="radio" value="print"/> Print</label>
+<label><input name="logo" type="radio" value="embroidery"/> Embroidery</label>
+<label><input name="logo" type="radio" value="rubber"/> Rubber Patch</label>
 <h3>Accessory</h3>
-<label><input type="radio" name="acc" value="strapA" checked> Strap A</label>
-<label><input type="radio" name="acc" value="strapB"> Strap B</label>
-
+<label><input checked="" name="acc" type="radio" value="strapA"/> Strap A</label>
+<label><input name="acc" type="radio" value="strapB"/> Strap B</label>
 <div class="custom-actions">
 <button onclick="generatePreview()">Generate Preview</button>
 <button onclick="alert('Inquiry feature coming soon')">Send Inquiry</button>
 </div>
-
 </div>
-
 <div class="custom-preview">
-<canvas id="previewCanvas" width="500" height="400"></canvas>
-</div>
-
+<canvas height="400" id="previewCanvas" width="500"></canvas>
 </div>
 </div>
-
+</div>
 <script>
 function generatePreview(){
 const canvas=document.getElementById('previewCanvas');
@@ -88,6 +96,5 @@ ctx.font="20px Arial";
 ctx.fillText("Preview Placeholder",150,200);
 }
 </script>
-
 </body>
 </html>

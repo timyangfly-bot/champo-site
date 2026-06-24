@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Search Products | CHAMPO</title>
-<link rel="stylesheet" href="../css/style.css">
+<link href="//css/style.css" rel="stylesheet"/>
 <style>
 .search-container {
   padding: 40px 0;
@@ -64,9 +65,29 @@
   background: white;
 }
 </style>
+<meta content="Search Products | CHAMPO - premium automotive accessories from Champo." name="description"/><link href="https://champoauto.com/search.html" rel="canonical"/>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"BreadcrumbList",
+ "itemListElement":[
+  {
+   "@type":"ListItem",
+   "position":1,
+   "name":"Home",
+   "item":"https://champoauto.com"
+  },
+  {
+   "@type":"ListItem",
+   "position":2,
+   "name":"Page",
+   "item":"https://champoauto.com/search.html"
+  }
+ ]
+}
+</script>
 </head>
 <body>
-
 <header class="header">
 <div class="container nav">
 <div class="logo">CHAMPO</div>
@@ -75,19 +96,12 @@
 <div class="dropdown">
 <a href="categories/pet-seat-cover.html">Products</a>
 <div class="dropdown-menu">
-
 <a href="categories/child-seat-protection-pad.html">Child Seat Protection Pad</a>
-
 <a href="categories/pet-seat-cover.html">Pet Seat Cover</a>
-
 <a href="categories/seat-hanging-bag.html">Seat Hanging Bag</a>
-
 <a href="categories/storage-box.html">Storage Box</a>
-
 <a href="categories/tool-kit.html">Tool Kit</a>
-
 <a href="categories/trunk-mat.html">Trunk Mat</a>
-
 </div>
 </div>
 <a href="index.html#factory">Factory</a>
@@ -95,53 +109,39 @@
 <a href="search.html">Search</a>
 </nav>
 <div class="nav-search">
-<input type="text" id="navSearch" placeholder="Search products..." autocomplete="off">
+<input autocomplete="off" id="navSearch" placeholder="Search products..." type="text"/>
 <button onclick="performNavSearch()">🔍</button>
 </div>
 <a class="btn" href="#contact">Get Quote</a>
 </div>
 </header>
-
 <div class="container search-container">
 <h1>Search Products</h1>
-
 <div class="search-box">
-<input type="text" id="searchInput" class="search-input" placeholder="Search for products, features, or categories..." autocomplete="off">
+<input autocomplete="off" class="search-input" id="searchInput" placeholder="Search for products, features, or categories..." type="text"/>
 <button class="search-button" onclick="performSearch()">Search</button>
 </div>
-
 <div class="search-filters">
-<select id="categoryFilter" class="filter-select">
+<select class="filter-select" id="categoryFilter">
 <option value="">All Categories</option>
-
 <option value="child-seat-protection-pad">Child Seat Protection Pad</option>
-
 <option value="pet-seat-cover">Pet Seat Cover</option>
-
 <option value="seat-hanging-bag">Seat Hanging Bag</option>
-
 <option value="storage-box">Storage Box</option>
-
 <option value="tool-kit">Tool Kit</option>
-
 <option value="trunk-mat">Trunk Mat</option>
-
 </select>
 </div>
-
-<div id="searchResults" class="search-results">
+<div class="search-results" id="searchResults">
 <!-- Search results will be loaded here -->
 </div>
-
 <div id="searchLoading" style="display:none;text-align:center;padding:20px;">
 <p>Searching...</p>
 </div>
 </div>
-
 <footer>
 <p>© CHAMPO Car Storage Solutions</p>
 </footer>
-
 <script>
 // Product data loaded from JSON
 const allProducts = [{"id": "CS055-01", "name": "Child Seat Protection Pad CS055-01", "description": "Premium child seat protection pad with enhanced features", "features": ["Premium material", "Enhanced protection", "Easy installation", "Easy to clean"], "colors": ["Black", "Gray"], "sizes": ["Standard"], "images": {"main": "../images/products/child-seat-protection-pad/cs055-01/main.jpg", "variants": [], "details": []}, "category_slug": "child-seat-protection-pad", "category_name": "Child Seat Protection Pad"}, {"id": "", "name": "Child Seat Protection Pad ", "description": "Premium child seat protection pad with enhanced durability", "features": ["Premium waterproof material", "Enhanced durability", "Easy installation", "Easy to clean"], "colors": ["Black", "Gray", "Blue"], "sizes": ["Standard", "Large"], "images": {"main": "../images/products/child-seat-protection-pad//main.jpg", "variants": [], "details": []}, "category_slug": "child-seat-protection-pad", "category_name": "Child Seat Protection Pad"}, {"id": "CS055-03", "name": "Child Seat Protection Pad CS055-03", "description": "Premium child seat protection pad with extra padding", "features": ["Premium material", "Extra padding", "Enhanced protection", "Easy installation"], "colors": ["Black", "Gray"], "sizes": ["Standard"], "images": {"main": "../images/products/child-seat-protection-pad/cs055-03/main.jpg", "variants": [], "details": []}, "category_slug": "child-seat-protection-pad", "category_name": "Child Seat Protection Pad"}, {"id": "P2601", "name": "Pet Seat Cover P2601", "description": "Cationic Fabric  ", "features": ["Cationic Fabric", "waterproof", "Non-slip", "Wear-resistant"], "colors": ["black", "gray"], "sizes": ["147*137cm"], "images": {"main": "../images/products/pet-seat-cover/p2601/main.jpg", "variants": ["../images/products/pet-seat-cover/p2601/variant1.jpg", "../images/products/pet-seat-cover/p2601/variant2.jpg", "../images/products/pet-seat-cover/p2601/variant3.jpg"], "details": []}, "category_slug": "pet-seat-cover", "category_name": "Pet Seat Cover"}, {"id": "P2602", "name": "Pet Seat Cover P2602", "description": "Cationic Fabric  ", "features": ["Cationic Fabric", "waterproof", "Non-slip", "Wear-resistant"], "colors": ["black", "gray"], "sizes": ["147*137cm"], "images": {"main": "../images/products/pet-seat-cover/p2602/main.jpg", "variants": ["../images/products/pet-seat-cover/p2602/variant1.jpg", "../images/products/pet-seat-cover/p2602/variant2.jpg", "../images/products/pet-seat-cover/p2602/variant3.jpg"], "details": []}, "category_slug": "pet-seat-cover", "category_name": "Pet Seat Cover"}, {"id": "P2603", "name": "Pet Seat Cover P2603", "description": "Cationic Fabric  ", "features": ["Cationic Fabric", "waterproof", "Non-slip", "Wear-resistant"], "colors": ["black", "gray"], "sizes": ["147*137cm"], "images": {"main": "../images/products/pet-seat-cover/p2603/main.jpg", "variants": ["../images/products/pet-seat-cover/p2603/variant1.jpg", "../images/products/pet-seat-cover/p2603/variant2.jpg", "../images/products/pet-seat-cover/p2603/variant4.jpg"], "details": []}, "category_slug": "pet-seat-cover", "category_name": "Pet Seat Cover"}, {"id": "P2604", "name": "Pet Seat Cover P2604", "description": "Cationic Fabric  ", "features": ["Cationic Fabric", "waterproof", "Non-slip", "Wear-resistant"], "colors": ["black", "gray"], "sizes": ["100*50cm"], "images": {"main": "../images/products/pet-seat-cover/p2604/main.jpg", "variants": ["../images/products/pet-seat-cover/p2604/variant1.jpg", "../images/products/pet-seat-cover/p2604/variant2.jpg", "../images/products/pet-seat-cover/p2604/variant3.jpg"], "details": []}, "category_slug": "pet-seat-cover", "category_name": "Pet Seat Cover"}, {"id": "P2605", "name": "Pet Seat Cover P2605", "description": "Cationic Fabric  ", "features": ["Cationic Fabric", "waterproof", "Non-slip", "Wear-resistant"], "colors": ["black", "gray"], "sizes": ["147*137cm"], "images": {"main": "../images/products/pet-seat-cover/p2605/main.jpg", "variants": ["../images/products/pet-seat-cover/p2605/variant1.jpg", "../images/products/pet-seat-cover/p2605/variant2.jpg", "../images/products/pet-seat-cover/p2605/variant3.jpg"], "details": []}, "category_slug": "pet-seat-cover", "category_name": "Pet Seat Cover"}, {"id": "P2606", "name": "Pet Seat Cover P2606", "description": "600D Oxford fabric", "features": ["600D Oxford fabric", "waterproof", "Non-slip", "Wear-resistant"], "colors": ["black"], "sizes": ["147*137cm"], "images": {"main": "../images/products/pet-seat-cover/p2606/main.jpg", "variants": ["../images/products/pet-seat-cover/p2606/variant1.jpg", "../images/products/pet-seat-cover/p2606/variant2.jpg", "../images/products/pet-seat-cover/p2606/variant3.jpg"], "details": []}, "category_slug": "pet-seat-cover", "category_name": "Pet Seat Cover"}, {"id": "P2607", "name": "Pet Seat Cover P2607", "description": "600D Oxford fabric", "features": ["600D Oxford fabric", "waterproof", "Non-slip", "Wear-resistant"], "colors": ["black"], "sizes": ["133*160cm"], "images": {"main": "../images/products/pet-seat-cover/p2607/main.jpg", "variants": ["../images/products/pet-seat-cover/p2607/variant1.jpg", "../images/products/pet-seat-cover/p2607/variant2.jpg", "../images/products/pet-seat-cover/p2607/variant3.jpg"], "details": []}, "category_slug": "pet-seat-cover", "category_name": "Pet Seat Cover"}, {"id": "P2608", "name": "Pet Seat Cover P2608", "description": "Cationic Fabric  ", "features": ["Cationic Fabric", "waterproof", "Non-slip", "Wear-resistant"], "colors": ["black", "gray"], "sizes": ["147*137cm"], "images": {"main": "../images/products/pet-seat-cover/p2608/main.jpg", "variants": ["../images/products/pet-seat-cover/p2608/variant2.jpg", "../images/products/pet-seat-cover/p2608/variant.jpg"], "details": []}, "category_slug": "pet-seat-cover", "category_name": "Pet Seat Cover"}, {"id": "P2609", "name": "Pet Seat Cover P2609", "description": "Cationic Fabric  ", "features": ["Cationic Fabric", "waterproof", "Non-slip", "Wear-resistant"], "colors": ["black", "yellow", "gray"], "sizes": ["147*138cm"], "images": {"main": "../images/products/pet-seat-cover/p2609/main.jpg", "variants": ["../images/products/pet-seat-cover/p2609/variant1.jpg", "../images/products/pet-seat-cover/p2609/variant2.jpg", "../images/products/pet-seat-cover/p2609/variant3.jpg"], "details": []}, "category_slug": "pet-seat-cover", "category_name": "Pet Seat Cover"}, {"id": "P2610", "name": "Pet Seat Cover P2610", "description": "Cationic Fabric  ", "features": ["Cationic Fabric", "waterproof", "Non-slip", "Wear-resistant"], "colors": ["black", "gray"], "sizes": ["185*134"], "images": {"main": "../images/products/pet-seat-cover/p2610/main.jpg", "variants": ["../images/products/pet-seat-cover/p2610/variant1.jpg", "../images/products/pet-seat-cover/p2610/variant2.jpg", "../images/products/pet-seat-cover/p2610/variant3.jpg"], "details": []}, "category_slug": "pet-seat-cover", "category_name": "Pet Seat Cover"}, {"id": "P2611", "name": "Pet Seat Cover P2611", "description": "600D Oxford fabric", "features": ["600D Oxford fabric", "waterproof", "Non-slip", "Wear-resistant"], "colors": ["black"], "sizes": ["147*137cm"], "images": {"main": "../images/products/pet-seat-cover/p2611/main.jpg", "variants": ["../images/products/pet-seat-cover/p2611/variant1.jpg", "../images/products/pet-seat-cover/p2611/variant3.jpg", "../images/products/pet-seat-cover/p2611/VARIANT1.jpg"], "details": []}, "category_slug": "pet-seat-cover", "category_name": "Pet Seat Cover"}, {"id": "P2612", "name": "Pet Seat Cover P2612", "description": "600D Oxford fabric", "features": ["600D Oxford fabric", "waterproof", "Non-slip", "Wear-resistant"], "colors": ["black"], "sizes": ["147*137cm"], "images": {"main": "../images/products/pet-seat-cover/p2612/main.jpg", "variants": ["../images/products/pet-seat-cover/p2612/variant1.jpg"], "details": []}, "category_slug": "pet-seat-cover", "category_name": "Pet Seat Cover"}, {"id": "P2613", "name": "Pet Seat Cover P2613", "description": "900D Oxford fabric", "features": ["900D Oxford fabric", "waterproof", "Non-slip", "Wear-resistant"], "colors": ["black", "gray"], "sizes": ["147*137cm"], "images": {"main": "../images/products/pet-seat-cover/p2613/main.jpg", "variants": ["../images/products/pet-seat-cover/p2613/variant1_white.jpg"], "details": []}, "category_slug": "pet-seat-cover", "category_name": "Pet Seat Cover"}, {"id": "P2614", "name": "Pet Seat Cover P2614", "description": "Cationic Fabric  ", "features": ["Cationic Fabric", "waterproof", "Non-slip", "Wear-resistant"], "colors": ["black", "gray"], "sizes": ["53*46*61CM"], "images": {"main": "../images/products/pet-seat-cover/p2614/main.jpg", "variants": ["../images/products/pet-seat-cover/p2614/variant1.jpg", "../images/products/pet-seat-cover/p2614/variant2.jpg", "../images/products/pet-seat-cover/p2614/variant3.jpg"], "details": []}, "category_slug": "pet-seat-cover", "category_name": "Pet Seat Cover"}, {"id": "P2615", "name": "Pet Seat Cover P2615", "description": "Cationic Fabric  ", "features": ["Cationic Fabric", "waterproof", "Non-slip", "Wear-resistant"], "colors": ["black", "gray"], "sizes": ["162*152"], "images": {"main": "../images/products/pet-seat-cover/p2615/main.jpg", "variants": ["../images/products/pet-seat-cover/p2615/variant1.jpg", "../images/products/pet-seat-cover/p2615/variant2.jpg", "../images/products/pet-seat-cover/p2615/variant3.jpg"], "details": []}, "category_slug": "pet-seat-cover", "category_name": "Pet Seat Cover"}, {"id": "P2616", "name": "Pet Seat Cover 2616", "description": "High quality pet seat cover", "features": ["Durable material", "Easy to install", "Universal fit"], "colors": ["Black", "Gray", "Blue"], "sizes": ["Standard"], "images": {"main": "../images/products/pet-seat-cover/p2616/main.jpg", "variants": ["../images/products/pet-seat-cover/p2616/variant1.jpg", "../images/products/pet-seat-cover/p2616/variant2.jpg", "../images/products/pet-seat-cover/p2616/variant3.jpg"], "details": []}, "category_slug": "pet-seat-cover", "category_name": "Pet Seat Cover"}, {"id": "SH001", "name": "Seat Hanging Bag SH001", "description": "Simple seat hanging bag with multiple pockets", "features": ["Multiple pockets", "Easy installation", "Universal fit", "Lightweight"], "colors": ["Black", "Gray"], "sizes": ["Standard"], "images": {"main": "../images/products/seat-hanging-bag/sh001/main.jpg", "variants": ["../images/products/seat-hanging-bag/sh001/variant1.jpg", "../images/products/seat-hanging-bag/sh001/variant2.jpg", "../images/products/seat-hanging-bag/sh001/variant3.jpg"], "details": []}, "category_slug": "seat-hanging-bag", "category_name": "Seat Hanging Bag"}, {"id": "SH002", "name": "Seat Hanging Bag SH002", "description": "Premium seat hanging bag with enhanced features", "features": ["Premium material", "Extra pockets", "Water-resistant", "Enhanced durability"], "colors": ["Black", "Gray", "Blue"], "sizes": ["Standard", "Large"], "images": {"main": "../images/products/seat-hanging-bag/sh002/main.jpg", "variants": ["../images/products/seat-hanging-bag/sh002/variant1.jpg", "../images/products/seat-hanging-bag/sh002/variant2.jpg", "../images/products/seat-hanging-bag/sh002/variant3.jpg"], "details": []}, "category_slug": "seat-hanging-bag", "category_name": "Seat Hanging Bag"}, {"id": "SB001", "name": "Storage Box SB001", "description": "Small storage box for organizing small items", "features": ["Compact design", "Multiple compartments", "Easy to carry", "Durable material"], "colors": ["Black", "Gray"], "sizes": ["Small"], "images": {"main": "../images/products/storage-box/sb001/main.jpg", "variants": ["../images/products/storage-box/sb001/detail-1.jpg", "../images/products/storage-box/sb001/detail-2.jpg", "../images/products/storage-box/sb001/variant-1.jpg"], "details": []}, "category_slug": "storage-box", "category_name": "Storage Box"}, {"id": "SB002", "name": "Storage Box SB002", "description": "Large storage box with multiple compartments for trunk organization", "features": ["Large capacity", "Multiple compartments", "Foldable design", "Water-resistant"], "colors": ["Black", "Gray", "Blue"], "sizes": ["Large"], "images": {"main": "../images/products/storage-box/sb002/main.jpg", "variants": ["../images/products/storage-box/sb002/detail-1.jpg", "../images/products/storage-box/sb002/detail-2.jpg", "../images/products/storage-box/sb002/variant-1.jpg"], "details": []}, "category_slug": "storage-box", "category_name": "Storage Box"}, {"id": "002-81", "name": "Storage Box 002-81", "description": "PU leather", "features": ["PU leather", "Collapsible", "Multifunctional", "Easy to clean"], "colors": ["black", "gray", "brown"], "sizes": ["54*34.5*30.5"], "images": {"main": "../images/products/storage-box/002-81/main.jpg", "variants": ["../images/products/storage-box/002-81/detail-1.jpg", "../images/products/storage-box/002-81/detail-2.jpg", "../images/products/storage-box/002-81/variant-1.jpg"], "details": []}, "category_slug": "storage-box", "category_name": "Storage Box"}, {"id": "TK001", "name": "Tool Kit TK001", "description": "Basic tool kit for car maintenance", "features": ["Essential tools", "Compact design", "Easy to carry", "Basic maintenance"], "colors": ["Black", "Gray"], "sizes": ["Standard"], "images": {"main": "../images/products/tool-kit/tk001/main.jpg", "variants": ["../images/products/tool-kit/tk001/variant1.jpg", "../images/products/tool-kit/tk001/variant2.jpg", "../images/products/tool-kit/tk001/variant3.jpg"], "details": []}, "category_slug": "tool-kit", "category_name": "Tool Kit"}, {"id": "TK002", "name": "Tool Kit TK002", "description": "Premium tool kit with comprehensive tools", "features": ["Comprehensive tools", "Premium quality", "Enhanced durability", "Emergency tools"], "colors": ["Black", "Gray", "Blue"], "sizes": ["Standard", "Large"], "images": {"main": "../images/products/tool-kit/tk002/main.jpg", "variants": ["../images/products/tool-kit/tk002/variant1.jpg", "../images/products/tool-kit/tk002/variant2.jpg", "../images/products/tool-kit/tk002/variant3.jpg"], "details": []}, "category_slug": "tool-kit", "category_name": "Tool Kit"}, {"id": "TM001", "name": "Trunk Mat TM001", "description": "Basic trunk mat with waterproof protection", "features": ["Waterproof", "Easy to clean", "Universal fit", "Anti-slip"], "colors": ["Black", "Gray"], "sizes": ["Standard", "Large"], "images": {"main": "../images/products/trunk-mat/tm001/main.jpg", "variants": ["../images/products/trunk-mat/tm001/variant1.jpg", "../images/products/trunk-mat/tm001/variant2.jpg", "../images/products/trunk-mat/tm001/variant3.jpg"], "details": []}, "category_slug": "trunk-mat", "category_name": "Trunk Mat"}, {"id": "TM002", "name": "Trunk Mat TM002", "description": "Premium trunk mat with enhanced durability and custom fit", "features": ["Premium material", "Enhanced durability", "Custom fit", "Easy installation"], "colors": ["Black", "Gray", "Brown"], "sizes": ["Custom sizes available"], "images": {"main": "../images/products/trunk-mat/tm002/main.jpg", "variants": ["../images/products/trunk-mat/tm002/variant1.jpg", "../images/products/trunk-mat/tm002/variant2.jpg", "../images/products/trunk-mat/tm002/variant3.jpg"], "details": []}, "category_slug": "trunk-mat", "category_name": "Trunk Mat"}];
@@ -238,6 +238,5 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 </script>
-
 </body>
 </html>
