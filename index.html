@@ -6,15 +6,46 @@
 <div class="dropdown"> <a href="#">Products</a> <div class="dropdown-menu"> <a href="#">Child Seat Protection Pad</a> <a href="#">Pet Seat Cover</a> <a href="#">Seat Hanging Bag</a> <a href="#">Storage Box</a> <a href="#">Tool Kit</a> <a href="#">Trunk Mat</a> </div> </div>
 <a href="#">Factory</a>
 <a href="#">Contact</a>
+<a href="#">Search</a>
 
 </nav>
 <a class="btn" href="#">Get Quote</a>
 
-</div> </header> <section class="hero"> <div class="slide active" style="background-image:url('images/hero/hero1.jpg')"></div> <div class="slide" style="background-image:url('images/hero/hero2.jpg')"></div> <div class="slide" style="background-image:url('images/hero/hero3.jpg')"></div> <div class="hero-text"> <h1>Reliable Automotive Accessories Manufacturer</h1> <p>Pet Seat Covers · Trunk Organizers · Cargo Liners</p> </div>
-<button class="hero-btn prev">❮</button>
-<button class="hero-btn next">❯</button>
-
-<div class="hero-dots"> <span class="dot active"></span> <span class="dot"></span> <span class="dot"></span> </div> </section> <section class="section"> <h2>Our Product Categories</h2> <p class="subtitle"> High‑quality automotive accessories for pet protection and trunk organization. </p> <div class="grid"> <div class="card"> <img src="images/product-view/pet-seat-cover.jpg"> <p>Pet Seat Cover</p> </div> <div class="card"> <img src="images/product-view/trunk-organizer.jpg"> <p>Trunk Organizer</p> </div> <div class="card"> <img src="images/product-view/hanging-bag.jpg"> <p>Seat Hanging Bag</p> </div> <div class="card"> <img src="images/product-view/tool-kit.jpg"> <p>Tool Kit</p> </div> <div class="card"> <img src="images/product-view/trunk-mat.jpg"> <p>Trunk Mat</p> </div> <div class="card"> <img src="images/product-view/child-seat-protection-pad.jpg"> <p>Child Seat Protection Pad</p> </div> </div> </section> <section class="factory"> <div class="factory-inner"> <h2>Professional Automotive Accessories Factory</h2> <p> We specialize in manufacturing automotive accessories including pet seat covers, trunk organizers, cargo liners and storage solutions. </p> <div class="factory-stats"> <div> <h3>10+</h3> <p>Years Experience</p> </div> <div> <h3>3000㎡</h3> <p>Factory Area</p> </div> <div> <h3>50+</h3> <p>Workers</p> </div> <div> <h3>30+</h3> <p>Export Countries</p> </div> </div> </div> </section> <section class="inquiry"> <h2>Send Us an Inquiry</h2> <p class="subtitle">Get quotation or product catalog from our sales team.</p> <form class="inquiry-form" action="send.php" method="post"> <input type="text" name="name" placeholder="Your Name" required> <input type="email" name="email" placeholder="Email" required> <input type="text" name="company" placeholder="Company"> <textarea name="message" placeholder="Your Inquiry"></textarea>
+</div> </header> <section class="hero"> <div class="slide active" style="background-image:url('images/hero/hero1.jpg')"></div> <div class="slide" style="background-image:url('images/hero/hero2.jpg')"></div> <div class="slide" style="background-image:url('images/hero/hero3.jpg')"></div> <div class="hero-text"> <h1>Reliable Automotive Accessories Manufacturer</h1> <p>Pet Seat Covers · Trunk Organizers · Cargo Liners</p> </div> </section> <section class="section"> <h2>Our Product Categories</h2> <p class="subtitle">High‑quality automotive accessories for pet protection and trunk organization.</p> <div class="grid"> <div class="card"> <img src="images/product-view/pet-seat-cover.jpg"> <p>Pet Seat Cover</p> </div> <div class="card"> <img src="images/product-view/trunk-organizer.jpg"> <p>Trunk Organizer</p> </div> <div class="card"> <img src="images/product-view/hanging-bag.jpg"> <p>Seat Hanging Bag</p> </div> <div class="card"> <img src="images/product-view/tool-kit.jpg"> <p>Tool Kit</p> </div> <div class="card"> <img src="images/product-view/trunk-mat.jpg"> <p>Trunk Mat</p> </div> <div class="card"> <img src="images/product-view/child-seat-protection-pad.jpg"> <p>Child Seat Protection Pad</p> </div> </div> </section> <section class="factory"> <div class="factory-inner"> <h2>Professional Automotive Accessories Factory</h2> <p> We specialize in manufacturing automotive accessories including pet seat covers, trunk organizers, cargo liners and storage solutions. Our factory supports OEM and bulk orders for global distributors and brands. </p> <div class="factory-stats"> <div> <h3>10+</h3> <p>Years Experience</p> </div> <div> <h3>3000㎡</h3> <p>Factory Area</p> </div> <div> <h3>50+</h3> <p>Workers</p> </div> <div> <h3>30+</h3> <p>Export Countries</p> </div> </div> </div> </section> <section class="inquiry"> <h2>Send Us an Inquiry</h2> <p class="subtitle">Get quotation or product catalog from our sales team.</p> <form class="inquiry-form"> <input type="text" placeholder="Your Name" required> <input type="email" placeholder="Email Address" required> <input type="text" placeholder="Company Name"> <textarea placeholder="Your Inquiry"></textarea>
 <button type="submit">Send Inquiry</button>
 
-</form> </section> <footer> <div class="footer-inner"> <div> <h4>CHAMPO</h4> <p>Professional manufacturer of automotive accessories.</p> </div> <div> <h4>Products</h4> <p>Pet Seat Cover</p> <p>Trunk Organizer</p> <p>Seat Hanging Bag</p> </div> <div> <h4>Contact</h4> <p>Email: sales@champoauto.com</p> <p>China</p> </div> </div> <p class="copyright"> © 2026 CHAMPO Automotive Accessories </p> </footer> <script> let slides=document.querySelectorAll(".slide"); let dots=document.querySelectorAll(".dot"); let prev=document.querySelector(".prev"); let next=document.querySelector(".next"); let index=0; function showSlide(i){ slides.forEach(s=>s.classList.remove("active")); dots.forEach(d=>d.classList.remove("active")); slides[i].classList.add("active"); dots[i].classList.add("active"); index=i; } dots.forEach((dot,i)=>{ dot.addEventListener("mouseenter",()=>showSlide(i)); }) prev.onclick=()=>{ index=(index-1+slides.length)%slides.length; showSlide(index); } next.onclick=()=>{ index=(index+1)%slides.length; showSlide(index); } setInterval(()=>{ index=(index+1)%slides.length; showSlide(index); },5000); </script> </body> </html>
+</form> </section> <footer> <div class="footer-inner"> <div> <h4>CHAMPO</h4> <p>Professional manufacturer of automotive accessories.</p> </div> <div> <h4>Products</h4> <p>Pet Seat Cover</p> <p>Trunk Organizer</p> <p>Seat Hanging Bag</p> </div> <div> <h4>Contact</h4> <p>Email: sales@champoauto.com</p> <p>China</p> </div> </div> <p class="copyright">© 2026 CHAMPO Automotive Accessories</p> </footer> <script> let slides=document.querySelectorAll(".slide"); let index=0; setInterval(()=>{ slides[index].classList.remove("active"); index=(index+1)%slides.length; slides[index].classList.add("active"); },4000); </script>
+let slides=document.querySelectorAll(".slide");
+let dots=document.querySelectorAll(".dot");
+
+let prev=document.querySelector(".prev");
+let next=document.querySelector(".next");
+
+let index=0;
+
+function showSlide(i){
+
+slides.forEach(s=>s.classList.remove("active"));
+dots.forEach(d=>d.classList.remove("active"));
+
+slides[i].classList.add("active");
+dots[i].classList.add("active");
+
+index=i;
+}
+
+prev.onclick=()=>{
+index=(index-1+slides.length)%slides.length;
+showSlide(index);
+}
+
+next.onclick=()=>{
+index=(index+1)%slides.length;
+showSlide(index);
+}
+
+setInterval(()=>{
+index=(index+1)%slides.length;
+showSlide(index);
+},5000);
+ </body> </html>
