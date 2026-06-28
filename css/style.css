@@ -340,3 +340,26 @@ margin-top:30px;
 color:#aaa;
 font-size:13px;
 }
+.card{
+display:block;
+text-decoration:none;
+color:#333;
+}
+
+.card p{
+text-decoration:none;
+}
+
+.whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+width:60px;
+height:60px;
+z-index:999;
+}
+
+.whatsapp img{
+width:60px;
+height:60px;
+}
