@@ -1,9 +1,16 @@
-*{margin:0;padding:0;box-sizing:border-box}
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
 body{
-font-family:Arial;
+font-family:Arial, Helvetica, sans-serif;
 background:#f7f7f7;
+color:#333;
 }
+
+/* header */
 
 header{
 background:#2b4668;
@@ -36,6 +43,8 @@ text-decoration:none;
 font-size:14px;
 }
 
+/* dropdown */
+
 .dropdown{
 position:relative;
 }
@@ -44,20 +53,28 @@ position:relative;
 display:none;
 position:absolute;
 top:30px;
+left:0;
 background:white;
 min-width:200px;
 border:1px solid #ddd;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
 .dropdown-menu a{
 display:block;
-padding:10px;
+padding:10px 15px;
 color:#333;
+}
+
+.dropdown-menu a:hover{
+background:#f5f5f5;
 }
 
 .dropdown:hover .dropdown-menu{
 display:block;
 }
+
+/* button */
 
 .btn{
 background:#ff8c2a;
@@ -100,7 +117,7 @@ background:rgba(0,0,0,.3);
 padding:20px 40px;
 }
 
-/* categories */
+/* section */
 
 .section{
 max-width:1200px;
@@ -112,6 +129,8 @@ text-align:center;
 color:#666;
 margin-bottom:40px;
 }
+
+/* product grid */
 
 .grid{
 display:grid;
@@ -134,4 +153,104 @@ object-fit:contain;
 .card p{
 margin-top:10px;
 font-weight:600;
+}
+
+/* factory */
+
+.factory{
+background:white;
+padding:60px 20px;
+margin-top:40px;
+}
+
+.factory-inner{
+max-width:1000px;
+margin:auto;
+text-align:center;
+}
+
+.factory-inner p{
+margin-top:15px;
+color:#666;
+}
+
+.factory-stats{
+margin-top:40px;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+}
+
+.factory-stats h3{
+color:#2b4668;
+font-size:28px;
+}
+
+/* inquiry */
+
+.inquiry{
+background:#f0f2f5;
+padding:60px 20px;
+text-align:center;
+}
+
+.inquiry-form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+.inquiry-form input,
+.inquiry-form textarea{
+padding:12px;
+border:1px solid #ddd;
+font-size:14px;
+}
+
+.inquiry-form textarea{
+height:120px;
+}
+
+.inquiry-form button{
+background:#2b4668;
+color:white;
+padding:12px;
+border:none;
+cursor:pointer;
+}
+
+/* footer */
+
+footer{
+background:#1f2f45;
+color:white;
+padding:40px 20px;
+margin-top:60px;
+}
+
+.footer-inner{
+max-width:1100px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+}
+
+footer h4{
+margin-bottom:10px;
+}
+
+footer p{
+color:#ccc;
+font-size:14px;
+margin-bottom:5px;
+}
+
+.copyright{
+text-align:center;
+margin-top:30px;
+color:#aaa;
+font-size:13px;
 }
