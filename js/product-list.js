@@ -25,19 +25,32 @@ const end = start + perPage;
 
 products.slice(start,end).forEach(code=>{
 
-const path = /images/products/${category}/${code};
+const path = `/images/products/${category}/${code}`;
 
 const card = document.createElement("div");
-card.className="product-card";
+card.className = "product-card";
 
 card.innerHTML = `
 
-<picture> <source srcset="${path}/main.webp" type="image/webp"> <img src="${path}/main.jpg" class="main-img" loading="lazy"> </picture> <div class="thumbs"> <img src="${path}/main_thumb.webp">
-<img src="${path}/variant1_thumb.webp" onerror="this.style.display='none'">
+<picture>
+<source srcset="${path}/main.webp" type="image/webp">
+<img src="${path}/main.jpg" class="main-img" loading="lazy">
+</picture>
 
-<img src="${path}/variant2_thumb.webp" onerror="this.style.display='none'">
+<div class="thumbs">
 
-</div> <h4>${code}</h4>
+<img src="${path}/main_thumb.webp">
+
+<img src="${path}/variant1_thumb.webp"
+onerror="this.style.display='none'">
+
+<img src="${path}/variant2_thumb.webp"
+onerror="this.style.display='none'">
+
+</div>
+
+<h4>${code}</h4>
+
 `;
 
 grid.appendChild(card);
@@ -82,7 +95,6 @@ function initThumbSwitch(){
 document.querySelectorAll(".product-card").forEach(card=>{
 
 const main=card.querySelector(".main-img");
-
 const thumbs=card.querySelectorAll(".thumbs img");
 
 thumbs.forEach(img=>{
