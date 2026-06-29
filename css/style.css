@@ -14,6 +14,8 @@ color:#333;
 
 header{
 background:#2b4668;
+position:relative;
+z-index:1000;
 }
 
 .nav{
@@ -66,7 +68,7 @@ background:white;
 min-width:200px;
 border-radius:6px;
 box-shadow:0 8px 20px rgba(0,0,0,.15);
-z-index:999;
+z-index:2000;
 }
 
 .dropdown-menu a{
@@ -87,7 +89,7 @@ display:block;
 
 .hero{
 position:relative;
-height:420px;
+height:520px;
 overflow:hidden;
 }
 
@@ -109,15 +111,28 @@ opacity:1;
 opacity:1;
 }
 
+/* hero text 左侧布局 */
+
 .hero-text{
 position:absolute;
-left:50%;
+left:8%;
 top:50%;
-transform:translate(-50%,-50%);
+transform:translateY(-50%);
 color:white;
-text-align:center;
-background:rgba(0,0,0,.4);
-padding:25px 40px;
+text-align:left;
+background:rgba(0,0,0,.35);
+padding:30px 40px;
+max-width:520px;
+}
+
+.hero-text h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero-text p{
+font-size:18px;
+line-height:1.5;
 }
 
 /* arrows */
@@ -176,6 +191,10 @@ background:white;
 animation:progress 5s linear forwards;
 }
 
+.hero:hover .dot.active::after{
+animation-play-state:paused;
+}
+
 @keyframes progress{
 from{width:0}
 to{width:100%}
@@ -210,6 +229,9 @@ border-radius:8px;
 border:1px solid #eee;
 transition:.3s;
 cursor:pointer;
+display:block;
+text-decoration:none;
+color:#333;
 }
 
 .card:hover{
@@ -340,15 +362,8 @@ margin-top:30px;
 color:#aaa;
 font-size:13px;
 }
-.card{
-display:block;
-text-decoration:none;
-color:#333;
-}
 
-.card p{
-text-decoration:none;
-}
+/* whatsapp */
 
 .whatsapp{
 position:fixed;
