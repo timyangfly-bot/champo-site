@@ -1,28 +1,22 @@
-const urlParams=new URLSearchParams(location.search)
+const category="seat-hanging-bag"
 
-const category=urlParams.get("cat") || "seat-hanging-bag"
+const products=[
+"HB-01","hb-02","HB-03","hb-04","hb-05",
+"hb-06","hb-07","hb-08","hb-09","hb-10",
+"hb-11","hb-12","hb-13","hb-14","hb-15",
+"hb-16","hb-17","hb-18","hb-19",
+"hb-21","hb-22","hb-23","hb-24","hb-25",
+"hb-26","hb-27","hb-28","hb-29","hb-30",
+"sh001","sh002"
+]
 
 const perPage=9
 let currentPage=1
 
 const grid=document.getElementById("productGrid")
 const pagination=document.getElementById("pagination")
-const title=document.getElementById("categoryTitle")
 
-title.innerText=category.replaceAll("-"," ")
-
-fetch("/products.json")
-.then(res=>res.json())
-.then(data=>{
-
-const products=data[category]
-
-renderProducts(products)
-renderPagination(products)
-
-})
-
-function renderProducts(products){
+function renderProducts(){
 
 grid.innerHTML=""
 
@@ -31,30 +25,19 @@ const end=start+perPage
 
 products.slice(start,end).forEach(code=>{
 
-const path=`/images/products/${category}/${code}`
+const path=/images/products/${category}/${code}
 
 const card=document.createElement("div")
 card.className="product-card"
 
 card.innerHTML=`
 
-<picture>
-<source srcset="${path}/main.webp" type="image/webp">
-<img src="${path}/main.jpg" class="main-img" loading="lazy">
-</picture>
-
-<div class="thumbs">
-
-<img src="${path}/main_thumb.webp">
-
+<picture> <source srcset="${path}/main.webp" type="image/webp"> <img src="${path}/main.jpg" class="main-img" loading="lazy"> </picture> <div class="thumbs"> <img src="${path}/main_thumb.webp">
 <img src="${path}/variant1_thumb.webp" onerror="this.style.display='none'">
 
 <img src="${path}/variant2_thumb.webp" onerror="this.style.display='none'">
 
-</div>
-
-<h4>${code}</h4>
-
+</div> <h4>${code}</h4>
 `
 
 grid.appendChild(card)
@@ -65,7 +48,7 @@ initThumbSwitch()
 
 }
 
-function renderPagination(products){
+function renderPagination(){
 
 pagination.innerHTML=""
 
@@ -82,9 +65,8 @@ if(i===currentPage) btn.classList.add("active")
 btn.onclick=()=>{
 
 currentPage=i
-
-renderProducts(products)
-renderPagination(products)
+renderProducts()
+renderPagination()
 
 }
 
@@ -99,6 +81,7 @@ function initThumbSwitch(){
 document.querySelectorAll(".product-card").forEach(card=>{
 
 const main=card.querySelector(".main-img")
+
 const thumbs=card.querySelectorAll(".thumbs img")
 
 thumbs.forEach(img=>{
@@ -114,3 +97,6 @@ main.src=img.src.replace("_thumb","")
 })
 
 }
+
+renderProducts()
+renderPagination()
