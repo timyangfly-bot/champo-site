@@ -1,22 +1,23 @@
 const category = "seat-hanging-bag";
 
-const products = [
-"HB-01","hb-02","HB-03","hb-04","hb-05",
-"hb-06","hb-07","hb-08","hb-09","hb-10",
-"hb-11","hb-12","hb-13","hb-14","hb-15",
-"hb-16","hb-17","hb-18","hb-19",
-"hb-21","hb-22","hb-23","hb-24","hb-25",
-"hb-26","hb-27","hb-28","hb-29","hb-30",
-"sh001","sh002"
-];
-
 const perPage = 9;
 let currentPage = 1;
 
 const grid = document.getElementById("productGrid");
 const pagination = document.getElementById("pagination");
 
-function renderProducts(){
+fetch("/products.json")
+.then(res => res.json())
+.then(data => {
+
+const products = data[category];
+
+renderProducts(products);
+renderPagination(products);
+
+});
+
+function renderProducts(products){
 
 grid.innerHTML = "";
 
@@ -61,7 +62,7 @@ initThumbSwitch();
 
 }
 
-function renderPagination(){
+function renderPagination(products){
 
 pagination.innerHTML="";
 
@@ -79,8 +80,8 @@ btn.onclick=()=>{
 
 currentPage=i;
 
-renderProducts();
-renderPagination();
+renderProducts(products);
+renderPagination(products);
 
 };
 
@@ -110,6 +111,3 @@ main.src=img.src.replace("_thumb","");
 });
 
 }
-
-renderProducts();
-renderPagination();
