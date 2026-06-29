@@ -1,4 +1,4 @@
-const category="seat-hanging-bag"
+const category = "seat-hanging-bag";
 
 const products = [
 "HB-01","hb-02","HB-03","hb-04","hb-05",
@@ -10,27 +10,27 @@ const products = [
 "sh001","sh002"
 ];
 
-const perPage=9
-let currentPage=1
+const perPage = 9;
+let currentPage = 1;
 
-const grid=document.getElementById("productGrid")
-const pagination=document.getElementById("pagination")
+const grid = document.getElementById("productGrid");
+const pagination = document.getElementById("pagination");
 
 function renderProducts(){
 
-grid.innerHTML=""
+grid.innerHTML = "";
 
-const start=(currentPage-1)*perPage
-const end=start+perPage
+const start = (currentPage-1)*perPage;
+const end = start + perPage;
 
 products.slice(start,end).forEach(code=>{
 
-const path=/images/products/${category}/${code}
+const path = /images/products/${category}/${code};
 
-const card=document.createElement("div")
-card.className="product-card"
+const card = document.createElement("div");
+card.className="product-card";
 
-card.innerHTML=`
+card.innerHTML = `
 
 <picture> <source srcset="${path}/main.webp" type="image/webp"> <img src="${path}/main.jpg" class="main-img" loading="lazy"> </picture> <div class="thumbs"> <img src="${path}/main_thumb.webp">
 <img src="${path}/variant1_thumb.webp" onerror="this.style.display='none'">
@@ -38,39 +38,40 @@ card.innerHTML=`
 <img src="${path}/variant2_thumb.webp" onerror="this.style.display='none'">
 
 </div> <h4>${code}</h4>
-`
+`;
 
-grid.appendChild(card)
+grid.appendChild(card);
 
-})
+});
 
-initThumbSwitch()
+initThumbSwitch();
 
 }
 
 function renderPagination(){
 
-pagination.innerHTML=""
+pagination.innerHTML="";
 
-const pages=Math.ceil(products.length/perPage)
+const pages = Math.ceil(products.length/perPage);
 
 for(let i=1;i<=pages;i++){
 
-const btn=document.createElement("button")
+const btn=document.createElement("button");
 
-btn.innerText=i
+btn.innerText=i;
 
-if(i===currentPage) btn.classList.add("active")
+if(i===currentPage) btn.classList.add("active");
 
 btn.onclick=()=>{
 
-currentPage=i
-renderProducts()
-renderPagination()
+currentPage=i;
 
-}
+renderProducts();
+renderPagination();
 
-pagination.appendChild(btn)
+};
+
+pagination.appendChild(btn);
 
 }
 
@@ -80,23 +81,23 @@ function initThumbSwitch(){
 
 document.querySelectorAll(".product-card").forEach(card=>{
 
-const main=card.querySelector(".main-img")
+const main=card.querySelector(".main-img");
 
-const thumbs=card.querySelectorAll(".thumbs img")
+const thumbs=card.querySelectorAll(".thumbs img");
 
 thumbs.forEach(img=>{
 
 img.onclick=()=>{
 
-main.src=img.src.replace("_thumb","")
+main.src=img.src.replace("_thumb","");
+
+};
+
+});
+
+});
 
 }
 
-})
-
-})
-
-}
-
-renderProducts()
-renderPagination()
+renderProducts();
+renderPagination();
