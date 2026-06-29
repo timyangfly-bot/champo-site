@@ -1,6 +1,6 @@
 const category="seat-hanging-bag"
 
-const products=[
+const products = [
 "HB-01","hb-02","HB-03","hb-04","hb-05",
 "hb-06","hb-07","hb-08","hb-09","hb-10",
 "hb-11","hb-12","hb-13","hb-14","hb-15",
@@ -8,7 +8,7 @@ const products=[
 "hb-21","hb-22","hb-23","hb-24","hb-25",
 "hb-26","hb-27","hb-28","hb-29","hb-30",
 "sh001","sh002"
-]
+];
 
 const perPage=9
 let currentPage=1
