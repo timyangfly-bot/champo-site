@@ -6,6 +6,13 @@ let currentPage = 1;
 const grid = document.getElementById("productGrid");
 const pagination = document.getElementById("pagination");
 
+/* 每个产品独立描述 */
+const productDescriptions = {
+"hb-01": "Seat back organizer with tablet holder and cup pockets, ideal for family travel and backseat storage.",
+"hb-02": "Foldable tray style seat hanging organizer with tissue pocket and multiple storage compartments.",
+"hb-03": "Multi-pocket car seat organizer with bottle holders and mesh storage for everyday vehicle essentials."
+};
+
 fetch("/products.json")
 .then(res => res.json())
 .then(data => {
@@ -28,6 +35,7 @@ const end = start + perPage;
 products.slice(start,end).forEach(code=>{
 
 const path = `/images/products/${category}/${code}`;
+const desc = productDescriptions[code] || "Durable car seat hanging organizer designed for storage and seat back protection.";
 
 const card = document.createElement("div");
 card.className = "product-card";
@@ -43,25 +51,26 @@ card.innerHTML = `
 
 <div class="thumbs">
 
-<img src="${path}/main_thumb.webp">
+<img src="${path}/main_thumb.webp" data-full="${path}/main.jpg">
 
 <img src="${path}/variant1_thumb.webp"
+data-full="${path}/variant1.jpg"
 onerror="this.style.display='none'">
 
 <img src="${path}/variant2_thumb.webp"
+data-full="${path}/variant2.jpg"
 onerror="this.style.display='none'">
 
 </div>
 
 </div>
-
 
 <div class="product-info">
 
 <h3 class="product-title">${formatName(code)}</h3>
 
 <p class="product-desc">
-Durable car seat hanging organizer designed for storage and seat back protection.
+${desc}
 </p>
 
 <a href="/products/${category}/${code}.html" class="product-btn">
@@ -77,6 +86,7 @@ grid.appendChild(card);
 });
 
 initThumbSwitch();
+initImageZoom();
 
 }
 
@@ -116,6 +126,8 @@ pagination.appendChild(btn);
 }
 
 
+/* 小图切换主图 */
+
 function initThumbSwitch(){
 
 document.querySelectorAll(".product-card").forEach(card=>{
@@ -127,13 +139,48 @@ thumbs.forEach(img=>{
 
 img.onclick=()=>{
 
-main.src=img.src.replace("_thumb","");
+main.src=img.dataset.full;
 
 };
 
 });
 
 });
+
+}
+
+
+/* 图片放大预览 */
+
+function initImageZoom(){
+
+document.querySelectorAll(".thumbs img").forEach(img=>{
+
+img.addEventListener("dblclick",()=>{
+
+openLightbox(img.dataset.full);
+
+});
+
+});
+
+}
+
+
+function openLightbox(src){
+
+let lightbox = document.createElement("div");
+lightbox.className = "image-lightbox";
+
+lightbox.innerHTML = `
+<div class="lightbox-content">
+<img src="${src}">
+</div>
+`;
+
+lightbox.onclick = () => lightbox.remove();
+
+document.body.appendChild(lightbox);
 
 }
 
