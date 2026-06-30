@@ -7,7 +7,7 @@ const grid = document.getElementById("productGrid");
 const pagination = document.getElementById("pagination");
 
 
-/* 产品描述（当 JSON 没写 desc 时使用） */
+/* 产品描述 */
 
 const productDescriptions = {
 
@@ -26,7 +26,7 @@ fetch("/products.json")
 
 .then(data=>{
 
-const products = data[category] || [];
+const products=data[category]||[];
 
 renderProducts(products);
 renderPagination(products);
@@ -34,13 +34,12 @@ renderPagination(products);
 });
 
 
-
 function renderProducts(products){
 
 grid.innerHTML="";
 
-const start = (currentPage-1)*perPage;
-const end = start + perPage;
+const start=(currentPage-1)*perPage;
+const end=start+perPage;
 
 products.slice(start,end).forEach(item=>{
 
@@ -61,22 +60,15 @@ desc=item.desc||productDescriptions[code]||defaultDesc();
 const path=`/images/products/${category}/${code}`;
 
 const card=document.createElement("div");
-
 card.className="product-card";
-
 
 card.innerHTML=`
 
 <div class="product-image">
 
-<picture>
-<source srcset="${path}/main.webp" type="image/webp">
-
 <img src="${path}/main.jpg"
 class="main-img"
 loading="lazy">
-
-</picture>
 
 <div class="thumbs">
 
@@ -91,7 +83,6 @@ onerror="this.style.display='none'">
 </div>
 
 </div>
-
 
 <div class="product-info">
 
@@ -151,10 +142,8 @@ renderProducts(products);
 renderPagination(products);
 
 window.scrollTo({
-
 top:0,
 behavior:"smooth"
-
 });
 
 };
@@ -167,33 +156,36 @@ pagination.appendChild(btn);
 
 
 
-/* 点击缩略图切换主图 */
+/* 缩略图切换主图 */
 
 function initThumbSwitch(){
 
 document.querySelectorAll(".product-card").forEach(card=>{
 
 const main=card.querySelector(".main-img");
-
 const thumbs=card.querySelectorAll(".thumbs img");
 
 thumbs.forEach(img=>{
 
-img.onclick=()=>{
+img.addEventListener("click",()=>{
+
+/* 从缩略图自动生成大图 */
 
 let full=img.src
-
 .replace("_thumb.webp",".jpg")
-
 .replace("_thumb.jpg",".jpg");
 
+/* 切换主图 */
+
 main.src=full;
+
+/* 缩略图高亮 */
 
 thumbs.forEach(t=>t.classList.remove("active"));
 
 img.classList.add("active");
 
-};
+});
 
 });
 
@@ -203,18 +195,27 @@ img.classList.add("active");
 
 
 
-/* 双击放大 */
+/* 点击主图或双击缩略图放大 */
 
 function initImageZoom(){
+
+document.querySelectorAll(".main-img").forEach(img=>{
+
+img.addEventListener("click",()=>{
+
+openLightbox(img.src);
+
+});
+
+});
+
 
 document.querySelectorAll(".thumbs img").forEach(img=>{
 
 img.addEventListener("dblclick",()=>{
 
 let full=img.src
-
 .replace("_thumb.webp",".jpg")
-
 .replace("_thumb.jpg",".jpg");
 
 openLightbox(full);
@@ -253,7 +254,7 @@ document.body.appendChild(lightbox);
 
 
 
-/* 产品名称格式化 */
+/* 产品名称 */
 
 function formatName(code){
 
@@ -271,6 +272,6 @@ return code
 
 function defaultDesc(){
 
-return"Durable car seat hanging organizer designed for storage and seat back protection.";
+return "Durable car seat hanging organizer designed for storage and seat back protection.";
 
 }
