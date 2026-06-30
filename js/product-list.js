@@ -17,6 +17,7 @@ renderPagination(products);
 
 });
 
+
 function renderProducts(products){
 
 grid.innerHTML = "";
@@ -32,6 +33,8 @@ const card = document.createElement("div");
 card.className = "product-card";
 
 card.innerHTML = `
+
+<div class="product-image">
 
 <picture>
 <source srcset="${path}/main.webp" type="image/webp">
@@ -50,7 +53,22 @@ onerror="this.style.display='none'">
 
 </div>
 
-<h4>${code}</h4>
+</div>
+
+
+<div class="product-info">
+
+<h3 class="product-title">${formatName(code)}</h3>
+
+<p class="product-desc">
+Durable car seat hanging organizer designed for storage and seat back protection.
+</p>
+
+<a href="/products/${category}/${code}.html" class="product-btn">
+View Details
+</a>
+
+</div>
 
 `;
 
@@ -61,6 +79,7 @@ grid.appendChild(card);
 initThumbSwitch();
 
 }
+
 
 function renderPagination(products){
 
@@ -83,6 +102,11 @@ currentPage=i;
 renderProducts(products);
 renderPagination(products);
 
+window.scrollTo({
+top:0,
+behavior:"smooth"
+});
+
 };
 
 pagination.appendChild(btn);
@@ -90,6 +114,7 @@ pagination.appendChild(btn);
 }
 
 }
+
 
 function initThumbSwitch(){
 
@@ -109,5 +134,14 @@ main.src=img.src.replace("_thumb","");
 });
 
 });
+
+}
+
+
+function formatName(code){
+
+return code
+.replace(/-/g," ")
+.replace(/\b\w/g,l=>l.toUpperCase());
 
 }
