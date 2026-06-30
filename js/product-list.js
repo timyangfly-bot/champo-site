@@ -6,24 +6,16 @@ let currentPage = 1;
 const grid = document.getElementById("productGrid");
 const pagination = document.getElementById("pagination");
 
-
-/* 产品描述 */
-
 const productDescriptions = {
 
 "hb-01":"Seat back organizer with tablet holder and cup pockets, ideal for family travel and backseat storage.",
-
 "hb-02":"Foldable tray style seat hanging organizer with tissue pocket and multiple storage compartments.",
-
 "hb-03":"Multi-pocket car seat organizer with bottle holders and mesh storage for everyday vehicle essentials."
 
 };
 
-
 fetch("/products.json")
-
 .then(res=>res.json())
-
 .then(data=>{
 
 const products=data[category]||[];
@@ -32,7 +24,6 @@ renderProducts(products);
 renderPagination(products);
 
 });
-
 
 function renderProducts(products){
 
@@ -66,9 +57,13 @@ card.innerHTML=`
 
 <div class="product-image">
 
+<div class="zoom-container">
+
 <img src="${path}/main.jpg"
 class="main-img"
 loading="lazy">
+
+</div>
 
 <div class="thumbs">
 
@@ -87,23 +82,26 @@ onerror="this.style.display='none'">
 <div class="product-info">
 
 <h3 class="product-title">
-
 ${formatName(code)}
-
 </h3>
 
 <p class="product-desc">
-
 ${desc}
-
 </p>
+
+<div class="product-actions">
 
 <a href="/products/${category}/${code}.html"
 class="product-btn">
-
 View Details
-
 </a>
+
+<a href="/#inquiry?product=${code}"
+class="quick-inquiry">
+Quick Inquiry
+</a>
+
+</div>
 
 </div>
 
@@ -113,12 +111,11 @@ grid.appendChild(card);
 
 });
 
-initThumbSwitch();
-initImageZoom();
+initThumbHover();
+initZoom();
+initImageLightbox();
 
 }
-
-
 
 function renderPagination(products){
 
@@ -154,11 +151,9 @@ pagination.appendChild(btn);
 
 }
 
+/* hover 缩略图切换主图 */
 
-
-/* 缩略图切换主图 */
-
-function initThumbSwitch(){
+function initThumbHover(){
 
 document.querySelectorAll(".product-card").forEach(card=>{
 
@@ -167,22 +162,15 @@ const thumbs=card.querySelectorAll(".thumbs img");
 
 thumbs.forEach(img=>{
 
-img.addEventListener("click",()=>{
-
-/* 从缩略图自动生成大图 */
+img.addEventListener("mouseenter",()=>{
 
 let full=img.src
 .replace("_thumb.webp",".jpg")
 .replace("_thumb.jpg",".jpg");
 
-/* 切换主图 */
-
 main.src=full;
 
-/* 缩略图高亮 */
-
 thumbs.forEach(t=>t.classList.remove("active"));
-
 img.classList.add("active");
 
 });
@@ -193,11 +181,39 @@ img.classList.add("active");
 
 }
 
+/* hover 主图放大 */
 
+function initZoom(){
 
-/* 点击主图或双击缩略图放大 */
+document.querySelectorAll(".zoom-container").forEach(container=>{
 
-function initImageZoom(){
+const img=container.querySelector(".main-img");
+
+container.addEventListener("mousemove",(e)=>{
+
+const rect=container.getBoundingClientRect();
+
+const x=(e.clientX-rect.left)/rect.width*100;
+const y=(e.clientY-rect.top)/rect.height*100;
+
+img.style.transformOrigin=`${x}% ${y}%`;
+img.style.transform="scale(2)";
+
+});
+
+container.addEventListener("mouseleave",()=>{
+
+img.style.transform="scale(1)";
+
+});
+
+});
+
+}
+
+/* 点击主图全屏 */
+
+function initImageLightbox(){
 
 document.querySelectorAll(".main-img").forEach(img=>{
 
@@ -209,41 +225,17 @@ openLightbox(img.src);
 
 });
 
-
-document.querySelectorAll(".thumbs img").forEach(img=>{
-
-img.addEventListener("dblclick",()=>{
-
-let full=img.src
-.replace("_thumb.webp",".jpg")
-.replace("_thumb.jpg",".jpg");
-
-openLightbox(full);
-
-});
-
-});
-
 }
-
-
-
-/* 图片灯箱 */
 
 function openLightbox(src){
 
 let lightbox=document.createElement("div");
-
 lightbox.className="image-lightbox";
 
 lightbox.innerHTML=`
-
 <div class="lightbox-content">
-
 <img src="${src}">
-
 </div>
-
 `;
 
 lightbox.onclick=()=>lightbox.remove();
@@ -251,10 +243,6 @@ lightbox.onclick=()=>lightbox.remove();
 document.body.appendChild(lightbox);
 
 }
-
-
-
-/* 产品名称 */
 
 function formatName(code){
 
@@ -266,12 +254,8 @@ return code
 
 }
 
-
-
-/* 默认描述 */
-
 function defaultDesc(){
 
-return "Durable car seat hanging organizer designed for storage and seat back protection.";
+return"Durable car seat hanging organizer designed for storage and seat back protection.";
 
 }
