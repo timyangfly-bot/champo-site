@@ -1,6 +1,382 @@
 <!DOCTYPE html>
+<html lang="en">
 
-<html lang="en"> <head> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>Seat Hanging Bag | CHAMPO</title> <link rel="stylesheet" href="/css/style.css"> <style> .product-container{ max-width:1200px; margin:40px auto; padding:0 20px; } .product-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:30px; } .product-card{ border:1px solid #eee; padding:15px; background:#fff; text-align:center; } .main-img{ width:100%; height:200px; object-fit:contain; } .thumbs{ display:flex; justify-content:center; gap:8px; margin-top:10px; } .thumbs img{ width:50px; height:50px; object-fit:cover; cursor:pointer; border:1px solid #ddd; } .product-card h4{ margin-top:10px; font-size:14px; } .pagination{ margin-top:40px; display:flex; justify-content:center; gap:8px; } .pagination button{ padding:8px 14px; border:1px solid #ddd; background:white; cursor:pointer; } .pagination button.active{ background:#2b4668; color:white; border-color:#2b4668; } </style> </head> <body> <header> <div class="nav"> <div class="logo">CHAMPO</div> <nav> <a href="/">Home</a> <a href="/products/">Products</a> <a href="#">Factory</a> <a href="#">Contact</a> </nav>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Seat Hanging Bag Manufacturer | CHAMPO</title>
+
+<link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/product.css">
+
+<style>
+
+.products-wrapper{
+    max-width:1200px;
+    margin:40px auto;
+    padding:0 20px;
+    display:flex;
+    gap:40px;
+}
+
+.product-sidebar{
+    width:260px;
+    flex-shrink:0;
+}
+
+.product-sidebar h3{
+    font-size:22px;
+    margin-bottom:20px;
+    color:#2b4668;
+}
+
+.category-list{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.category-list li{
+    margin-bottom:12px;
+}
+
+.category-list a{
+    text-decoration:none;
+    color:#333;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.category-list a:hover{
+    color:#2b4668;
+}
+
+.category-list .active a{
+    color:#2b4668;
+    font-weight:600;
+}
+
+.product-main{
+    flex:1;
+}
+
+.category-title{
+    font-size:36px;
+    margin-bottom:20px;
+    color:#222;
+}
+
+.category-banner{
+    margin-bottom:35px;
+}
+
+.category-banner img{
+    width:100%;
+    border-radius:8px;
+    object-fit:cover;
+}
+
+.customization-box{
+    background:#f5f7fa;
+    padding:30px;
+    border-radius:8px;
+    margin-bottom:40px;
+}
+
+.customization-box h2{
+    margin-bottom:15px;
+    font-size:26px;
+    color:#2b4668;
+}
+
+.customization-box p{
+    line-height:1.8;
+    color:#555;
+}
+
+.customization-box ul{
+    margin-top:15px;
+    padding-left:20px;
+}
+
+.customization-box li{
+    margin-bottom:10px;
+    color:#444;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.product-card{
+    border:1px solid #eee;
+    padding:15px;
+    background:#fff;
+    text-align:center;
+    transition:0.3s;
+}
+
+.product-card:hover{
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.main-img{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+}
+
+.thumbs{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    margin-top:10px;
+}
+
+.thumbs img{
+    width:50px;
+    height:50px;
+    object-fit:cover;
+    cursor:pointer;
+    border:1px solid #ddd;
+}
+
+.product-card h4{
+    margin-top:12px;
+    font-size:15px;
+    color:#222;
+}
+
+.pagination{
+    margin-top:40px;
+    display:flex;
+    justify-content:center;
+    gap:8px;
+}
+
+.pagination button{
+    padding:8px 14px;
+    border:1px solid #ddd;
+    background:white;
+    cursor:pointer;
+}
+
+.pagination button.active{
+    background:#2b4668;
+    color:white;
+    border-color:#2b4668;
+}
+
+.inquiry-box{
+    margin-top:60px;
+    background:#111;
+    color:#fff;
+    padding:50px 40px;
+    border-radius:8px;
+    text-align:center;
+}
+
+.inquiry-box h2{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.inquiry-box p{
+    line-height:1.8;
+    max-width:800px;
+    margin:0 auto;
+    color:#ddd;
+}
+
+.inquiry-btn{
+    display:inline-block;
+    margin-top:25px;
+    padding:14px 32px;
+    background:#ff6600;
+    color:#fff;
+    text-decoration:none;
+    border-radius:4px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.inquiry-btn:hover{
+    background:#e05500;
+}
+
+@media(max-width:991px){
+
+.products-wrapper{
+    flex-direction:column;
+}
+
+.product-sidebar{
+    width:100%;
+}
+
+.product-grid{
+    grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.product-grid{
+    grid-template-columns:1fr;
+}
+
+.category-title{
+    font-size:28px;
+}
+
+.inquiry-box{
+    padding:35px 20px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="nav">
+
+<div class="logo">CHAMPO</div>
+
+<nav>
+<a href="/">Home</a>
+<a href="/products/">Products</a>
+<a href="#">Factory</a>
+<a href="#">Contact</a>
+</nav>
+
 <a class="btn" href="/#inquiry">Get Quote</a>
 
-</div> </header> <div class="product-container"> <h1>Seat Hanging Bag</h1> <div id="productGrid" class="product-grid"></div> <div id="pagination" class="pagination"></div> </div> <script src="/js/product-list.js"></script> </body> </html>
+</div>
+
+</header>
+
+
+<div class="products-wrapper">
+
+
+<!-- 左侧分类导航 -->
+
+<aside class="product-sidebar">
+
+<h3>Product Categories</h3>
+
+<ul class="category-list">
+
+<li class="active">
+<a href="/products/">Seat Hanging Bag</a>
+</li>
+
+<li>
+<a href="/products/pet-seat-cover/">Pet Seat Cover</a>
+</li>
+
+<li>
+<a href="/products/storage-box/">Storage Box</a>
+</li>
+
+<li>
+<a href="/products/tool-kit/">Tool Kit</a>
+</li>
+
+<li>
+<a href="/products/trunk-mat/">Trunk Mat</a>
+</li>
+
+<li>
+<a href="/products/child-seat-protection-pad/">Child Seat Protection Pad</a>
+</li>
+
+</ul>
+
+</aside>
+
+
+<!-- 右侧主体 -->
+
+<main class="product-main">
+
+<h1 class="category-title">Seat Hanging Bag</h1>
+
+
+<!-- 分类Banner -->
+
+<div class="category-banner">
+
+<img src="/images/category-seat-hanging-bag.jpg" alt="Seat Hanging Bag">
+
+</div>
+
+
+<!-- OEM说明 -->
+
+<div class="customization-box">
+
+<h2>OEM & Customization Service</h2>
+
+<p>
+CHAMPO is a professional manufacturer of automotive storage products.
+We provide OEM and ODM services for global brands and wholesalers.
+</p>
+
+<ul>
+<li>Custom logo printing or embroidery</li>
+<li>Material selection (Oxford fabric, PU leather, etc.)</li>
+<li>Pocket structure and layout customization</li>
+<li>Color and packaging customization</li>
+<li>Fast sampling and factory direct supply</li>
+</ul>
+
+</div>
+
+
+<!-- 产品列表 -->
+
+<div id="productGrid" class="product-grid"></div>
+
+
+<!-- 分页 -->
+
+<div id="pagination" class="pagination"></div>
+
+
+<!-- Inquiry CTA -->
+
+<div class="inquiry-box">
+
+<h2>Looking for a Reliable Automotive Storage Product Manufacturer?</h2>
+
+<p>
+Contact CHAMPO to get product catalogs, samples and factory quotations.
+We support OEM and custom production for distributors and brands worldwide.
+</p>
+
+<a href="/#inquiry" class="inquiry-btn">
+Send Inquiry
+</a>
+
+</div>
+
+</main>
+
+</div>
+
+
+<script src="/js/product-list.js"></script>
+
+</body>
+</html>
