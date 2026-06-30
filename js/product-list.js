@@ -151,7 +151,7 @@ pagination.appendChild(btn);
 
 }
 
-/* hover 缩略图切换主图 */
+/* hover 缩略图切换 */
 
 function initThumbHover(){
 
@@ -162,16 +162,14 @@ const thumbs=card.querySelectorAll(".thumbs img");
 
 thumbs.forEach(img=>{
 
-img.addEventListener("mouseenter",()=>{
+img.addEventListener("mouseover",function(){
 
-let full=img.src
-.replace("_thumb.webp",".jpg")
-.replace("_thumb.jpg",".jpg");
+let full=this.src.replace("_thumb.webp",".jpg");
 
 main.src=full;
 
 thumbs.forEach(t=>t.classList.remove("active"));
-img.classList.add("active");
+this.classList.add("active");
 
 });
 
@@ -181,7 +179,7 @@ img.classList.add("active");
 
 }
 
-/* hover 主图放大 */
+/* 主图hover放大 */
 
 function initZoom(){
 
@@ -197,7 +195,7 @@ const x=(e.clientX-rect.left)/rect.width*100;
 const y=(e.clientY-rect.top)/rect.height*100;
 
 img.style.transformOrigin=`${x}% ${y}%`;
-img.style.transform="scale(2)";
+img.style.transform="scale(1.8)";
 
 });
 
@@ -211,7 +209,7 @@ img.style.transform="scale(1)";
 
 }
 
-/* 点击主图全屏 */
+/* 点击主图放大 */
 
 function initImageLightbox(){
 
@@ -230,6 +228,7 @@ openLightbox(img.src);
 function openLightbox(src){
 
 let lightbox=document.createElement("div");
+
 lightbox.className="image-lightbox";
 
 lightbox.innerHTML=`
