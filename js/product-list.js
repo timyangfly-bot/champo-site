@@ -1,7 +1,4 @@
-/* 自动识别分类 */
-
-const pathParts = window.location.pathname.split("/");
-const category = pathParts[pathParts.length-2];
+const category = "seat-hanging-bag";
 
 const perPage = 9;
 let currentPage = 1;
@@ -9,19 +6,24 @@ let currentPage = 1;
 const grid = document.getElementById("productGrid");
 const pagination = document.getElementById("pagination");
 
+/* 产品描述（当 JSON 没写 desc 时使用） */
+const productDescriptions = {
+"hb-01": "Seat back organizer with tablet holder and cup pockets, ideal for family travel and backseat storage.",
+"hb-02": "Foldable tray style seat hanging organizer with tissue pocket and multiple storage compartments.",
+"hb-03": "Multi-pocket car seat organizer with bottle holders and mesh storage for everyday vehicle essentials."
+};
+
+
 fetch("/products.json")
 .then(res => res.json())
 .then(data => {
 
-const products = data[category];
-
-if(!products) return;
+const products = data[category] || [];
 
 renderProducts(products);
 renderPagination(products);
 
 });
-
 
 
 function renderProducts(products){
@@ -31,12 +33,20 @@ grid.innerHTML = "";
 const start = (currentPage-1)*perPage;
 const end = start + perPage;
 
-products.slice(start,end).forEach(product=>{
+products.slice(start,end).forEach(item=>{
 
-const code = product.code;
-const desc = product.desc;
+/* 兼容两种 JSON 结构 */
+let code, desc;
 
-const imgPath = `/images/products/${category}/${code}`;
+if(typeof item === "string"){
+code = item;
+desc = productDescriptions[code] || defaultDesc();
+}else{
+code = item.code;
+desc = item.desc || productDescriptions[code] || defaultDesc();
+}
+
+const path = `/images/products/${category}/${code}`;
 
 const card = document.createElement("div");
 card.className = "product-card";
@@ -46,21 +56,20 @@ card.innerHTML = `
 <div class="product-image">
 
 <picture>
-<source srcset="${imgPath}/main.webp" type="image/webp">
-<img src="${imgPath}/main.jpg" class="main-img" loading="lazy">
+<source srcset="${path}/main.webp" type="image/webp">
+<img src="${path}/main.jpg" class="main-img" loading="lazy">
 </picture>
 
 <div class="thumbs">
 
-<img src="${imgPath}/main_thumb.webp"
-data-full="${imgPath}/main.jpg">
+<img src="${path}/main_thumb.webp" data-full="${path}/main.jpg">
 
-<img src="${imgPath}/variant1_thumb.webp"
-data-full="${imgPath}/variant1.jpg"
+<img src="${path}/variant1_thumb.webp"
+data-full="${path}/variant1.jpg"
 onerror="this.style.display='none'">
 
-<img src="${imgPath}/variant2_thumb.webp"
-data-full="${imgPath}/variant2.jpg"
+<img src="${path}/variant2_thumb.webp"
+data-full="${path}/variant2.jpg"
 onerror="this.style.display='none'">
 
 </div>
@@ -130,7 +139,7 @@ pagination.appendChild(btn);
 
 
 
-/* 小图切换 */
+/* 小图切换主图 */
 
 function initThumbSwitch(){
 
@@ -155,7 +164,7 @@ main.src=img.dataset.full;
 
 
 
-/* 图片放大 */
+/* 双击放大图片 */
 
 function initImageZoom(){
 
@@ -175,16 +184,16 @@ openLightbox(img.dataset.full);
 
 function openLightbox(src){
 
-let lightbox=document.createElement("div");
-lightbox.className="image-lightbox";
+let lightbox = document.createElement("div");
+lightbox.className = "image-lightbox";
 
-lightbox.innerHTML=`
+lightbox.innerHTML = `
 <div class="lightbox-content">
 <img src="${src}">
 </div>
 `;
 
-lightbox.onclick=()=>lightbox.remove();
+lightbox.onclick = () => lightbox.remove();
 
 document.body.appendChild(lightbox);
 
@@ -196,8 +205,17 @@ document.body.appendChild(lightbox);
 
 function formatName(code){
 
+if(!code) return "";
+
 return code
 .replace(/-/g," ")
 .replace(/\b\w/g,l=>l.toUpperCase());
 
+}
+
+
+/* 默认描述 */
+
+function defaultDesc(){
+return "Durable car seat hanging organizer designed for storage and seat back protection.";
 }
