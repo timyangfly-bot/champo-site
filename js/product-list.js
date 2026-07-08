@@ -1,7 +1,6 @@
-// 从URL获取当前分类
+// Get current category from URL
 function getCurrentCategory() {
   const path = window.location.pathname;
-  // 匹配 /products/seat-hanging-bag/ 这样的路径
   const match = path.match(/\/products\/([^\/]+)/);
   return match ? match[1] : "seat-hanging-bag";
 }
@@ -45,8 +44,10 @@ const productDescriptions = {
   "cp-03": "Extra large child seat protector for SUVs and larger vehicle seats."
 };
 
-// 添加加载状态
-grid.innerHTML = '<div class="loading">Loading products...</div>';
+// Add loading state
+if (grid) {
+  grid.innerHTML = '<div class="loading">Loading products...</div>';
+}
 
 fetch("/products.json")
   .then(res => {
@@ -59,7 +60,7 @@ fetch("/products.json")
     const products = data[category] || [];
     
     if (products.length === 0) {
-      grid.innerHTML = '<div class="no-products">No products found in this category.</div>';
+      if (grid) grid.innerHTML = '<div class="no-products">No products found in this category.</div>';
       return;
     }
     
@@ -68,10 +69,12 @@ fetch("/products.json")
   })
   .catch(error => {
     console.error("Error:", error);
-    grid.innerHTML = '<div class="error">Failed to load products. Please try again later.</div>';
+    if (grid) grid.innerHTML = '<div class="error">Failed to load products. Please try again later.</div>';
   });
 
 function renderProducts(products) {
+  if (!grid) return;
+  
   grid.innerHTML = "";
 
   const start = (currentPage - 1) * perPage;
@@ -137,15 +140,17 @@ function renderProducts(products) {
     grid.appendChild(card);
   });
 
-  // 使用 setTimeout 确保DOM更新后再初始化事件
+  // Use setTimeout to ensure DOM is updated before initializing events
   setTimeout(() => {
     initThumbHover();
     initZoom();
     initImageLightbox();
-  }, 0);
+  }, -1);
 }
 
 function renderPagination(products) {
+  if (!pagination) return;
+  
   pagination.innerHTML = "";
 
   const pages = Math.ceil(products.length / perPage);
@@ -170,7 +175,7 @@ function renderPagination(products) {
   }
 }
 
-/* hover 缩略图切换 */
+/* hover thumbnail switching */
 function initThumbHover() {
   document.querySelectorAll(".product-card").forEach(card => {
     const main = card.querySelector(".main-img");
@@ -178,7 +183,7 @@ function initThumbHover() {
 
     thumbs.forEach(img => {
       img.addEventListener("mouseover", function() {
-        // 修复路径转换：将 _thumb.webp 替换为 .jpg
+        // Fix path conversion: replace _thumb.webp with .jpg
         let full = this.src.replace("_thumb.webp", ".jpg");
         main.src = full;
 
@@ -189,7 +194,7 @@ function initThumbHover() {
   });
 }
 
-/* 主图hover放大 */
+/* main image hover zoom */
 function initZoom() {
   document.querySelectorAll(".zoom-container").forEach(container => {
     const img = container.querySelector(".main-img");
@@ -209,7 +214,7 @@ function initZoom() {
   });
 }
 
-/* 点击主图放大 */
+/* click main image to enlarge */
 function initImageLightbox() {
   document.querySelectorAll(".main-img").forEach(img => {
     img.addEventListener("click", () => {
