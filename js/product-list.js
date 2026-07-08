@@ -15,9 +15,9 @@ const pagination = document.getElementById("pagination");
 
 const productDescriptions = {
   // Seat Hanging Bags
-  "hb-01": "Seat back organizer with tablet holder and cup pockets, ideal for family travel and backseat storage.",
+  "HB-01": "Seat back organizer with tablet holder and cup pockets, ideal for family travel and backseat storage.",
   "hb-02": "Foldable tray style seat hanging organizer with tissue pocket and multiple storage compartments.",
-  "hb-03": "Multi-pocket car seat organizer with bottle holders and mesh storage for everyday vehicle essentials.",
+  "HB-03": "Multi-pocket car seat organizer with bottle holders and mesh storage for everyday vehicle essentials.",
   
   // Pet Seat Covers
   "ps-01": "Premium waterproof pet seat cover with non-slip backing and side pockets for pet accessories.",
