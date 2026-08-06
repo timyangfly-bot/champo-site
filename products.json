@@ -1,13 +1,26 @@
-let code, folder, desc;
+{
+  "pet-seat-cover": [
+    { "folder": "p2606" },
+    { "folder": "p2607" },
+    { "folder": "p2608" },
+    { "folder": "p2609" },
+    { "folder": "p2610" },
+    { "folder": "p2611" },
+    { "folder": "ps001" },
+    { "folder": "ps002" },
+    { "folder": "ps003" }
+  ],
 
-if (typeof item === "string") {
-  folder = item;
-  code = item;
-} else {
-  folder = item.folder;
-  code = item.code || item.folder;
+  "storage-box": [
+    { "folder": "002-81" },
+    { "folder": "008-01" },
+    { "folder": "023-25" },
+    { "folder": "037-10" }
+  ],
+
+  "seat-hanging-bag": [
+    { "folder": "HB-01" },
+    { "folder": "HB-02" },
+    { "folder": "HB-03" }
+  ]
 }
-
-desc = productDescriptions[code] || defaultDesc();
-
-const path = `/images/products/${category}/${folder}`;
