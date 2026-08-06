@@ -72,7 +72,7 @@ function renderProducts(products) {
       desc = item.desc || productDescriptions[code] || defaultDesc();
     }
 
-    const path = `/main/images/products/${category}/${folder}`;
+   const path = `https://champoauto.com/images/products/${category}/${folder}`;
 
     const card = document.createElement("div");
     card.className = "product-card";
