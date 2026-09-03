@@ -1,0 +1,49 @@
+import fs from "node:fs/promises";
+import path from "node:path";
+import data from "../src/data/products.json" with { type: "json" };
+
+const root = path.resolve(import.meta.dirname, "..");
+const out = path.join(root, "dist");
+const esc = s => String(s ?? "").replace(/[&<>\"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const url = p => `https://www.champoauto.com${p}`;
+const productUrl = (category, product) => `/products/${category.slug}/${product.sku.toLowerCase()}/`;
+
+await fs.rm(out,{recursive:true,force:true});
+await fs.mkdir(out,{recursive:true});
+await fs.cp(path.join(root,"images"),path.join(out,"images"),{recursive:true});
+await fs.cp(path.join(root,"src","assets"),path.join(out,"assets"),{recursive:true});
+
+const nav = `<header class="site-header"><a class="brand" href="/" aria-label="CHAMPO home"><span>C</span>CHAMPO</a><button class="menu-button" aria-expanded="false" aria-controls="site-nav">Menu</button><nav id="site-nav"><a href="/#products">Products</a><a href="/#capabilities">Capabilities</a><a href="/#process">Process</a><a href="/#contact">Contact</a></nav><a class="header-cta" href="/#contact">Start a project <span>↗</span></a></header>`;
+const footer = `<footer><div class="footer-grid"><div><a class="brand brand-light" href="/"><span>C</span>CHAMPO</a><p>Automotive accessories, made for brands that expect more.</p></div><div><b>Explore</b><a href="/#products">Products</a><a href="/#capabilities">OEM & ODM</a><a href="/#contact">Contact</a></div><div><b>Get in touch</b><a href="mailto:${data.site.email}">${data.site.email}</a><span>Ningbo, Zhejiang, China</span></div></div><div class="footer-bottom"><span>© ${new Date().getFullYear()} CHAMPO. All rights reserved.</span><span>Built for better journeys.</span></div></footer>`;
+const layout = ({title,description,body,canonical="/",schema=""}) => `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(title)}</title><meta name="description" content="${esc(description)}"><link rel="canonical" href="${url(canonical)}"><link rel="stylesheet" href="/assets/site.css"><script defer src="/assets/site.js"></script>${schema}</head><body>${nav}<main>${body}</main>${footer}</body></html>`;
+const inquiry = (subject="Product development") => `<section class="contact" id="contact"><div><p class="eyebrow light">LET'S BUILD SOMETHING USEFUL</p><h2>Have a product in mind?</h2><p>Tell us what you need. Our team will respond with options for materials, customization, MOQ and lead time.</p></div><form action="https://formsubmit.co/${data.site.email}" method="POST"><input type="hidden" name="_subject" value="CHAMPO website inquiry: ${esc(subject)}"><div class="form-row"><label>Name<input name="name" required autocomplete="name"></label><label>Work email<input name="email" type="email" required autocomplete="email"></label></div><label>Company<input name="company" autocomplete="organization"></label><label>What are you looking for?<textarea name="message" rows="4" required></textarea></label><button type="submit">Send inquiry <span>↗</span></button></form></section>`;
+const card = (c,p) => `<a class="product-card" href="${productUrl(c,p)}"><div class="product-image"><img src="${p.image}" alt="${esc(p.name)}" loading="lazy"><span>View product ↗</span></div><div><p>${esc(c.name)}</p><h3>${esc(p.sku)}</h3></div></a>`;
+
+const featured=data.categories.flatMap(c=>c.products.slice(0,2).map(p=>[c,p])).slice(0,8);
+const categoryTiles=data.categories.map((c,i)=>`<a class="category-tile tile-${i+1}" href="/products/${c.slug}/"><img src="${c.products[0]?.image}" alt="${esc(c.name)}"><div><span>${String(i+1).padStart(2,"0")}</span><h3>${esc(c.name)}</h3><p>${c.products.length} products</p></div></a>`).join("");
+const homeBody=`<section class="hero"><div class="hero-copy"><p class="eyebrow">AUTOMOTIVE ACCESSORIES · OEM / ODM</p><h1>Built for the<br><em>road ahead.</em></h1><p class="hero-lede">CHAMPO develops dependable car organization and protection products for global brands, importers and retailers.</p><div class="hero-actions"><a class="button dark" href="#products">Explore products</a><a class="text-link" href="#contact">Discuss your project ↗</a></div></div><div class="hero-visual"><img src="${data.categories[1].products[0].image}" alt="CHAMPO automotive organizer"><div class="floating-note"><b>Factory direct</b><span>Flexible customization</span></div></div><div class="hero-stats"><div><strong>10+</strong><span>years manufacturing</span></div><div><strong>6</strong><span>focused categories</span></div><div><strong>OEM</strong><span>from idea to shipment</span></div></div></section>
+<section class="category-section" id="products"><div class="section-head"><div><p class="eyebrow">WHAT WE MAKE</p><h2>Products that earn<br>their place in the car.</h2></div><p>Purposeful materials, practical construction and flexible customization across a focused automotive range.</p></div><div class="category-grid">${categoryTiles}</div></section>
+<section class="manifesto"><p class="eyebrow light">WHY CHAMPO</p><p>We turn practical ideas into <em>well-made products</em>—with direct communication, flexible development and quality you can repeat.</p></section>
+<section class="capabilities" id="capabilities"><div class="capability-image"><img src="${data.categories[0].products[4]?.image || data.categories[0].products[0].image}" alt="Automotive accessory detail" loading="lazy"></div><div><p class="eyebrow">FROM BRIEF TO BULK</p><h2>One manufacturing partner. Every important step.</h2><div class="accordion"><details open><summary>01 · Product development</summary><p>Material selection, functional refinements and samples tailored to your market.</p></details><details><summary>02 · Branding & packaging</summary><p>Logo application, colorways, labels and retail-ready packaging options.</p></details><details><summary>03 · Quality control</summary><p>Clear specifications and inspection checkpoints before goods leave production.</p></details><details><summary>04 · Flexible production</summary><p>Trial-order support and scalable capacity for established programs.</p></details></div></div></section>
+<section class="process" id="process"><div class="section-head"><div><p class="eyebrow">HOW WE WORK</p><h2>A clear route from<br>idea to delivery.</h2></div></div><ol><li><span>01</span><b>Share the brief</b><p>Product, target price, quantity and market.</p></li><li><span>02</span><b>Confirm the solution</b><p>Materials, details, sample and quotation.</p></li><li><span>03</span><b>Make & inspect</b><p>Production with quality checkpoints.</p></li><li><span>04</span><b>Pack & ship</b><p>Final inspection and export coordination.</p></li></ol></section>${inquiry()}`;
+await fs.writeFile(path.join(out,"index.html"),layout({title:"CHAMPO | Automotive Accessories Manufacturer",description:"OEM and ODM automotive organizers, pet seat covers, cargo liners and car protection products.",body:homeBody,canonical:"/"}));
+
+for(const c of data.categories){
+  const dir=path.join(out,"products",c.slug); await fs.mkdir(dir,{recursive:true});
+  const body=`<section class="page-hero"><p class="eyebrow">PRODUCT COLLECTION</p><h1>${esc(c.name)}</h1><p>${esc(c.intro)}</p><span>${c.products.length} products</span></section><section class="catalog-grid">${c.products.map(p=>card(c,p)).join("")}</section>${inquiry(c.name)}`;
+  await fs.writeFile(path.join(dir,"index.html"),layout({title:`${c.name} | CHAMPO`,description:c.intro,body,canonical:`/products/${c.slug}/`}));
+  for(const p of c.products){
+    const pdir=path.join(dir,p.sku.toLowerCase()); await fs.mkdir(pdir,{recursive:true});
+    const facts=[["Item no.",p.sku],["Size",p.dimension],["Packing",p.packing],["Net weight",p.weight],["MOQ",p.moq?`${p.moq} pcs`:"Ask us"],["Colors",p.colors.join(", ")||"Custom options"]].filter(x=>x[1]);
+    const gallery=[p.image,...p.gallery].slice(0,4).map((img,i)=>`<img src="${img}" alt="${esc(p.name)}${i?` detail ${i}`:""}" ${i?"loading=\"lazy\"":""}>`).join("");
+    const schema=`<script type="application/ld+json">${JSON.stringify({"@context":"https://schema.org","@type":"Product",name:p.name,sku:p.sku,image:[url(p.image)],brand:{"@type":"Brand",name:"CHAMPO"},description:p.description||c.intro})}</script>`;
+    const pbody=`<nav class="breadcrumbs"><a href="/">Home</a><span>/</span><a href="/products/${c.slug}/">${esc(c.name)}</a><span>/</span><b>${esc(p.sku)}</b></nav><section class="product-detail"><div class="gallery">${gallery}</div><div class="product-info"><p class="eyebrow">${esc(c.name)}</p><h1>${esc(p.sku)}</h1><p class="product-lede">${esc(p.description||c.intro)}</p><dl>${facts.map(([a,b])=>`<div><dt>${esc(a)}</dt><dd>${esc(b)}</dd></div>`).join("")}</dl><a class="button dark wide" href="#contact">Request quote</a><p class="microcopy">Logo, color and packaging customization available.</p></div></section>${inquiry(`${p.sku} / ${c.name}`)}`;
+    await fs.writeFile(path.join(pdir,"index.html"),layout({title:`${p.sku} ${c.name.replace(/s$/,'')} | CHAMPO`,description:p.description||c.intro,body:pbody,canonical:productUrl(c,p),schema}));
+  }
+}
+const allProducts=data.categories.flatMap(c=>c.products.map(p=>({sku:p.sku,name:p.name,category:c.name,url:productUrl(c,p),image:p.image}))); 
+await fs.writeFile(path.join(out,"products.json"),JSON.stringify(allProducts,null,2));
+await fs.writeFile(path.join(out,"robots.txt"),`User-agent: *\nAllow: /\nSitemap: ${url('/sitemap.xml')}\n`);
+const paths=["/",...data.categories.map(c=>`/products/${c.slug}/`),...data.categories.flatMap(c=>c.products.map(p=>productUrl(c,p)))];
+await fs.writeFile(path.join(out,"sitemap.xml"),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${paths.map(p=>`<url><loc>${url(p)}</loc></url>`).join("")}</urlset>`);
+console.log(`Built ${paths.length} pages in ${out}`);

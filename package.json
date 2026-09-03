@@ -1,0 +1,9 @@
+{
+  "name": "champo-v2",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-v2.mjs",
+    "preview": "node scripts/serve.mjs"
+  }
+}
