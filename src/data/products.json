@@ -6,342 +6,9 @@
   },
   "categories": [
     {
-      "slug": "pet-seat-cover",
-      "name": "Pet Seat Covers",
-      "intro": "Waterproof, hard-wearing protection designed for everyday travel with pets.",
-      "products": [
-        {
-          "sku": "P2601",
-          "dimension": "147*137cm",
-          "packing": "38*26*11",
-          "weight": "1.8kg",
-          "moq": "500",
-          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black",
-            "Gray"
-          ],
-          "name": "Pet Seat Cover P2601",
-          "image": "/images/products/pet-seat-cover/p2601/main.webp",
-          "gallery": [
-            "/images/products/pet-seat-cover/p2601/detail1.jpg",
-            "/images/products/pet-seat-cover/p2601/detail1.webp",
-            "/images/products/pet-seat-cover/p2601/detail2.jpg",
-            "/images/products/pet-seat-cover/p2601/detail2.webp",
-            "/images/products/pet-seat-cover/p2601/main.jpg"
-          ]
-        },
-        {
-          "sku": "P2602",
-          "dimension": "147*137cm",
-          "packing": "38*26*11",
-          "weight": "1.8kg",
-          "moq": "500",
-          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black",
-            "Gray"
-          ],
-          "name": "Pet Seat Cover P2602",
-          "image": "/images/products/pet-seat-cover/p2602/main.webp",
-          "gallery": [
-            "/images/products/pet-seat-cover/p2602/main.jpg",
-            "/images/products/pet-seat-cover/p2602/variant1.jpg",
-            "/images/products/pet-seat-cover/p2602/variant1.webp",
-            "/images/products/pet-seat-cover/p2602/variant2.jpg",
-            "/images/products/pet-seat-cover/p2602/variant2.webp"
-          ]
-        },
-        {
-          "sku": "P2603",
-          "dimension": "147*137cm",
-          "packing": "38*26*6",
-          "weight": "1.3kg",
-          "moq": "500",
-          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black",
-            "Gray"
-          ],
-          "name": "Pet Seat Cover P2603",
-          "image": "/images/products/pet-seat-cover/p2603/main.webp",
-          "gallery": [
-            "/images/products/pet-seat-cover/p2603/main.jpg",
-            "/images/products/pet-seat-cover/p2603/variant1.jpg",
-            "/images/products/pet-seat-cover/p2603/variant1.webp",
-            "/images/products/pet-seat-cover/p2603/variant2.jpg",
-            "/images/products/pet-seat-cover/p2603/variant2.webp"
-          ]
-        },
-        {
-          "sku": "P2604",
-          "dimension": "100*50cm",
-          "packing": "45*25*7",
-          "weight": "0.7kg",
-          "moq": "500",
-          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black",
-            "Gray"
-          ],
-          "name": "Pet Seat Cover P2604",
-          "image": "/images/products/pet-seat-cover/p2604/main.webp",
-          "gallery": [
-            "/images/products/pet-seat-cover/p2604/main.jpg",
-            "/images/products/pet-seat-cover/p2604/variant1.jpg",
-            "/images/products/pet-seat-cover/p2604/variant1.webp",
-            "/images/products/pet-seat-cover/p2604/variant2.jpg",
-            "/images/products/pet-seat-cover/p2604/variant2.webp"
-          ]
-        },
-        {
-          "sku": "P2605",
-          "dimension": "147*137cm",
-          "packing": "38*26*11",
-          "weight": "1.4kg",
-          "moq": "500",
-          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black",
-            "Gray"
-          ],
-          "name": "Pet Seat Cover P2605",
-          "image": "/images/products/pet-seat-cover/p2605/main.webp",
-          "gallery": [
-            "/images/products/pet-seat-cover/p2605/main.jpg",
-            "/images/products/pet-seat-cover/p2605/variant1.jpg",
-            "/images/products/pet-seat-cover/p2605/variant1.webp",
-            "/images/products/pet-seat-cover/p2605/variant2.jpg",
-            "/images/products/pet-seat-cover/p2605/variant2.webp"
-          ]
-        },
-        {
-          "sku": "P2606",
-          "dimension": "147*137cm",
-          "packing": "38*26*9",
-          "weight": "1.8kg",
-          "moq": "500",
-          "description": "600D Oxford fabric\nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black"
-          ],
-          "name": "Pet Seat Cover P2606",
-          "image": "/images/products/pet-seat-cover/p2606/main.webp",
-          "gallery": [
-            "/images/products/pet-seat-cover/p2606/main.jpg",
-            "/images/products/pet-seat-cover/p2606/variant1.jpg",
-            "/images/products/pet-seat-cover/p2606/variant1.webp",
-            "/images/products/pet-seat-cover/p2606/variant2.jpg",
-            "/images/products/pet-seat-cover/p2606/variant2.webp"
-          ]
-        },
-        {
-          "sku": "P2607",
-          "dimension": "133*160cm",
-          "packing": "65*45*5",
-          "weight": "2.6kg",
-          "moq": "500",
-          "description": "600D Oxford fabric\nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black"
-          ],
-          "name": "Pet Seat Cover P2607",
-          "image": "/images/products/pet-seat-cover/p2607/main.webp",
-          "gallery": [
-            "/images/products/pet-seat-cover/p2607/main.jpg",
-            "/images/products/pet-seat-cover/p2607/variant1.jpg",
-            "/images/products/pet-seat-cover/p2607/variant1.webp",
-            "/images/products/pet-seat-cover/p2607/variant2.jpg",
-            "/images/products/pet-seat-cover/p2607/variant2.webp"
-          ]
-        },
-        {
-          "sku": "P2608",
-          "dimension": "147*137cm",
-          "packing": "38*26*11",
-          "weight": "1.8kg",
-          "moq": "500",
-          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black",
-            "Gray"
-          ],
-          "name": "Pet Seat Cover P2608",
-          "image": "/images/products/pet-seat-cover/p2608/main.webp",
-          "gallery": [
-            "/images/products/pet-seat-cover/p2608/main.jpg",
-            "/images/products/pet-seat-cover/p2608/variant.jpg",
-            "/images/products/pet-seat-cover/p2608/variant.webp",
-            "/images/products/pet-seat-cover/p2608/variant2.jpg",
-            "/images/products/pet-seat-cover/p2608/variant2.webp"
-          ]
-        },
-        {
-          "sku": "P2609",
-          "dimension": "147*138cm",
-          "packing": "67*44*12CM",
-          "weight": "2.9",
-          "moq": "500",
-          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black",
-            "Yellow",
-            "Gray"
-          ],
-          "name": "Pet Seat Cover P2609",
-          "image": "/images/products/pet-seat-cover/p2609/main.webp",
-          "gallery": [
-            "/images/products/pet-seat-cover/p2609/detail1.jpg",
-            "/images/products/pet-seat-cover/p2609/detail1.webp",
-            "/images/products/pet-seat-cover/p2609/detail2.jpg",
-            "/images/products/pet-seat-cover/p2609/detail2.webp",
-            "/images/products/pet-seat-cover/p2609/detail3.jpg"
-          ]
-        },
-        {
-          "sku": "P2610",
-          "dimension": "185*134",
-          "packing": "64*52*10",
-          "weight": "4.5KG",
-          "moq": "500",
-          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black",
-            "Gray"
-          ],
-          "name": "Pet Seat Cover P2610",
-          "image": "/images/products/pet-seat-cover/p2610/main.webp",
-          "gallery": [
-            "/images/products/pet-seat-cover/p2610/main.jpg",
-            "/images/products/pet-seat-cover/p2610/variant1.jpg",
-            "/images/products/pet-seat-cover/p2610/variant1.webp",
-            "/images/products/pet-seat-cover/p2610/variant2.jpg",
-            "/images/products/pet-seat-cover/p2610/variant2.webp"
-          ]
-        },
-        {
-          "sku": "P2611",
-          "dimension": "147*137cm",
-          "packing": "38*26*11",
-          "weight": "1.8kg",
-          "moq": "500",
-          "description": "600D Oxford fabric\nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black"
-          ],
-          "name": "Pet Seat Cover P2611",
-          "image": "/images/products/pet-seat-cover/p2611/main.webp",
-          "gallery": [
-            "/images/products/pet-seat-cover/p2611/main.jpg",
-            "/images/products/pet-seat-cover/p2611/variant1.jpg",
-            "/images/products/pet-seat-cover/p2611/variant1.webp",
-            "/images/products/pet-seat-cover/p2611/variant3.jpg",
-            "/images/products/pet-seat-cover/p2611/variant3.webp"
-          ]
-        },
-        {
-          "sku": "P2612",
-          "dimension": "147*137cm",
-          "packing": "38*26*6",
-          "weight": "1.5KG",
-          "moq": "500",
-          "description": "600D Oxford fabric\nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black"
-          ],
-          "name": "Pet Seat Cover P2612",
-          "image": "/images/products/pet-seat-cover/p2612/main.webp",
-          "gallery": [
-            "/images/products/pet-seat-cover/p2612/main.jpg",
-            "/images/products/pet-seat-cover/p2612/variant1.jpg",
-            "/images/products/pet-seat-cover/p2612/variant1.webp"
-          ]
-        },
-        {
-          "sku": "P2613",
-          "dimension": "147*137cm",
-          "packing": "38*26*6",
-          "weight": "1.5KG",
-          "moq": "500",
-          "description": "900D Oxford fabric\nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black",
-            "Gray"
-          ],
-          "name": "Pet Seat Cover P2613",
-          "image": "/images/products/pet-seat-cover/p2613/main.webp",
-          "gallery": [
-            "/images/products/pet-seat-cover/p2613/main.jpg",
-            "/images/products/pet-seat-cover/p2613/variant1_white.jpg",
-            "/images/products/pet-seat-cover/p2613/variant1_white.webp"
-          ]
-        },
-        {
-          "sku": "P2614",
-          "dimension": "53*46*61CM",
-          "packing": "",
-          "weight": "1.5kg",
-          "moq": "500",
-          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black",
-            "Gray"
-          ],
-          "name": "Pet Seat Cover P2614",
-          "image": "/images/products/pet-seat-cover/p2614/main.webp",
-          "gallery": [
-            "/images/products/pet-seat-cover/p2614/main.jpg",
-            "/images/products/pet-seat-cover/p2614/variant1.jpg",
-            "/images/products/pet-seat-cover/p2614/variant1.webp",
-            "/images/products/pet-seat-cover/p2614/variant2.jpg",
-            "/images/products/pet-seat-cover/p2614/variant2.webp"
-          ]
-        },
-        {
-          "sku": "P2615",
-          "dimension": "162*152",
-          "packing": "",
-          "weight": "1.8kg",
-          "moq": "500",
-          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black",
-            "Gray"
-          ],
-          "name": "Pet Seat Cover P2615",
-          "image": "/images/products/pet-seat-cover/p2615/main.webp",
-          "gallery": [
-            "/images/products/pet-seat-cover/p2615/main.jpg",
-            "/images/products/pet-seat-cover/p2615/variant1.jpg",
-            "/images/products/pet-seat-cover/p2615/variant1.webp",
-            "/images/products/pet-seat-cover/p2615/variant2.jpg",
-            "/images/products/pet-seat-cover/p2615/variant2.webp"
-          ]
-        },
-        {
-          "sku": "P2616",
-          "dimension": "",
-          "packing": "",
-          "weight": "",
-          "moq": "",
-          "description": "",
-          "colors": [],
-          "name": "Pet Seat Cover P2616",
-          "image": "/images/products/pet-seat-cover/p2616/main.webp",
-          "gallery": [
-            "/images/products/pet-seat-cover/p2616/main.jpg",
-            "/images/products/pet-seat-cover/p2616/variant1.jpg",
-            "/images/products/pet-seat-cover/p2616/variant1.webp",
-            "/images/products/pet-seat-cover/p2616/variant2.jpg",
-            "/images/products/pet-seat-cover/p2616/variant2.webp"
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "storage-box",
-      "name": "Trunk Organizers",
-      "intro": "Collapsible storage solutions engineered to keep every journey organized.",
+      "slug": "car-organizers",
+      "name": "Car Organization",
+      "intro": "Trunk organizers and seat-back storage products developed for practical, everyday vehicle organization.",
       "products": [
         {
           "sku": "158-02",
@@ -363,7 +30,8 @@
             "/images/products/storage-box/158-02/main.jpg",
             "/images/products/storage-box/158-02/variant-1.jpg",
             "/images/products/storage-box/158-02/variant-1.webp"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "158-01",
@@ -383,7 +51,8 @@
             "/images/products/storage-box/158-01/detail2.jpg",
             "/images/products/storage-box/158-01/detail2.webp",
             "/images/products/storage-box/158-01/main.jpg"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "110-03",
@@ -403,7 +72,8 @@
             "/images/products/storage-box/110-03/detail2.jpg",
             "/images/products/storage-box/110-03/detail2.webp",
             "/images/products/storage-box/110-03/main.jpg"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "002-81",
@@ -425,7 +95,8 @@
             "/images/products/storage-box/002-81/detail-2.jpg",
             "/images/products/storage-box/002-81/detail-2.webp",
             "/images/products/storage-box/002-81/main.jpg"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "110-18",
@@ -445,7 +116,8 @@
             "/images/products/storage-box/110-18/detail2.jpg",
             "/images/products/storage-box/110-18/detail2.webp",
             "/images/products/storage-box/110-18/main.jpg"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "110-38",
@@ -466,7 +138,8 @@
             "/images/products/storage-box/110-38/main.jpg",
             "/images/products/storage-box/110-38/vairant1.png",
             "/images/products/storage-box/110-38/vairant1.webp"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "037-11",
@@ -486,7 +159,8 @@
             "/images/products/storage-box/037-11/detail2.jpg",
             "/images/products/storage-box/037-11/detail2.webp",
             "/images/products/storage-box/037-11/main.jpg"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "068-21",
@@ -507,7 +181,8 @@
             "/images/products/storage-box/068-21/detail2.jpg",
             "/images/products/storage-box/068-21/detail2.webp",
             "/images/products/storage-box/068-21/main.jpg"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "037-10",
@@ -528,7 +203,8 @@
             "/images/products/storage-box/037-10/detail2.jpg",
             "/images/products/storage-box/037-10/detail2.webp",
             "/images/products/storage-box/037-10/main.jpg"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "023-25",
@@ -548,7 +224,8 @@
             "/images/products/storage-box/023-25/detail2.jpg",
             "/images/products/storage-box/023-25/detail2.webp",
             "/images/products/storage-box/023-25/main.jpg"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "023-01",
@@ -568,7 +245,8 @@
             "/images/products/storage-box/023-01/DETAIL2.jpg",
             "/images/products/storage-box/023-01/DETAIL2.webp",
             "/images/products/storage-box/023-01/DETAIL3.jpg"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "023-11",
@@ -588,7 +266,8 @@
             "/images/products/storage-box/023-11/detail2.jpg",
             "/images/products/storage-box/023-11/detail2.webp",
             "/images/products/storage-box/023-11/detailed.jpg"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "110-12",
@@ -608,7 +287,8 @@
             "/images/products/storage-box/110-12/vairant1.webp",
             "/images/products/storage-box/110-12/vairant2.jpg",
             "/images/products/storage-box/110-12/vairant2.webp"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "158-06",
@@ -630,7 +310,8 @@
             "/images/products/storage-box/158-06/detail2.jpg",
             "/images/products/storage-box/158-06/detail2.webp",
             "/images/products/storage-box/158-06/detail3.jpg"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "110-08",
@@ -650,7 +331,8 @@
             "/images/products/storage-box/110-08/detail2.jpg",
             "/images/products/storage-box/110-08/detail2.webp",
             "/images/products/storage-box/110-08/main.jpg"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "037-02",
@@ -670,7 +352,8 @@
             "/images/products/storage-box/037-02/variant1.webp",
             "/images/products/storage-box/037-02/variant2.jpg",
             "/images/products/storage-box/037-02/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "037-06",
@@ -690,7 +373,8 @@
             "/images/products/storage-box/037-06/main.jpg",
             "/images/products/storage-box/037-06/variant1.jpg",
             "/images/products/storage-box/037-06/variant1.webp"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "008-01",
@@ -710,7 +394,8 @@
             "/images/products/storage-box/008-01/detail2.jpg",
             "/images/products/storage-box/008-01/detail2.webp",
             "/images/products/storage-box/008-01/main.jpg"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "008-02",
@@ -730,7 +415,8 @@
             "/images/products/storage-box/008-02/detail1.jpg",
             "/images/products/storage-box/008-02/detail1.webp",
             "/images/products/storage-box/008-02/main.png"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "008-03",
@@ -750,7 +436,8 @@
             "/images/products/storage-box/008-03/variant1.webp",
             "/images/products/storage-box/008-03/variant2.jpg",
             "/images/products/storage-box/008-03/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "023-30",
@@ -770,7 +457,8 @@
             "/images/products/storage-box/023-30/detail2.jpg",
             "/images/products/storage-box/023-30/detail2.webp",
             "/images/products/storage-box/023-30/main.jpg"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "037-12",
@@ -791,7 +479,8 @@
             "/images/products/storage-box/037-12/variant1.webp",
             "/images/products/storage-box/037-12/variant2.jpg",
             "/images/products/storage-box/037-12/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "036-09",
@@ -811,7 +500,8 @@
             "/images/products/storage-box/036-09/variant1.webp",
             "/images/products/storage-box/036-09/variant2.jpg",
             "/images/products/storage-box/036-09/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Trunk Organizers"
         },
         {
           "sku": "036-08",
@@ -831,15 +521,9 @@
             "/images/products/storage-box/036-08/variant1.webp",
             "/images/products/storage-box/036-08/variant2.jpg",
             "/images/products/storage-box/036-08/variant2.webp"
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "seat-hanging-bag",
-      "name": "Seat Organizers",
-      "intro": "Space-saving organizers for seat backs, consoles and everyday essentials.",
-      "products": [
+          ],
+          "sourceCategory": "Trunk Organizers"
+        },
         {
           "sku": "HB-01",
           "dimension": "64*45cm",
@@ -859,7 +543,8 @@
             "/images/products/seat-hanging-bag/HB-01/variant.webp",
             "/images/products/seat-hanging-bag/HB-01/variant1.jpg",
             "/images/products/seat-hanging-bag/HB-01/variant1.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-02",
@@ -880,7 +565,8 @@
             "/images/products/seat-hanging-bag/hb-02/variant1.webp",
             "/images/products/seat-hanging-bag/hb-02/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-02/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-03",
@@ -901,7 +587,8 @@
             "/images/products/seat-hanging-bag/HB-03/variant1.webp",
             "/images/products/seat-hanging-bag/HB-03/variant2.jpg",
             "/images/products/seat-hanging-bag/HB-03/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-04",
@@ -922,7 +609,8 @@
             "/images/products/seat-hanging-bag/hb-04/variant1.webp",
             "/images/products/seat-hanging-bag/hb-04/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-04/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-05",
@@ -943,7 +631,8 @@
             "/images/products/seat-hanging-bag/hb-05/variant1.webp",
             "/images/products/seat-hanging-bag/hb-05/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-05/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-06",
@@ -964,7 +653,8 @@
             "/images/products/seat-hanging-bag/hb-06/variant1.webp",
             "/images/products/seat-hanging-bag/hb-06/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-06/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-07",
@@ -985,7 +675,8 @@
             "/images/products/seat-hanging-bag/hb-07/variant1.webp",
             "/images/products/seat-hanging-bag/hb-07/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-07/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-08",
@@ -1006,7 +697,8 @@
             "/images/products/seat-hanging-bag/hb-08/variant1.webp",
             "/images/products/seat-hanging-bag/hb-08/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-08/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-09",
@@ -1027,7 +719,8 @@
             "/images/products/seat-hanging-bag/hb-09/variant1.webp",
             "/images/products/seat-hanging-bag/hb-09/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-09/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-10",
@@ -1048,7 +741,8 @@
             "/images/products/seat-hanging-bag/hb-10/variant1.webp",
             "/images/products/seat-hanging-bag/hb-10/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-10/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-11",
@@ -1069,7 +763,8 @@
             "/images/products/seat-hanging-bag/hb-11/variant1.webp",
             "/images/products/seat-hanging-bag/hb-11/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-11/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-12",
@@ -1090,7 +785,8 @@
             "/images/products/seat-hanging-bag/hb-12/variant1.webp",
             "/images/products/seat-hanging-bag/hb-12/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-12/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-13",
@@ -1111,7 +807,8 @@
             "/images/products/seat-hanging-bag/hb-13/variant1.webp",
             "/images/products/seat-hanging-bag/hb-13/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-13/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-14",
@@ -1132,7 +829,8 @@
             "/images/products/seat-hanging-bag/hb-14/variant.webp",
             "/images/products/seat-hanging-bag/hb-14/variant1.jpg",
             "/images/products/seat-hanging-bag/hb-14/variant1.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-15",
@@ -1153,7 +851,8 @@
             "/images/products/seat-hanging-bag/hb-15/variant1.webp",
             "/images/products/seat-hanging-bag/hb-15/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-15/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-16",
@@ -1174,7 +873,8 @@
             "/images/products/seat-hanging-bag/hb-16/variant1.webp",
             "/images/products/seat-hanging-bag/hb-16/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-16/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-17",
@@ -1195,7 +895,8 @@
             "/images/products/seat-hanging-bag/hb-17/variant1.webp",
             "/images/products/seat-hanging-bag/hb-17/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-17/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-18",
@@ -1216,7 +917,8 @@
             "/images/products/seat-hanging-bag/hb-18/variant1.webp",
             "/images/products/seat-hanging-bag/hb-18/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-18/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-19",
@@ -1237,7 +939,8 @@
             "/images/products/seat-hanging-bag/hb-19/variant1.webp",
             "/images/products/seat-hanging-bag/hb-19/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-19/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-20",
@@ -1256,7 +959,8 @@
             "/images/products/seat-hanging-bag/hb-20/variant1.jpg",
             "/images/products/seat-hanging-bag/hb-20/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-20/variant3.jpg"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-21",
@@ -1277,7 +981,8 @@
             "/images/products/seat-hanging-bag/hb-21/variant1.webp",
             "/images/products/seat-hanging-bag/hb-21/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-21/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-22",
@@ -1297,7 +1002,8 @@
             "/images/products/seat-hanging-bag/hb-22/variant1.webp",
             "/images/products/seat-hanging-bag/hb-22/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-22/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-23",
@@ -1317,7 +1023,8 @@
             "/images/products/seat-hanging-bag/hb-23/variant1.webp",
             "/images/products/seat-hanging-bag/hb-23/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-23/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-24",
@@ -1337,7 +1044,8 @@
             "/images/products/seat-hanging-bag/hb-24/variant1.webp",
             "/images/products/seat-hanging-bag/hb-24/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-24/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-25",
@@ -1357,7 +1065,8 @@
             "/images/products/seat-hanging-bag/hb-25/variant1.webp",
             "/images/products/seat-hanging-bag/hb-25/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-25/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-26",
@@ -1377,7 +1086,8 @@
             "/images/products/seat-hanging-bag/hb-26/variant1.webp",
             "/images/products/seat-hanging-bag/hb-26/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-26/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-27",
@@ -1397,7 +1107,8 @@
             "/images/products/seat-hanging-bag/hb-27/variant1.webp",
             "/images/products/seat-hanging-bag/hb-27/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-27/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-28",
@@ -1417,7 +1128,8 @@
             "/images/products/seat-hanging-bag/hb-28/variant1.webp",
             "/images/products/seat-hanging-bag/hb-28/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-28/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-29",
@@ -1437,7 +1149,8 @@
             "/images/products/seat-hanging-bag/hb-29/variant1.webp",
             "/images/products/seat-hanging-bag/hb-29/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-29/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         },
         {
           "sku": "HB-30",
@@ -1458,14 +1171,533 @@
             "/images/products/seat-hanging-bag/hb-30/variant1.webp",
             "/images/products/seat-hanging-bag/hb-30/variant2.jpg",
             "/images/products/seat-hanging-bag/hb-30/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Seat Organizers"
         }
       ]
     },
     {
-      "slug": "tool-kit",
-      "name": "Tool Bags",
-      "intro": "Compact, durable tool storage for automotive and roadside applications.",
+      "slug": "pet-car-protection",
+      "name": "Pet Travel & Cargo Protection",
+      "intro": "Pet seat covers and cargo liners engineered to protect vehicle interiors during daily travel.",
+      "products": [
+        {
+          "sku": "P2601",
+          "dimension": "147*137cm",
+          "packing": "38*26*11",
+          "weight": "1.8kg",
+          "moq": "500",
+          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black",
+            "Gray"
+          ],
+          "name": "Pet Seat Cover P2601",
+          "image": "/images/products/pet-seat-cover/p2601/main.webp",
+          "gallery": [
+            "/images/products/pet-seat-cover/p2601/detail1.jpg",
+            "/images/products/pet-seat-cover/p2601/detail1.webp",
+            "/images/products/pet-seat-cover/p2601/detail2.jpg",
+            "/images/products/pet-seat-cover/p2601/detail2.webp",
+            "/images/products/pet-seat-cover/p2601/main.jpg"
+          ],
+          "sourceCategory": "Pet Seat Covers"
+        },
+        {
+          "sku": "P2602",
+          "dimension": "147*137cm",
+          "packing": "38*26*11",
+          "weight": "1.8kg",
+          "moq": "500",
+          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black",
+            "Gray"
+          ],
+          "name": "Pet Seat Cover P2602",
+          "image": "/images/products/pet-seat-cover/p2602/main.webp",
+          "gallery": [
+            "/images/products/pet-seat-cover/p2602/main.jpg",
+            "/images/products/pet-seat-cover/p2602/variant1.jpg",
+            "/images/products/pet-seat-cover/p2602/variant1.webp",
+            "/images/products/pet-seat-cover/p2602/variant2.jpg",
+            "/images/products/pet-seat-cover/p2602/variant2.webp"
+          ],
+          "sourceCategory": "Pet Seat Covers"
+        },
+        {
+          "sku": "P2603",
+          "dimension": "147*137cm",
+          "packing": "38*26*6",
+          "weight": "1.3kg",
+          "moq": "500",
+          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black",
+            "Gray"
+          ],
+          "name": "Pet Seat Cover P2603",
+          "image": "/images/products/pet-seat-cover/p2603/main.webp",
+          "gallery": [
+            "/images/products/pet-seat-cover/p2603/main.jpg",
+            "/images/products/pet-seat-cover/p2603/variant1.jpg",
+            "/images/products/pet-seat-cover/p2603/variant1.webp",
+            "/images/products/pet-seat-cover/p2603/variant2.jpg",
+            "/images/products/pet-seat-cover/p2603/variant2.webp"
+          ],
+          "sourceCategory": "Pet Seat Covers"
+        },
+        {
+          "sku": "P2604",
+          "dimension": "100*50cm",
+          "packing": "45*25*7",
+          "weight": "0.7kg",
+          "moq": "500",
+          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black",
+            "Gray"
+          ],
+          "name": "Pet Seat Cover P2604",
+          "image": "/images/products/pet-seat-cover/p2604/main.webp",
+          "gallery": [
+            "/images/products/pet-seat-cover/p2604/main.jpg",
+            "/images/products/pet-seat-cover/p2604/variant1.jpg",
+            "/images/products/pet-seat-cover/p2604/variant1.webp",
+            "/images/products/pet-seat-cover/p2604/variant2.jpg",
+            "/images/products/pet-seat-cover/p2604/variant2.webp"
+          ],
+          "sourceCategory": "Pet Seat Covers"
+        },
+        {
+          "sku": "P2605",
+          "dimension": "147*137cm",
+          "packing": "38*26*11",
+          "weight": "1.4kg",
+          "moq": "500",
+          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black",
+            "Gray"
+          ],
+          "name": "Pet Seat Cover P2605",
+          "image": "/images/products/pet-seat-cover/p2605/main.webp",
+          "gallery": [
+            "/images/products/pet-seat-cover/p2605/main.jpg",
+            "/images/products/pet-seat-cover/p2605/variant1.jpg",
+            "/images/products/pet-seat-cover/p2605/variant1.webp",
+            "/images/products/pet-seat-cover/p2605/variant2.jpg",
+            "/images/products/pet-seat-cover/p2605/variant2.webp"
+          ],
+          "sourceCategory": "Pet Seat Covers"
+        },
+        {
+          "sku": "P2606",
+          "dimension": "147*137cm",
+          "packing": "38*26*9",
+          "weight": "1.8kg",
+          "moq": "500",
+          "description": "600D Oxford fabric\nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black"
+          ],
+          "name": "Pet Seat Cover P2606",
+          "image": "/images/products/pet-seat-cover/p2606/main.webp",
+          "gallery": [
+            "/images/products/pet-seat-cover/p2606/main.jpg",
+            "/images/products/pet-seat-cover/p2606/variant1.jpg",
+            "/images/products/pet-seat-cover/p2606/variant1.webp",
+            "/images/products/pet-seat-cover/p2606/variant2.jpg",
+            "/images/products/pet-seat-cover/p2606/variant2.webp"
+          ],
+          "sourceCategory": "Pet Seat Covers"
+        },
+        {
+          "sku": "P2607",
+          "dimension": "133*160cm",
+          "packing": "65*45*5",
+          "weight": "2.6kg",
+          "moq": "500",
+          "description": "600D Oxford fabric\nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black"
+          ],
+          "name": "Pet Seat Cover P2607",
+          "image": "/images/products/pet-seat-cover/p2607/main.webp",
+          "gallery": [
+            "/images/products/pet-seat-cover/p2607/main.jpg",
+            "/images/products/pet-seat-cover/p2607/variant1.jpg",
+            "/images/products/pet-seat-cover/p2607/variant1.webp",
+            "/images/products/pet-seat-cover/p2607/variant2.jpg",
+            "/images/products/pet-seat-cover/p2607/variant2.webp"
+          ],
+          "sourceCategory": "Pet Seat Covers"
+        },
+        {
+          "sku": "P2608",
+          "dimension": "147*137cm",
+          "packing": "38*26*11",
+          "weight": "1.8kg",
+          "moq": "500",
+          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black",
+            "Gray"
+          ],
+          "name": "Pet Seat Cover P2608",
+          "image": "/images/products/pet-seat-cover/p2608/main.webp",
+          "gallery": [
+            "/images/products/pet-seat-cover/p2608/main.jpg",
+            "/images/products/pet-seat-cover/p2608/variant.jpg",
+            "/images/products/pet-seat-cover/p2608/variant.webp",
+            "/images/products/pet-seat-cover/p2608/variant2.jpg",
+            "/images/products/pet-seat-cover/p2608/variant2.webp"
+          ],
+          "sourceCategory": "Pet Seat Covers"
+        },
+        {
+          "sku": "P2609",
+          "dimension": "147*138cm",
+          "packing": "67*44*12CM",
+          "weight": "2.9",
+          "moq": "500",
+          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black",
+            "Yellow",
+            "Gray"
+          ],
+          "name": "Pet Seat Cover P2609",
+          "image": "/images/products/pet-seat-cover/p2609/main.webp",
+          "gallery": [
+            "/images/products/pet-seat-cover/p2609/detail1.jpg",
+            "/images/products/pet-seat-cover/p2609/detail1.webp",
+            "/images/products/pet-seat-cover/p2609/detail2.jpg",
+            "/images/products/pet-seat-cover/p2609/detail2.webp",
+            "/images/products/pet-seat-cover/p2609/detail3.jpg"
+          ],
+          "sourceCategory": "Pet Seat Covers"
+        },
+        {
+          "sku": "P2610",
+          "dimension": "185*134",
+          "packing": "64*52*10",
+          "weight": "4.5KG",
+          "moq": "500",
+          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black",
+            "Gray"
+          ],
+          "name": "Pet Seat Cover P2610",
+          "image": "/images/products/pet-seat-cover/p2610/main.webp",
+          "gallery": [
+            "/images/products/pet-seat-cover/p2610/main.jpg",
+            "/images/products/pet-seat-cover/p2610/variant1.jpg",
+            "/images/products/pet-seat-cover/p2610/variant1.webp",
+            "/images/products/pet-seat-cover/p2610/variant2.jpg",
+            "/images/products/pet-seat-cover/p2610/variant2.webp"
+          ],
+          "sourceCategory": "Pet Seat Covers"
+        },
+        {
+          "sku": "P2611",
+          "dimension": "147*137cm",
+          "packing": "38*26*11",
+          "weight": "1.8kg",
+          "moq": "500",
+          "description": "600D Oxford fabric\nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black"
+          ],
+          "name": "Pet Seat Cover P2611",
+          "image": "/images/products/pet-seat-cover/p2611/main.webp",
+          "gallery": [
+            "/images/products/pet-seat-cover/p2611/main.jpg",
+            "/images/products/pet-seat-cover/p2611/variant1.jpg",
+            "/images/products/pet-seat-cover/p2611/variant1.webp",
+            "/images/products/pet-seat-cover/p2611/variant3.jpg",
+            "/images/products/pet-seat-cover/p2611/variant3.webp"
+          ],
+          "sourceCategory": "Pet Seat Covers"
+        },
+        {
+          "sku": "P2612",
+          "dimension": "147*137cm",
+          "packing": "38*26*6",
+          "weight": "1.5KG",
+          "moq": "500",
+          "description": "600D Oxford fabric\nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black"
+          ],
+          "name": "Pet Seat Cover P2612",
+          "image": "/images/products/pet-seat-cover/p2612/main.webp",
+          "gallery": [
+            "/images/products/pet-seat-cover/p2612/main.jpg",
+            "/images/products/pet-seat-cover/p2612/variant1.jpg",
+            "/images/products/pet-seat-cover/p2612/variant1.webp"
+          ],
+          "sourceCategory": "Pet Seat Covers"
+        },
+        {
+          "sku": "P2613",
+          "dimension": "147*137cm",
+          "packing": "38*26*6",
+          "weight": "1.5KG",
+          "moq": "500",
+          "description": "900D Oxford fabric\nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black",
+            "Gray"
+          ],
+          "name": "Pet Seat Cover P2613",
+          "image": "/images/products/pet-seat-cover/p2613/main.webp",
+          "gallery": [
+            "/images/products/pet-seat-cover/p2613/main.jpg",
+            "/images/products/pet-seat-cover/p2613/variant1_white.jpg",
+            "/images/products/pet-seat-cover/p2613/variant1_white.webp"
+          ],
+          "sourceCategory": "Pet Seat Covers"
+        },
+        {
+          "sku": "P2614",
+          "dimension": "53*46*61CM",
+          "packing": "",
+          "weight": "1.5kg",
+          "moq": "500",
+          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black",
+            "Gray"
+          ],
+          "name": "Pet Seat Cover P2614",
+          "image": "/images/products/pet-seat-cover/p2614/main.webp",
+          "gallery": [
+            "/images/products/pet-seat-cover/p2614/main.jpg",
+            "/images/products/pet-seat-cover/p2614/variant1.jpg",
+            "/images/products/pet-seat-cover/p2614/variant1.webp",
+            "/images/products/pet-seat-cover/p2614/variant2.jpg",
+            "/images/products/pet-seat-cover/p2614/variant2.webp"
+          ],
+          "sourceCategory": "Pet Seat Covers"
+        },
+        {
+          "sku": "P2615",
+          "dimension": "162*152",
+          "packing": "",
+          "weight": "1.8kg",
+          "moq": "500",
+          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black",
+            "Gray"
+          ],
+          "name": "Pet Seat Cover P2615",
+          "image": "/images/products/pet-seat-cover/p2615/main.webp",
+          "gallery": [
+            "/images/products/pet-seat-cover/p2615/main.jpg",
+            "/images/products/pet-seat-cover/p2615/variant1.jpg",
+            "/images/products/pet-seat-cover/p2615/variant1.webp",
+            "/images/products/pet-seat-cover/p2615/variant2.jpg",
+            "/images/products/pet-seat-cover/p2615/variant2.webp"
+          ],
+          "sourceCategory": "Pet Seat Covers"
+        },
+        {
+          "sku": "P2616",
+          "dimension": "",
+          "packing": "",
+          "weight": "",
+          "moq": "",
+          "description": "",
+          "colors": [],
+          "name": "Pet Seat Cover P2616",
+          "image": "/images/products/pet-seat-cover/p2616/main.webp",
+          "gallery": [
+            "/images/products/pet-seat-cover/p2616/main.jpg",
+            "/images/products/pet-seat-cover/p2616/variant1.jpg",
+            "/images/products/pet-seat-cover/p2616/variant1.webp",
+            "/images/products/pet-seat-cover/p2616/variant2.jpg",
+            "/images/products/pet-seat-cover/p2616/variant2.webp"
+          ],
+          "sourceCategory": "Pet Seat Covers"
+        },
+        {
+          "sku": "TM3301",
+          "dimension": "102*189*59cm",
+          "packing": "40*30*5",
+          "weight": "1.4KG",
+          "moq": "500",
+          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black",
+            "Gray"
+          ],
+          "name": "Cargo Liner TM3301",
+          "image": "/images/products/trunk-mat/tm3301/main.webp",
+          "gallery": [
+            "/images/products/trunk-mat/tm3301/main.jpg",
+            "/images/products/trunk-mat/tm3301/variant1.jpg",
+            "/images/products/trunk-mat/tm3301/variant1.webp",
+            "/images/products/trunk-mat/tm3301/variant2.jpg",
+            "/images/products/trunk-mat/tm3301/variant2.webp"
+          ],
+          "sourceCategory": "Cargo Liners"
+        },
+        {
+          "sku": "TM3302",
+          "dimension": "M：186*172cm\nL：216*203cm",
+          "packing": "30*25*5",
+          "weight": "M:1.1KG\nL:1.5KG",
+          "moq": "500",
+          "description": "600D Oxford Fabric  \nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black"
+          ],
+          "name": "Cargo Liner TM3302",
+          "image": "/images/products/trunk-mat/tm3302/main.webp",
+          "gallery": [
+            "/images/products/trunk-mat/tm3302/main.png",
+            "/images/products/trunk-mat/tm3302/variant1.png",
+            "/images/products/trunk-mat/tm3302/variant1.webp",
+            "/images/products/trunk-mat/tm3302/variant3.jpg",
+            "/images/products/trunk-mat/tm3302/variant3.webp"
+          ],
+          "sourceCategory": "Cargo Liners"
+        },
+        {
+          "sku": "TM3303",
+          "dimension": "160*104",
+          "packing": "32*32*4",
+          "weight": "0.85kg",
+          "moq": "500",
+          "description": "600D Oxford Fabric  \nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black"
+          ],
+          "name": "Cargo Liner TM3303",
+          "image": "/images/products/trunk-mat/tm3303/main.webp",
+          "gallery": [
+            "/images/products/trunk-mat/tm3303/main.jpg",
+            "/images/products/trunk-mat/tm3303/variant1.jpg",
+            "/images/products/trunk-mat/tm3303/variant1.webp",
+            "/images/products/trunk-mat/tm3303/variant2.jpg",
+            "/images/products/trunk-mat/tm3303/variant2.webp"
+          ],
+          "sourceCategory": "Cargo Liners"
+        },
+        {
+          "sku": "TM3304",
+          "dimension": "270*140",
+          "packing": "32*26*5",
+          "weight": "1.5KG",
+          "moq": "500",
+          "description": "600D Oxford Fabric  \nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black"
+          ],
+          "name": "Cargo Liner TM3304",
+          "image": "/images/products/trunk-mat/tm3304/main.webp",
+          "gallery": [
+            "/images/products/trunk-mat/tm3304/main.jpg",
+            "/images/products/trunk-mat/tm3304/variant1.jpg",
+            "/images/products/trunk-mat/tm3304/variant1.webp",
+            "/images/products/trunk-mat/tm3304/variant2.jpg",
+            "/images/products/trunk-mat/tm3304/variant2.webp"
+          ],
+          "sourceCategory": "Cargo Liners"
+        },
+        {
+          "sku": "TM3305",
+          "dimension": "S:99*87\nM:122*117\nL:85*165",
+          "packing": "",
+          "weight": "2.5KG",
+          "moq": "500",
+          "description": "900D Oxford Fabric  \nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Brown"
+          ],
+          "name": "Cargo Liner TM3305",
+          "image": "/images/products/trunk-mat/TM3305/main.webp",
+          "gallery": [
+            "/images/products/trunk-mat/TM3305/main.jpg",
+            "/images/products/trunk-mat/TM3305/variant1.jpg",
+            "/images/products/trunk-mat/TM3305/variant1.webp",
+            "/images/products/trunk-mat/TM3305/variant2.jpg",
+            "/images/products/trunk-mat/TM3305/variant2.webp"
+          ],
+          "sourceCategory": "Cargo Liners"
+        },
+        {
+          "sku": "TM3306",
+          "dimension": "190*106",
+          "packing": "",
+          "weight": "3kg",
+          "moq": "500",
+          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Gray"
+          ],
+          "name": "Cargo Liner TM3306",
+          "image": "/images/products/trunk-mat/tm3306/main.webp",
+          "gallery": [
+            "/images/products/trunk-mat/tm3306/main.jpg",
+            "/images/products/trunk-mat/tm3306/variant1.jpg",
+            "/images/products/trunk-mat/tm3306/variant1.webp",
+            "/images/products/trunk-mat/tm3306/variant2.jpg",
+            "/images/products/trunk-mat/tm3306/variant2.webp"
+          ],
+          "sourceCategory": "Cargo Liners"
+        },
+        {
+          "sku": "TM3307",
+          "dimension": "119*222",
+          "packing": "",
+          "weight": "3.05kg",
+          "moq": "500",
+          "description": "600D Oxford Fabric  \nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black"
+          ],
+          "name": "Cargo Liner TM3307",
+          "image": "/images/products/trunk-mat/tm3307/main.webp",
+          "gallery": [
+            "/images/products/trunk-mat/tm3307/main.jpg",
+            "/images/products/trunk-mat/tm3307/variant1.jpg",
+            "/images/products/trunk-mat/tm3307/variant1.webp",
+            "/images/products/trunk-mat/tm3307/variant2.jpg",
+            "/images/products/trunk-mat/tm3307/variant2.webp"
+          ],
+          "sourceCategory": "Cargo Liners"
+        },
+        {
+          "sku": "TM3308",
+          "dimension": "115*220",
+          "packing": "",
+          "weight": "2.8kg",
+          "moq": "500",
+          "description": "600D Oxford Fabric  \nwaterproof\nNon-slip\nWear-resistant",
+          "colors": [
+            "Black"
+          ],
+          "name": "Cargo Liner TM3308",
+          "image": "/images/products/trunk-mat/tm3308/main.webp",
+          "gallery": [
+            "/images/products/trunk-mat/tm3308/main.jpg",
+            "/images/products/trunk-mat/tm3308/variant1.jpg",
+            "/images/products/trunk-mat/tm3308/variant1.webp",
+            "/images/products/trunk-mat/tm3308/variant2.jpg",
+            "/images/products/trunk-mat/tm3308/variant2.webp"
+          ],
+          "sourceCategory": "Cargo Liners"
+        }
+      ]
+    },
+    {
+      "slug": "vehicle-tool-kits",
+      "name": "Vehicle Tool Bags",
+      "intro": "Durable, compact tool storage solutions for roadside, maintenance and automotive retail programs.",
       "products": [
         {
           "sku": "TK-801",
@@ -1486,7 +1718,8 @@
             "/images/products/tool-kit/Tk-801/variant1.webp",
             "/images/products/tool-kit/Tk-801/variant2.jpg",
             "/images/products/tool-kit/Tk-801/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Tool Bags"
         },
         {
           "sku": "TK-802",
@@ -1507,7 +1740,8 @@
             "/images/products/tool-kit/tk-802/variant1.webp",
             "/images/products/tool-kit/tk-802/variant2.jpg",
             "/images/products/tool-kit/tk-802/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Tool Bags"
         },
         {
           "sku": "TK-803",
@@ -1528,7 +1762,8 @@
             "/images/products/tool-kit/tk-803/vairant1.webp",
             "/images/products/tool-kit/tk-803/variant2.jpg",
             "/images/products/tool-kit/tk-803/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Tool Bags"
         },
         {
           "sku": "TK-804",
@@ -1549,7 +1784,8 @@
             "/images/products/tool-kit/tk-804/variant1.webp",
             "/images/products/tool-kit/tk-804/variant2.jpg",
             "/images/products/tool-kit/tk-804/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Tool Bags"
         },
         {
           "sku": "TK-805",
@@ -1569,7 +1805,8 @@
             "/images/products/tool-kit/tk-805/variant.webp",
             "/images/products/tool-kit/tk-805/variant2.jpg",
             "/images/products/tool-kit/tk-805/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Tool Bags"
         },
         {
           "sku": "TK-806",
@@ -1590,7 +1827,8 @@
             "/images/products/tool-kit/tk-806/variant1.webp",
             "/images/products/tool-kit/tk-806/variant2.jpg",
             "/images/products/tool-kit/tk-806/variant2.webp"
-          ]
+          ],
+          "sourceCategory": "Tool Bags"
         },
         {
           "sku": "TK-807",
@@ -1610,224 +1848,8 @@
             "/images/products/tool-kit/tk-807/variant1.webp",
             "/images/products/tool-kit/tk-807/variant2.jpg",
             "/images/products/tool-kit/tk-807/variant2.webp"
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "trunk-mat",
-      "name": "Cargo Liners",
-      "intro": "Protective cargo liners built for spills, dirt and demanding daily use.",
-      "products": [
-        {
-          "sku": "TM3301",
-          "dimension": "102*189*59cm",
-          "packing": "40*30*5",
-          "weight": "1.4KG",
-          "moq": "500",
-          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black",
-            "Gray"
           ],
-          "name": "Cargo Liner TM3301",
-          "image": "/images/products/trunk-mat/tm3301/main.webp",
-          "gallery": [
-            "/images/products/trunk-mat/tm3301/main.jpg",
-            "/images/products/trunk-mat/tm3301/variant1.jpg",
-            "/images/products/trunk-mat/tm3301/variant1.webp",
-            "/images/products/trunk-mat/tm3301/variant2.jpg",
-            "/images/products/trunk-mat/tm3301/variant2.webp"
-          ]
-        },
-        {
-          "sku": "TM3302",
-          "dimension": "M：186*172cm\nL：216*203cm",
-          "packing": "30*25*5",
-          "weight": "M:1.1KG\nL:1.5KG",
-          "moq": "500",
-          "description": "600D Oxford Fabric  \nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black"
-          ],
-          "name": "Cargo Liner TM3302",
-          "image": "/images/products/trunk-mat/tm3302/main.webp",
-          "gallery": [
-            "/images/products/trunk-mat/tm3302/main.png",
-            "/images/products/trunk-mat/tm3302/variant1.png",
-            "/images/products/trunk-mat/tm3302/variant1.webp",
-            "/images/products/trunk-mat/tm3302/variant3.jpg",
-            "/images/products/trunk-mat/tm3302/variant3.webp"
-          ]
-        },
-        {
-          "sku": "TM3303",
-          "dimension": "160*104",
-          "packing": "32*32*4",
-          "weight": "0.85kg",
-          "moq": "500",
-          "description": "600D Oxford Fabric  \nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black"
-          ],
-          "name": "Cargo Liner TM3303",
-          "image": "/images/products/trunk-mat/tm3303/main.webp",
-          "gallery": [
-            "/images/products/trunk-mat/tm3303/main.jpg",
-            "/images/products/trunk-mat/tm3303/variant1.jpg",
-            "/images/products/trunk-mat/tm3303/variant1.webp",
-            "/images/products/trunk-mat/tm3303/variant2.jpg",
-            "/images/products/trunk-mat/tm3303/variant2.webp"
-          ]
-        },
-        {
-          "sku": "TM3304",
-          "dimension": "270*140",
-          "packing": "32*26*5",
-          "weight": "1.5KG",
-          "moq": "500",
-          "description": "600D Oxford Fabric  \nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black"
-          ],
-          "name": "Cargo Liner TM3304",
-          "image": "/images/products/trunk-mat/tm3304/main.webp",
-          "gallery": [
-            "/images/products/trunk-mat/tm3304/main.jpg",
-            "/images/products/trunk-mat/tm3304/variant1.jpg",
-            "/images/products/trunk-mat/tm3304/variant1.webp",
-            "/images/products/trunk-mat/tm3304/variant2.jpg",
-            "/images/products/trunk-mat/tm3304/variant2.webp"
-          ]
-        },
-        {
-          "sku": "TM3305",
-          "dimension": "S:99*87\nM:122*117\nL:85*165",
-          "packing": "",
-          "weight": "2.5KG",
-          "moq": "500",
-          "description": "900D Oxford Fabric  \nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Brown"
-          ],
-          "name": "Cargo Liner TM3305",
-          "image": "/images/products/trunk-mat/TM3305/main.webp",
-          "gallery": [
-            "/images/products/trunk-mat/TM3305/main.jpg",
-            "/images/products/trunk-mat/TM3305/variant1.jpg",
-            "/images/products/trunk-mat/TM3305/variant1.webp",
-            "/images/products/trunk-mat/TM3305/variant2.jpg",
-            "/images/products/trunk-mat/TM3305/variant2.webp"
-          ]
-        },
-        {
-          "sku": "TM3306",
-          "dimension": "190*106",
-          "packing": "",
-          "weight": "3kg",
-          "moq": "500",
-          "description": "Cationic Fabric  \nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Gray"
-          ],
-          "name": "Cargo Liner TM3306",
-          "image": "/images/products/trunk-mat/tm3306/main.webp",
-          "gallery": [
-            "/images/products/trunk-mat/tm3306/main.jpg",
-            "/images/products/trunk-mat/tm3306/variant1.jpg",
-            "/images/products/trunk-mat/tm3306/variant1.webp",
-            "/images/products/trunk-mat/tm3306/variant2.jpg",
-            "/images/products/trunk-mat/tm3306/variant2.webp"
-          ]
-        },
-        {
-          "sku": "TM3307",
-          "dimension": "119*222",
-          "packing": "",
-          "weight": "3.05kg",
-          "moq": "500",
-          "description": "600D Oxford Fabric  \nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black"
-          ],
-          "name": "Cargo Liner TM3307",
-          "image": "/images/products/trunk-mat/tm3307/main.webp",
-          "gallery": [
-            "/images/products/trunk-mat/tm3307/main.jpg",
-            "/images/products/trunk-mat/tm3307/variant1.jpg",
-            "/images/products/trunk-mat/tm3307/variant1.webp",
-            "/images/products/trunk-mat/tm3307/variant2.jpg",
-            "/images/products/trunk-mat/tm3307/variant2.webp"
-          ]
-        },
-        {
-          "sku": "TM3308",
-          "dimension": "115*220",
-          "packing": "",
-          "weight": "2.8kg",
-          "moq": "500",
-          "description": "600D Oxford Fabric  \nwaterproof\nNon-slip\nWear-resistant",
-          "colors": [
-            "Black"
-          ],
-          "name": "Cargo Liner TM3308",
-          "image": "/images/products/trunk-mat/tm3308/main.webp",
-          "gallery": [
-            "/images/products/trunk-mat/tm3308/main.jpg",
-            "/images/products/trunk-mat/tm3308/variant1.jpg",
-            "/images/products/trunk-mat/tm3308/variant1.webp",
-            "/images/products/trunk-mat/tm3308/variant2.jpg",
-            "/images/products/trunk-mat/tm3308/variant2.webp"
-          ]
-        }
-      ]
-    },
-    {
-      "slug": "child-seat-protection-pad",
-      "name": "Child Seat Protectors",
-      "intro": "Durable pads that protect vehicle upholstery beneath child safety seats.",
-      "products": [
-        {
-          "sku": "CS055-01",
-          "dimension": "",
-          "packing": "",
-          "weight": "",
-          "moq": "",
-          "description": "",
-          "colors": [],
-          "name": "Child Seat Protector CS055-01",
-          "image": "/images/products/child-seat-protection-pad/cs055-01/main.webp",
-          "gallery": [
-            "/images/products/child-seat-protection-pad/cs055-01/main.jpg"
-          ]
-        },
-        {
-          "sku": "CS055-02",
-          "dimension": "",
-          "packing": "",
-          "weight": "",
-          "moq": "",
-          "description": "",
-          "colors": [],
-          "name": "Child Seat Protector CS055-02",
-          "image": "/images/products/child-seat-protection-pad/CS055-02/main1.webp",
-          "gallery": [
-            "/images/products/child-seat-protection-pad/CS055-02/main1.jpg"
-          ]
-        },
-        {
-          "sku": "CS055-03",
-          "dimension": "",
-          "packing": "",
-          "weight": "",
-          "moq": "",
-          "description": "",
-          "colors": [],
-          "name": "Child Seat Protector CS055-03",
-          "image": "/images/products/child-seat-protection-pad/cs055-03/main.webp",
-          "gallery": [
-            "/images/products/child-seat-protection-pad/cs055-03/main.jpg"
-          ]
+          "sourceCategory": "Tool Bags"
         }
       ]
     }
