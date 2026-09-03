@@ -21,8 +21,8 @@ const card = (c,p) => `<a class="product-card" href="${productUrl(c,p)}"><div cl
 
 const featured=data.categories.flatMap(c=>c.products.slice(0,2).map(p=>[c,p])).slice(0,8);
 const categoryImages={
-  "car-organizers":["/assets/categories/organizer.jpg","/assets/categories/hanging-bag.jpg"],
-  "pet-car-protection":["/assets/categories/pet-cover.jpg","/assets/categories/trunk-cover.jpg"],
+  "car-organizers":["/assets/categories/organizer.jpg"],
+  "pet-car-protection":["/assets/categories/pet-cover.jpg"],
   "vehicle-tool-kits":["/assets/categories/tool-kit.jpg"]
 };
 const categoryTiles=data.categories.map((c,i)=>`<a class="category-tile tile-${i+1} images-${categoryImages[c.slug].length}" href="/products/${c.slug}/"><span class="tile-media">${categoryImages[c.slug].map((img,n)=>`<img src="${img}" alt="${esc(c.name)}${n?" alternative application":""}">`).join("")}</span><div><span>${String(i+1).padStart(2,"0")}</span><h3>${esc(c.name)}</h3><p>${c.products.length} products</p></div></a>`).join("");
