@@ -60,3 +60,7 @@ filterReset?.addEventListener('click',()=>{
 });
 
 document.querySelector('[data-print-spec]')?.addEventListener('click',()=>window.print());
+
+document.querySelectorAll('[data-rfq-form]').forEach(form=>form.addEventListener('submit',()=>{
+  if(form.checkValidity())sessionStorage.setItem('champo_rfq_pending','1');
+}));
