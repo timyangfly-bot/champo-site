@@ -96,6 +96,8 @@ for(const [oldSlug,newSlug] of Object.entries(legacyCategories)){const d=path.jo
 const allProducts=data.categories.flatMap(c=>c.products.map(p=>({sku:p.sku,name:p.name,category:c.name,url:productUrl(c,p),image:p.image}))); 
 await fs.writeFile(path.join(out,"products.json"),JSON.stringify(allProducts,null,2));
 await fs.writeFile(path.join(out,"robots.txt"),`User-agent: *\nAllow: /\nSitemap: ${url('/sitemap.xml')}\nHost: www.champoauto.com\n`);
+await fs.writeFile(path.join(out,"CNAME"),"www.champoauto.com\n");
+await fs.writeFile(path.join(out,".nojekyll"),"");
 const paths=["/",...infoPages.map(page=>`/${page.slug}/`),"/faq/",...data.categories.map(c=>`/products/${c.slug}/`),...data.categories.flatMap(c=>c.products.map(p=>productUrl(c,p)))];
 await fs.writeFile(path.join(out,"sitemap.xml"),`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${paths.map(p=>`<url><loc>${url(p)}</loc><lastmod>2026-09-10</lastmod></url>`).join("")}</urlset>`);
 console.log(`Built ${paths.length} pages in ${out}`);
