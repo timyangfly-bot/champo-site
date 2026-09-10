@@ -1,26 +1,478 @@
-{
-  "pet-seat-cover": [
-    { "folder": "p2606" },
-    { "folder": "p2607" },
-    { "folder": "p2608" },
-    { "folder": "p2609" },
-    { "folder": "p2610" },
-    { "folder": "p2611" },
-    { "folder": "ps001" },
-    { "folder": "ps002" },
-    { "folder": "ps003" }
-  ],
-
-  "storage-box": [
-    { "folder": "002-81" },
-    { "folder": "008-01" },
-    { "folder": "023-25" },
-    { "folder": "037-10" }
-  ],
-
-  "seat-hanging-bag": [
-    { "folder": "HB-01" },
-    { "folder": "HB-02" },
-    { "folder": "HB-03" }
-  ]
-}
+[
+  {
+    "sku": "035-22",
+    "name": "Mesh Seat-Back Organizer — 035-22",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/035-22/",
+    "image": "/images/products/catalog-2026/035-22/main.webp"
+  },
+  {
+    "sku": "105-8",
+    "name": "PU Leather Car Organizer — 105-8",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/105-8/",
+    "image": "/images/products/catalog-2026/105-8/main.webp"
+  },
+  {
+    "sku": "105-13",
+    "name": "PU Leather Car Organizer — 105-13",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/105-13/",
+    "image": "/images/products/catalog-2026/105-13/main.webp"
+  },
+  {
+    "sku": "105-14",
+    "name": "PU Leather Car Organizer — 105-14",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/105-14/",
+    "image": "/images/products/catalog-2026/105-14/main.webp"
+  },
+  {
+    "sku": "105-16",
+    "name": "PU Leather Car Organizer — 105-16",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/105-16/",
+    "image": "/images/products/catalog-2026/105-16/main.webp"
+  },
+  {
+    "sku": "105-18",
+    "name": "PU Leather Car Organizer — 105-18",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/105-18/",
+    "image": "/images/products/catalog-2026/105-18/main.webp"
+  },
+  {
+    "sku": "002-83",
+    "name": "PU Leather Car Organizer — 002-83",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/002-83/",
+    "image": "/images/products/catalog-2026/002-83/main.webp"
+  },
+  {
+    "sku": "002-88",
+    "name": "PU Leather Car Organizer — 002-88",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/002-88/",
+    "image": "/images/products/catalog-2026/002-88/main.webp"
+  },
+  {
+    "sku": "M201",
+    "name": "Foldable Trunk Organizer — M201",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/m201/",
+    "image": "/images/products/catalog-2026/m201/main.webp"
+  },
+  {
+    "sku": "M207",
+    "name": "Foldable Trunk Organizer — M207",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/m207/",
+    "image": "/images/products/catalog-2026/m207/main.webp"
+  },
+  {
+    "sku": "M209",
+    "name": "Foldable Trunk Organizer — M209",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/m209/",
+    "image": "/images/products/catalog-2026/m209/main.webp"
+  },
+  {
+    "sku": "055-01-A",
+    "name": "Mesh Seat-Back Organizer — 055-01-A",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/055-01-a/",
+    "image": "/images/products/catalog-2026/055-01-a/main.webp"
+  },
+  {
+    "sku": "055-01-B",
+    "name": "Mesh Seat-Back Organizer — 055-01-B",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/055-01-b/",
+    "image": "/images/products/catalog-2026/055-01-b/main.webp"
+  },
+  {
+    "sku": "023-30",
+    "name": "Foldable Trunk Organizer — 023-30",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/023-30/",
+    "image": "/images/products/catalog-2026/023-30/main.webp"
+  },
+  {
+    "sku": "035-1",
+    "name": "Foldable Trunk Organizer — 035-1",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/035-1/",
+    "image": "/images/products/catalog-2026/035-1/main.webp"
+  },
+  {
+    "sku": "035-88",
+    "name": "Foldable Trunk Organizer — 035-88",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/035-88/",
+    "image": "/images/products/catalog-2026/035-88/main.webp"
+  },
+  {
+    "sku": "037-7",
+    "name": "Foldable Trunk Organizer — 037-7",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/037-7/",
+    "image": "/images/products/catalog-2026/037-7/main.webp"
+  },
+  {
+    "sku": "002-81",
+    "name": "PU Leather Car Organizer — 002-81",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/002-81/",
+    "image": "/images/products/catalog-2026/002-81/main.webp"
+  },
+  {
+    "sku": "110-1",
+    "name": "Foldable Trunk Organizer — 110-1",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/110-1/",
+    "image": "/images/products/catalog-2026/110-1/main.webp"
+  },
+  {
+    "sku": "110-3",
+    "name": "Foldable Trunk Organizer — 110-3",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/110-3/",
+    "image": "/images/products/catalog-2026/110-3/main.webp"
+  },
+  {
+    "sku": "110-31",
+    "name": "Foldable Trunk Organizer — 110-31",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/110-31/",
+    "image": "/images/products/catalog-2026/110-31/main.webp"
+  },
+  {
+    "sku": "035-66",
+    "name": "Foldable Trunk Organizer — 035-66",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/035-66/",
+    "image": "/images/products/catalog-2026/035-66/main.webp"
+  },
+  {
+    "sku": "110-9",
+    "name": "Foldable Trunk Organizer — 110-9",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/110-9/",
+    "image": "/images/products/catalog-2026/110-9/main.webp"
+  },
+  {
+    "sku": "158-01",
+    "name": "Foldable Trunk Organizer — 158-01",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/158-01/",
+    "image": "/images/products/catalog-2026/158-01/main.webp"
+  },
+  {
+    "sku": "158-02",
+    "name": "Foldable Trunk Organizer — 158-02",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/158-02/",
+    "image": "/images/products/catalog-2026/158-02/main.webp"
+  },
+  {
+    "sku": "110-18",
+    "name": "Foldable Trunk Organizer — 110-18",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/110-18/",
+    "image": "/images/products/catalog-2026/110-18/main.webp"
+  },
+  {
+    "sku": "110-38",
+    "name": "Foldable Trunk Organizer — 110-38",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/110-38/",
+    "image": "/images/products/catalog-2026/110-38/main.webp"
+  },
+  {
+    "sku": "023-11",
+    "name": "Foldable Trunk Organizer — 023-11",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/023-11/",
+    "image": "/images/products/catalog-2026/023-11/main.webp"
+  },
+  {
+    "sku": "023-01",
+    "name": "Foldable Trunk Organizer — 023-01",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/023-01/",
+    "image": "/images/products/catalog-2026/023-01/main.webp"
+  },
+  {
+    "sku": "023-20",
+    "name": "Foldable Trunk Organizer — 023-20",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/023-20/",
+    "image": "/images/products/catalog-2026/023-20/main.webp"
+  },
+  {
+    "sku": "068-21",
+    "name": "Foldable Trunk Organizer — 068-21",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/068-21/",
+    "image": "/images/products/catalog-2026/068-21/main.webp"
+  },
+  {
+    "sku": "023-25",
+    "name": "Foldable Trunk Organizer — 023-25",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/023-25/",
+    "image": "/images/products/catalog-2026/023-25/main.webp"
+  },
+  {
+    "sku": "037-10",
+    "name": "Foldable Trunk Organizer — 037-10",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/037-10/",
+    "image": "/images/products/catalog-2026/037-10/main.webp"
+  },
+  {
+    "sku": "099-01",
+    "name": "PU Leather Car Organizer — 099-01",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/099-01/",
+    "image": "/images/products/catalog-2026/099-01/main.webp"
+  },
+  {
+    "sku": "099-02",
+    "name": "PU Leather Car Organizer — 099-02",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/099-02/",
+    "image": "/images/products/catalog-2026/099-02/main.webp"
+  },
+  {
+    "sku": "099-03",
+    "name": "PU Leather Car Organizer — 099-03",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/099-03/",
+    "image": "/images/products/catalog-2026/099-03/main.webp"
+  },
+  {
+    "sku": "037-11",
+    "name": "Foldable Trunk Organizer — 037-11",
+    "category": "Car Organization",
+    "url": "/products/car-organizers/037-11/",
+    "image": "/images/products/catalog-2026/037-11/main.webp"
+  },
+  {
+    "sku": "P24-01",
+    "name": "Quilted Pet Seat Protector — P24-01",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p24-01/",
+    "image": "/images/products/catalog-2026/p24-01/main.webp"
+  },
+  {
+    "sku": "P25-11",
+    "name": "Hard-Bottom Pet Seat Extender — P25-11",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p25-11/",
+    "image": "/images/products/catalog-2026/p25-11/main.webp"
+  },
+  {
+    "sku": "P25-12",
+    "name": "Hard-Bottom Pet Seat Extender — P25-12",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p25-12/",
+    "image": "/images/products/catalog-2026/p25-12/main.webp"
+  },
+  {
+    "sku": "P24-17",
+    "name": "Quilted Pet Seat Protector — P24-17",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p24-17/",
+    "image": "/images/products/catalog-2026/p24-17/main.webp"
+  },
+  {
+    "sku": "P24-02",
+    "name": "Quilted Pet Seat Protector — P24-02",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p24-02/",
+    "image": "/images/products/catalog-2026/p24-02/main.webp"
+  },
+  {
+    "sku": "P24-03",
+    "name": "Quilted Pet Seat Protector — P24-03",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p24-03/",
+    "image": "/images/products/catalog-2026/p24-03/main.webp"
+  },
+  {
+    "sku": "P24-04",
+    "name": "Quilted Pet Seat Protector — P24-04",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p24-04/",
+    "image": "/images/products/catalog-2026/p24-04/main.webp"
+  },
+  {
+    "sku": "P24-05",
+    "name": "Quilted Pet Seat Protector — P24-05",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p24-05/",
+    "image": "/images/products/catalog-2026/p24-05/main.webp"
+  },
+  {
+    "sku": "P27-91",
+    "name": "Hard-Bottom Pet Seat Extender — P27-91",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p27-91/",
+    "image": "/images/products/catalog-2026/p27-91/main.webp"
+  },
+  {
+    "sku": "P27-81",
+    "name": "Quilted Pet Seat Protector — P27-81",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p27-81/",
+    "image": "/images/products/catalog-2026/p27-81/main.webp"
+  },
+  {
+    "sku": "P27-61",
+    "name": "Quilted Pet Seat Protector — P27-61",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p27-61/",
+    "image": "/images/products/catalog-2026/p27-61/main.webp"
+  },
+  {
+    "sku": "P27-51",
+    "name": "Quilted Pet Seat Protector — P27-51",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p27-51/",
+    "image": "/images/products/catalog-2026/p27-51/main.webp"
+  },
+  {
+    "sku": "PC2601",
+    "name": "Quilted Pet Seat Protector — PC2601",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/pc2601/",
+    "image": "/images/products/catalog-2026/pc2601/main.webp"
+  },
+  {
+    "sku": "PC2602",
+    "name": "Quilted Pet Seat Protector — PC2602",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/pc2602/",
+    "image": "/images/products/catalog-2026/pc2602/main.webp"
+  },
+  {
+    "sku": "PC2603",
+    "name": "Quilted Pet Seat Protector — PC2603",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/pc2603/",
+    "image": "/images/products/catalog-2026/pc2603/main.webp"
+  },
+  {
+    "sku": "PC2604",
+    "name": "Quilted Pet Seat Protector — PC2604",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/pc2604/",
+    "image": "/images/products/catalog-2026/pc2604/main.webp"
+  },
+  {
+    "sku": "P24-06",
+    "name": "Quilted Pet Seat Protector — P24-06",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p24-06/",
+    "image": "/images/products/catalog-2026/p24-06/main.webp"
+  },
+  {
+    "sku": "P25-28",
+    "name": "Quilted Pet Seat Protector — P25-28",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p25-28/",
+    "image": "/images/products/catalog-2026/p25-28/main.webp"
+  },
+  {
+    "sku": "P25-29",
+    "name": "Quilted Pet Seat Protector — P25-29",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p25-29/",
+    "image": "/images/products/catalog-2026/p25-29/main.webp"
+  },
+  {
+    "sku": "P25-30",
+    "name": "Quilted Cargo Liner with Storage Pockets — P25-30",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p25-30/",
+    "image": "/images/products/catalog-2026/p25-30/main.webp"
+  },
+  {
+    "sku": "P25-33",
+    "name": "Full-Coverage Cargo Liner with Mesh Window — P25-33",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p25-33/",
+    "image": "/images/products/catalog-2026/p25-33/main.webp"
+  },
+  {
+    "sku": "P25-38",
+    "name": "Quilted Rear-Seat Dog Hammock — P25-38",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p25-38/",
+    "image": "/images/products/catalog-2026/p25-38/main.webp"
+  },
+  {
+    "sku": "P26-81",
+    "name": "Hard-Bottom Rear-Seat Pet Extender — P26-81",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p26-81/",
+    "image": "/images/products/catalog-2026/p26-81/main.webp"
+  },
+  {
+    "sku": "P26-83",
+    "name": "Quilted Full-Coverage Cargo Liner — P26-83",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p26-83/",
+    "image": "/images/products/catalog-2026/p26-83/main.webp"
+  },
+  {
+    "sku": "P25-41",
+    "name": "Cationic Fabric Rear-Seat Dog Hammock — P25-41",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p25-41/",
+    "image": "/images/products/catalog-2026/p25-41/main.webp"
+  },
+  {
+    "sku": "P25-42",
+    "name": "Split Rear-Bench Seat Protector — P25-42",
+    "category": "Pet Travel & Cargo Protection",
+    "url": "/products/pet-car-protection/p25-42/",
+    "image": "/images/products/catalog-2026/p25-42/main.webp"
+  },
+  {
+    "sku": "EK001",
+    "name": "Automotive Emergency Tool Bag — EK001",
+    "category": "Vehicle Tool Bags",
+    "url": "/products/vehicle-tool-kits/ek001/",
+    "image": "/images/products/catalog-2026/ek001/main.webp"
+  },
+  {
+    "sku": "EK002",
+    "name": "Automotive Emergency Tool Bag — EK002",
+    "category": "Vehicle Tool Bags",
+    "url": "/products/vehicle-tool-kits/ek002/",
+    "image": "/images/products/catalog-2026/ek002/main.webp"
+  },
+  {
+    "sku": "EK003",
+    "name": "Automotive Emergency Tool Bag — EK003",
+    "category": "Vehicle Tool Bags",
+    "url": "/products/vehicle-tool-kits/ek003/",
+    "image": "/images/products/catalog-2026/ek003/main.webp"
+  },
+  {
+    "sku": "EK004",
+    "name": "Automotive Emergency Tool Bag — EK004",
+    "category": "Vehicle Tool Bags",
+    "url": "/products/vehicle-tool-kits/ek004/",
+    "image": "/images/products/catalog-2026/ek004/main.webp"
+  },
+  {
+    "sku": "EK005",
+    "name": "Automotive Emergency Tool Bag — EK005",
+    "category": "Vehicle Tool Bags",
+    "url": "/products/vehicle-tool-kits/ek005/",
+    "image": "/images/products/catalog-2026/ek005/main.webp"
+  }
+]
