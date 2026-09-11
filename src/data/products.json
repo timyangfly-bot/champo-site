@@ -411,7 +411,11 @@
           "productType": "Trunk Organizer",
           "materialGroup": "Cationic Fabric",
           "image": "/images/products/catalog-2026/037-7/main.webp",
-          "gallery": [],
+          "gallery": [
+            "/images/products/catalog-2026/037-7/gallery-1.webp",
+            "/images/products/catalog-2026/037-7/gallery-2.webp",
+            "/images/products/catalog-2026/037-7/gallery-3.webp"
+          ],
           "material": "300D cationic fabric\nlining: cardboard",
           "dimension": "25*45*24CM",
           "weight": "0.78kg",
