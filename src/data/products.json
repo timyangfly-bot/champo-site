@@ -91,7 +91,11 @@
           "productType": "Car Organizer",
           "materialGroup": "PU Leather",
           "image": "/images/products/catalog-2026/105-14/main.webp",
-          "gallery": [],
+          "gallery": [
+            "/images/products/catalog-2026/105-14/gallery-1.webp",
+            "/images/products/catalog-2026/105-14/gallery-2.webp",
+            "/images/products/catalog-2026/105-14/gallery-3.webp"
+          ],
           "material": "PU leather laminated with foam\nlining: PE board",
           "dimension": "34.5*27.5*16.5cm",
           "weight": "0.9kg",
