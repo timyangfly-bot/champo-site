@@ -18,7 +18,9 @@
           "materialGroup": "Mesh Fabric",
           "image": "/images/products/catalog-2026/035-22/main.webp",
           "gallery": [
-            "/images/products/catalog-2026/035-22/gallery-1.webp"
+            "/images/products/catalog-2026/035-22/gallery-1.webp",
+            "/images/products/catalog-2026/035-22/gallery-2.webp",
+            "/images/products/catalog-2026/035-22/gallery-3.webp"
           ],
           "material": "mesh fabric",
           "dimension": "39*16*28cm",
@@ -40,7 +42,11 @@
           "productType": "Car Organizer",
           "materialGroup": "PU Leather",
           "image": "/images/products/catalog-2026/105-8/main.webp",
-          "gallery": [],
+          "gallery": [
+            "/images/products/catalog-2026/105-8/gallery-1.webp",
+            "/images/products/catalog-2026/105-8/gallery-2.webp",
+            "/images/products/catalog-2026/105-8/gallery-3.webp"
+          ],
           "material": "PU leather laminated with foam",
           "dimension": "26*38.5*14.5cm",
           "weight": "0.373kg",
@@ -61,7 +67,10 @@
           "productType": "Car Organizer",
           "materialGroup": "PU Leather",
           "image": "/images/products/catalog-2026/105-13/main-clean.png",
-          "gallery": [],
+          "gallery": [
+            "/images/products/catalog-2026/105-13/gallery-1.webp",
+            "/images/products/catalog-2026/105-13/gallery-2.webp"
+          ],
           "material": "PU leather laminated with foam\nlining: PE board",
           "dimension": "33*23*9cm",
           "weight": "0.6kg",
@@ -209,7 +218,9 @@
           "materialGroup": "Oxford Fabric",
           "image": "/images/products/catalog-2026/m207/main.webp",
           "gallery": [
-            "/images/products/catalog-2026/m207/gallery-1.webp"
+            "/images/products/catalog-2026/m207/gallery-1.webp",
+            "/images/products/catalog-2026/m207/gallery-2.webp",
+            "/images/products/catalog-2026/m207/gallery-3.webp"
           ],
           "material": "600D Oxford fabric",
           "dimension": "90*25cm",
@@ -715,7 +726,9 @@
           "materialGroup": "PU Leather",
           "image": "/images/products/catalog-2026/099-01/main.webp",
           "gallery": [
-            "/images/products/catalog-2026/099-01/gallery-1.webp"
+            "/images/products/catalog-2026/099-01/gallery-1.webp",
+            "/images/products/catalog-2026/099-01/gallery-2.webp",
+            "/images/products/catalog-2026/099-01/gallery-3.webp"
           ],
           "material": "PU leather\nlining: MDF board",
           "dimension": "32*29*23",
@@ -738,7 +751,9 @@
           "materialGroup": "PU Leather",
           "image": "/images/products/catalog-2026/099-02/main.webp",
           "gallery": [
-            "/images/products/catalog-2026/099-02/gallery-1.webp"
+            "/images/products/catalog-2026/099-02/gallery-1.webp",
+            "/images/products/catalog-2026/099-02/gallery-2.webp",
+            "/images/products/catalog-2026/099-02/gallery-3.webp"
           ],
           "material": "PU leather\nlining: MDF board",
           "dimension": "36*31.5*30cm",
@@ -761,7 +776,9 @@
           "materialGroup": "PU Leather",
           "image": "/images/products/catalog-2026/099-03/main.webp",
           "gallery": [
-            "/images/products/catalog-2026/099-03/gallery-1.webp"
+            "/images/products/catalog-2026/099-03/gallery-1.webp",
+            "/images/products/catalog-2026/099-03/gallery-2.webp",
+            "/images/products/catalog-2026/099-03/gallery-3.webp"
           ],
           "material": "PU leather\nlining: MDF board",
           "dimension": "50*31*30cm",
@@ -875,7 +892,9 @@
           "materialGroup": "Cationic Fabric",
           "image": "/images/products/catalog-2026/p24-17/main.webp",
           "gallery": [
-            "/images/products/catalog-2026/p24-17/gallery-1.webp"
+            "/images/products/catalog-2026/p24-17/gallery-1.webp",
+            "/images/products/catalog-2026/p24-17/gallery-2.webp",
+            "/images/products/catalog-2026/p24-17/gallery-3.webp"
           ],
           "material": "300D cationic fabric+PP cotton+anti-slip mesh",
           "dimension": "147*137CM",
@@ -982,7 +1001,9 @@
           "materialGroup": "Oxford Fabric",
           "image": "/images/products/catalog-2026/p27-91/main.webp",
           "gallery": [
-            "/images/products/catalog-2026/p27-91/gallery-1.webp"
+            "/images/products/catalog-2026/p27-91/gallery-1.webp",
+            "/images/products/catalog-2026/p27-91/gallery-2.webp",
+            "/images/products/catalog-2026/p27-91/gallery-3.webp"
           ],
           "material": "300D Oxford fabric+PP cotton+hollow PP boardlining:",
           "dimension": "S:56*56*55CM\nL:73*56*55CM",
@@ -1005,7 +1026,9 @@
           "materialGroup": "Cationic Fabric",
           "image": "/images/products/catalog-2026/p27-81/main.webp",
           "gallery": [
-            "/images/products/catalog-2026/p27-81/gallery-1.webp"
+            "/images/products/catalog-2026/p27-81/gallery-1.webp",
+            "/images/products/catalog-2026/p27-81/gallery-2.webp",
+            "/images/products/catalog-2026/p27-81/gallery-3.webp"
           ],
           "material": "300D cationic fabric",
           "dimension": "49*49*49cm",
@@ -1028,7 +1051,9 @@
           "materialGroup": "Other Materials",
           "image": "/images/products/catalog-2026/p27-61/main.webp",
           "gallery": [
-            "/images/products/catalog-2026/p27-61/gallery-1.webp"
+            "/images/products/catalog-2026/p27-61/gallery-1.webp",
+            "/images/products/catalog-2026/p27-61/gallery-2.webp",
+            "/images/products/catalog-2026/p27-61/gallery-3.webp"
           ],
           "material": "300D printed fabric",
           "dimension": "41*33*44cm",
@@ -1051,7 +1076,9 @@
           "materialGroup": "Cationic Fabric",
           "image": "/images/products/catalog-2026/p27-51/main.webp",
           "gallery": [
-            "/images/products/catalog-2026/p27-51/gallery-1.webp"
+            "/images/products/catalog-2026/p27-51/gallery-1.webp",
+            "/images/products/catalog-2026/p27-51/gallery-2.webp",
+            "/images/products/catalog-2026/p27-51/gallery-3.webp"
           ],
           "material": "300D cationic fabric",
           "dimension": "42*21*25cm",
