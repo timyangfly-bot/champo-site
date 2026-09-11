@@ -311,7 +311,11 @@
           "productType": "Seat Organizer",
           "materialGroup": "Oxford Fabric",
           "image": "/images/products/catalog-2026/055-01-b/main.webp",
-          "gallery": [],
+          "gallery": [
+            "/images/products/catalog-2026/055-01-b/gallery-1.webp",
+            "/images/products/catalog-2026/055-01-b/gallery-2.webp",
+            "/images/products/catalog-2026/055-01-b/gallery-3.webp"
+          ],
           "material": "600D Oxford fabric\nanti-slip mesh\nlining: EPE foam",
           "dimension": "88*48cm",
           "weight": "0.3KG",
