@@ -112,7 +112,10 @@
           "productType": "Car Organizer",
           "materialGroup": "PU Leather",
           "image": "/images/products/catalog-2026/105-16/main.webp",
-          "gallery": [],
+          "gallery": [
+            "/images/products/catalog-2026/105-16/gallery-1.webp",
+            "/images/products/catalog-2026/105-16/gallery-2.webp"
+          ],
           "material": "PU leather laminated with foam\nlining: PE board",
           "dimension": "34*24*5cm",
           "weight": "0.6kg",
@@ -133,7 +136,11 @@
           "productType": "Car Organizer",
           "materialGroup": "PU Leather",
           "image": "/images/products/catalog-2026/105-18/main-clean.png",
-          "gallery": [],
+          "gallery": [
+            "/images/products/catalog-2026/105-18/gallery-1.webp",
+            "/images/products/catalog-2026/105-18/gallery-2.webp",
+            "/images/products/catalog-2026/105-18/gallery-3.webp"
+          ],
           "material": "PU leather laminated with foam",
           "dimension": "39*34*6cm",
           "weight": "0.8kg",
@@ -154,7 +161,11 @@
           "productType": "Car Organizer",
           "materialGroup": "PU Leather",
           "image": "/images/products/catalog-2026/002-83/main.webp",
-          "gallery": [],
+          "gallery": [
+            "/images/products/catalog-2026/002-83/gallery-1.webp",
+            "/images/products/catalog-2026/002-83/gallery-2.webp",
+            "/images/products/catalog-2026/002-83/gallery-3.webp"
+          ],
           "material": "PU leather laminated with foam\nlining: cardboard",
           "dimension": "65.5*45.5*2.5cm",
           "weight": "1.3kg",
@@ -175,7 +186,11 @@
           "productType": "Car Organizer",
           "materialGroup": "PU Leather",
           "image": "/images/products/catalog-2026/002-88/main.webp",
-          "gallery": [],
+          "gallery": [
+            "/images/products/catalog-2026/002-88/gallery-1.webp",
+            "/images/products/catalog-2026/002-88/gallery-2.webp",
+            "/images/products/catalog-2026/002-88/gallery-3.webp"
+          ],
           "material": "PU leather laminated with foam",
           "dimension": "60*43*6cm",
           "weight": "0.5kg",
@@ -452,7 +467,11 @@
           "productType": "Trunk Organizer",
           "materialGroup": "Oxford Fabric",
           "image": "/images/products/catalog-2026/110-31/main.webp",
-          "gallery": [],
+          "gallery": [
+            "/images/products/catalog-2026/110-31/gallery-1.webp",
+            "/images/products/catalog-2026/110-31/gallery-2.webp",
+            "/images/products/catalog-2026/110-31/gallery-3.webp"
+          ],
           "material": "600D Oxford fabric\nlining: cardboard",
           "dimension": "58*35*30cm",
           "weight": "1.1kg",
