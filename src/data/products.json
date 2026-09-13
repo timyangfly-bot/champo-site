@@ -532,7 +532,11 @@
           "productType": "Trunk Organizer",
           "materialGroup": "Oxford Fabric",
           "image": "/images/products/catalog-2026/035-66/main.webp",
-          "gallery": [],
+          "gallery": [
+            "/images/products/catalog-2026/035-66/gallery-1.webp",
+            "/images/products/catalog-2026/035-66/gallery-2.webp",
+            "/images/products/catalog-2026/035-66/gallery-3.webp"
+          ],
           "material": "600D Oxford fabric\nlining: cardboard",
           "dimension": "S:26.5*18*27.5CM\nL:32*37*27.5CM",
           "weight": "0.8KG\n1.1KG",
@@ -574,7 +578,11 @@
           "productType": "Trunk Organizer",
           "materialGroup": "Oxford Fabric",
           "image": "/images/products/catalog-2026/158-01/main.webp",
-          "gallery": [],
+          "gallery": [
+            "/images/products/catalog-2026/158-01/gallery-1.webp",
+            "/images/products/catalog-2026/158-01/gallery-2.webp",
+            "/images/products/catalog-2026/158-01/gallery-3.webp"
+          ],
           "material": "600D Oxford fabric ultrasonic-quilted fabric\nlining: cardboard",
           "dimension": "56*32*27cm",
           "weight": "1.1kg",
@@ -595,7 +603,11 @@
           "productType": "Trunk Organizer",
           "materialGroup": "Oxford Fabric",
           "image": "/images/products/catalog-2026/158-02/main-clean.png",
-          "gallery": [],
+          "gallery": [
+            "/images/products/catalog-2026/158-02/gallery-1.webp",
+            "/images/products/catalog-2026/158-02/gallery-2.webp",
+            "/images/products/catalog-2026/158-02/gallery-3.webp"
+          ],
           "material": "600D Oxford fabric\nlining: cardboard",
           "dimension": "55*35*30CM",
           "weight": "1.1kg",
@@ -616,7 +628,11 @@
           "productType": "Trunk Organizer",
           "materialGroup": "Oxford Fabric",
           "image": "/images/products/catalog-2026/110-18/main.webp",
-          "gallery": [],
+          "gallery": [
+            "/images/products/catalog-2026/110-18/gallery-1.webp",
+            "/images/products/catalog-2026/110-18/gallery-2.webp",
+            "/images/products/catalog-2026/110-18/gallery-3.webp"
+          ],
           "material": "600D Oxford fabric\nlining: cardboard",
           "dimension": "58*35*30CM",
           "weight": "1.8KG",
@@ -637,7 +653,11 @@
           "productType": "Trunk Organizer",
           "materialGroup": "Oxford Fabric",
           "image": "/images/products/catalog-2026/110-38/main.webp",
-          "gallery": [],
+          "gallery": [
+            "/images/products/catalog-2026/110-38/gallery-1.webp",
+            "/images/products/catalog-2026/110-38/gallery-2.webp",
+            "/images/products/catalog-2026/110-38/gallery-3.webp"
+          ],
           "material": "900D Oxford fabric\nlining: PE board",
           "dimension": "60L:58*40*30cm",
           "weight": "30L:30*40*30cm 1.6kg\n2.4kg",
