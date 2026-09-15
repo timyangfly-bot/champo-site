@@ -64,3 +64,12 @@ document.querySelector('[data-print-spec]')?.addEventListener('click',()=>window
 document.querySelectorAll('[data-rfq-form]').forEach(form=>form.addEventListener('submit',()=>{
   if(form.checkValidity())sessionStorage.setItem('champo_rfq_pending','1');
 }));
+
+const wechatToggle=document.querySelector('[data-wechat-toggle]');
+const wechatCard=document.querySelector('[data-wechat-card]');
+const closeWechat=()=>{if(!wechatCard||!wechatToggle)return;wechatCard.hidden=true;wechatToggle.setAttribute('aria-expanded','false')};
+wechatToggle?.addEventListener('click',()=>{const willOpen=wechatCard.hidden;wechatCard.hidden=!willOpen;wechatToggle.setAttribute('aria-expanded',String(willOpen));if(willOpen)window.dataLayer?.push({event:'contact_click',contact_method:'wechat'})});
+document.querySelector('[data-wechat-close]')?.addEventListener('click',closeWechat);
+document.addEventListener('keydown',event=>{if(event.key==='Escape')closeWechat()});
+document.querySelector('[data-wechat-copy]')?.addEventListener('click',async event=>{const button=event.currentTarget;try{await navigator.clipboard.writeText(button.dataset.wechatValue);button.textContent='Copied';setTimeout(()=>button.textContent='Copy number',1800)}catch{button.textContent='Select & copy the number above'}});
+document.querySelector('[data-contact-channel="whatsapp"]')?.addEventListener('click',()=>window.dataLayer?.push({event:'contact_click',contact_method:'whatsapp'}));
