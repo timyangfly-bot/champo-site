@@ -78,3 +78,10 @@ Validation status for this handoff: direct Node execution of `scripts/build-v2.m
 - Analytics tags being present in HTML does not establish that GA4 is receiving data or that GTM tags are published/configured correctly.
 - The local preview server only serves generated `dist/`; rebuild after source edits before expecting preview changes.
 - This handoff does not assert that current local output exactly matches the live deployment.
+
+## Conversation handoff and next task
+
+- The current Codex task is named `网站开发` and remains the main conversation for overall CHAMPO website development, deployment and release coordination.
+- SEO planning and future SEO automation should be handled in a separate child task/worktree when created; do not rename or repurpose this main website-development task.
+- The next isolated SEO implementation task is to create `scripts/seo-audit.mjs` and an `npm run seo:audit` command. It should audit generated HTML metadata, internal links, sitemap and robots.txt without deploying or submitting indexing requests.
+- This main task is being archived after this handoff; resume the SEO implementation from the separate child task when available.
