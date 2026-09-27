@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://champoauto.com/sitemap.xml
+Sitemap: https://www.champoauto.com/sitemap.xml
+Host: www.champoauto.com
