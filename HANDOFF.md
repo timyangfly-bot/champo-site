@@ -38,7 +38,7 @@ The Search Console action is incomplete because Google requires an interactive r
 ## Outstanding items
 
 - After several hours or the next day, retry one manufacturer URL at a time in URL Inspection. If Google shows reCAPTCHA, complete it manually in the browser before clicking the request button. Record the exact result; do not repeatedly submit all three URLs in one session.
-- Deploy the new buyer-guide pages, then resubmit or verify the sitemap so Google can discover the four new sitemap URLs.
+- Deployed the new buyer-guide pages to `origin/main` at commit `d9f5816`; live browser verification confirmed all three guide URLs return their intended pages. Reopen Search Console sitemap reporting to confirm Google has reread the new 84-URL sitemap.
 - Confirmed on 2026-09-26 that the live homepage and all three manufacturer landing pages serve the current V2 content: 68 catalog products, current manufacturer copy/capacity claims, navigation links and GA4 measurement ID `G-7S6Z52Q2XQ`. Direct browser access to `robots.txt` and `sitemap.xml` was blocked by the browser client, but Search Console successfully read the live sitemap and reported 80 discovered pages.
 - FormSubmit delivery and GA4 `generate_lead` tracking were verified in an earlier session according to the user; do not repeat unless a deployment changes the form or analytics code.
 - Rebuild after approved catalog changes so sitemap `<lastmod>` values reflect the current `src/data/products.json` modification date.
