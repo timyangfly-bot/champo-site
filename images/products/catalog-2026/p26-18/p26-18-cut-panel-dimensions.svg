@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1180" role="img" aria-labelledby="title desc">
+  <title id="title">P26-18 unfolded panel layout with dimensions</title>
+  <desc id="desc">A connected top-down P26-18 cut-panel layout. The front panel carries two pockets and a mesh window with perimeter webbing. Two white dashed lines divide the 137 by 63 centimeter base into three sections to indicate the internal support boards.</desc>
+  <defs>
+    <pattern id="extra-area" width="14" height="14" patternUnits="userSpaceOnUse"><rect width="14" height="14" fill="#f8fafb"/><path d="M-3 3L3-3M0 14L14 0M11 17L17 11" stroke="#677c8d" stroke-width="2" stroke-opacity=".5"/></pattern>
+    <pattern id="quilt" width="34" height="34" patternUnits="userSpaceOnUse"><rect width="34" height="34" fill="#737b84"/><path d="M0 0L34 34M34 0L0 34" fill="none" stroke="#e1e5e8" stroke-opacity=".24" stroke-width="1.5"/><path d="M0 17H34M17 0V34" fill="none" stroke="#3e4b58" stroke-opacity=".12" stroke-width="1"/></pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="5" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#152a3e"/></marker>
+    <style>
+      .bg{fill:#f5f7f9}.title{font:700 34px Arial,sans-serif;fill:#10263b}.sub{font:16px Arial,sans-serif;fill:#53697c}.panel{fill:url(#quilt);stroke:#172b3f;stroke-width:4;stroke-linejoin:round}.seam{fill:none;stroke:#e5e8eb;stroke-opacity:.8;stroke-width:2}.pipe{fill:none;stroke:#f36b36;stroke-width:5;stroke-linecap:round;stroke-linejoin:round}.dim{stroke:#152a3e;stroke-width:2.5;marker-start:url(#arrow);marker-end:url(#arrow)}.ext{stroke:#152a3e;stroke-width:1.5;stroke-dasharray:5 5}.dt{font:700 19px Arial,sans-serif;fill:#10263b}.dtw{font:700 18px Arial,sans-serif;fill:#fff}.tag{font:700 18px Arial,sans-serif;fill:#10263b}.tiny{font:700 13px Arial,sans-serif;fill:#263e52}.part{font:700 15px Arial,sans-serif;letter-spacing:.06em;fill:#fff}.outline{fill:#fff;stroke:#d6dfe6;stroke-width:2}.compare{fill:#fff;stroke:#e4d2c7;stroke-width:2}.std{fill:#aab5be}.wide{fill:#10263b}.accent{font:700 20px Arial,sans-serif;fill:#c85127}.small{font:14px Arial,sans-serif;fill:#53697c}
+    .webbing{fill:none;stroke:#172b3f;stroke-width:16;stroke-linejoin:round;stroke-linecap:round}.webbing-edge{fill:none;stroke:#aab4bc;stroke-width:3;stroke-linejoin:round}.divider{fill:none;stroke:#fff;stroke-width:5;stroke-dasharray:14 10;stroke-linecap:round}.strap{fill:none;stroke:#111c27;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}.strap-detail{fill:none;stroke:#8e989f;stroke-width:2.5;stroke-linecap:round}.strap-tab{fill:#c89665;stroke:#956a45;stroke-width:1.5}.rotated-layout text{transform:rotate(180deg);transform-origin:center;transform-box:fill-box}.area-callout{font:700 24px Arial,sans-serif;fill:#ff7a45}</style>
+  </defs>
+  <rect class="bg" width="1400" height="1180" rx="24"/>
+  <text class="title" x="52" y="42">P26-18 · UNFOLDED PANEL DIMENSIONS</text>
+  <text class="sub" x="52" y="68">Top-down layout based on the connected panel structure · All measurements in cm</text>
+
+  <!-- Rotate the product layout 180°; counter-rotate text in CSS so labels stay readable. -->
+  <g class="rotated-layout" transform="rotate(180 700 511.5)">
+  <!-- Connected cut-panel layout: rear 137×68, base 137×63, front 137×47, two flared side panels. -->
+  <path class="panel" d="M410 430L410 142Q410 128 424 128L976 128Q990 128 990 142L990 430Z"/>
+  <path class="panel" d="M410 430L990 430L990 696L410 696Z"/>
+  <path class="panel" d="M410 696L990 696L990 881Q990 895 976 895L424 895Q410 895 410 881Z"/>
+  <path class="panel" d="M410 430L410 696L236 709L236 417Z"/>
+  <path class="panel" d="M990 430L990 696L1164 709L1164 417Z"/>
+  <!-- Highlight the extra 18 cm strip on the 63 cm base itself (18/63 of panel depth). -->
+  <rect x="410" y="620" width="580" height="76" fill="#f36b36" fill-opacity=".34" stroke="#c85127" stroke-width="2"/>
+  <path class="webbing" d="M424 128H976Q990 128 990 142V430L1164 417V709L990 696V881Q990 895 976 895H424Q410 895 410 881V696L236 709V417L410 430V142Q410 128 424 128Z"/><path class="webbing-edge" d="M424 128H976Q990 128 990 142V430L1164 417V709L990 696V881Q990 895 976 895H424Q410 895 410 881V696L236 709V417L410 430V142Q410 128 424 128Z"/>
+  <!-- Adjustable headrest straps: two pairs at each end and one loop on each side. -->
+  <path class="strap" d="M501 146L526 76L551 146M849 146L874 76L899 146M501 879L526 900L551 879M849 879L874 900L899 879M238 520C176 492 171 558 238 580M1162 520C1224 492 1229 558 1162 580"/><path class="strap-detail" d="M501 146L526 76L551 146M849 146L874 76L899 146M501 879L526 958L551 879M849 879L874 958L899 879M238 520C176 492 171 558 238 580M1162 520C1224 492 1229 558 1162 580"/>
+  <rect class="strap-tab" x="491" y="138" width="20" height="28" rx="8"/><rect class="strap-tab" x="541" y="138" width="20" height="28" rx="8"/><rect class="strap-tab" x="839" y="138" width="20" height="28" rx="8"/><rect class="strap-tab" x="889" y="138" width="20" height="28" rx="8"/>
+  <rect class="strap-tab" x="491" y="865" width="20" height="28" rx="8"/><rect class="strap-tab" x="541" y="865" width="20" height="28" rx="8"/><rect class="strap-tab" x="839" y="865" width="20" height="28" rx="8"/><rect class="strap-tab" x="889" y="865" width="20" height="28" rx="8"/><rect class="strap-tab" x="222" y="530" width="22" height="30" rx="8"/><rect class="strap-tab" x="1156" y="530" width="22" height="30" rx="8"/>
+  <path class="pipe" d="M410 430L236 417M410 696L236 709M990 430L1164 417M990 696L1164 709"/>
+  <path class="seam" d="M425 445H975M425 681H975M425 445V681M975 445V681"/>
+
+  <!-- Front-panel pocket and mesh features, matching the supplied reference. -->
+  <rect x="470" y="744" width="118" height="94" rx="9" fill="#4c5661" stroke="#27394b" stroke-width="3"/><path d="M470 763H588" stroke="#111c27" stroke-width="8"/><rect x="812" y="744" width="118" height="94" rx="9" fill="#4c5661" stroke="#27394b" stroke-width="3"/><path d="M812 763H930" stroke="#111c27" stroke-width="8"/>
+  <rect x="650" y="730" width="100" height="138" rx="17" fill="#303d48" stroke="#d7dfe5" stroke-width="4"/><path d="M660 740V858M675 737V861M690 737V861M705 737V861M720 737V861M735 740V858M655 757H745M653 775H747M653 793H747M653 811H747M653 829H745M655 847H745" stroke="#c6d1d9" stroke-opacity=".72" stroke-width="1.8"/>
+  <path d="M484 168H916" stroke="#e4e8eb" stroke-width="3"/><rect x="491" y="145" width="23" height="39" rx="9" fill="#c89665"/><rect x="886" y="145" width="23" height="39" rx="9" fill="#c89665"/>
+  <text class="part" x="682" y="385" text-anchor="middle">REAR PANEL</text>
+  <text class="part" x="700" y="598" text-anchor="middle">BASE PANEL</text>
+  <text class="part" x="700" y="720" text-anchor="middle">FRONT PANEL</text>
+  <text class="tiny" x="325" y="557" text-anchor="middle" transform="rotate(-4 325 557)">SIDE PANEL</text>
+  <text class="tiny" x="1075" y="557" text-anchor="middle" transform="rotate(4 1075 557)">SIDE PANEL</text>
+  <!-- White dashed lines show the three internal base-board sections. -->
+  <path class="divider" d="M603 440V686M797 440V686"/>
+  <rect x="572" y="485" width="256" height="30" rx="8" fill="#172b3f" fill-opacity=".88"/><text class="dtw" x="700" y="506" text-anchor="middle" font-size="14">3-SECTION INTERNAL BOARD</text>
+  <rect x="540" y="640" width="320" height="36" rx="9" fill="#10263b" stroke="#fff" stroke-width="2"/><text class="area-callout" x="700" y="666" text-anchor="middle">EXTRA 40% AREA</text>
+
+  <!-- Front, base and rear share the same 137 cm span -->
+  <line class="ext" x1="410" y1="109" x2="410" y2="126"/><line class="ext" x1="990" y1="109" x2="990" y2="126"/><line class="dim" x1="416" y1="108" x2="984" y2="108"/><rect class="outline" x="652" y="94" width="96" height="30" rx="8"/><text class="dt" x="700" y="116" text-anchor="middle">137 cm</text>
+  <line class="ext" x1="410" y1="914" x2="410" y2="935"/><line class="ext" x1="990" y1="914" x2="990" y2="935"/><line class="dim" x1="416" y1="934" x2="984" y2="934"/><rect class="outline" x="652" y="920" width="96" height="30" rx="8"/><text class="dt" x="700" y="942" text-anchor="middle">137 cm</text>
+  <rect class="outline" x="568" y="558" width="264" height="46" rx="11"/><text class="tag" x="700" y="587" text-anchor="middle">BASE 137 × 63 cm</text>
+
+  <!-- Panel heights/depths -->
+  <line class="ext" x1="390" y1="142" x2="410" y2="142"/><line class="ext" x1="390" y1="430" x2="410" y2="430"/><line class="dim" x1="388" y1="148" x2="388" y2="424"/><rect class="outline" x="278" y="263" width="88" height="32" rx="8"/><text class="dt" x="322" y="286" text-anchor="middle">68 cm</text>
+  <line class="ext" x1="1010" y1="436" x2="990" y2="436"/><line class="ext" x1="1010" y1="690" x2="990" y2="690"/><line class="dim" x1="1012" y1="442" x2="1012" y2="684"/><rect class="outline" x="1022" y="548" width="88" height="32" rx="8"/><text class="dt" x="1066" y="571" text-anchor="middle">63 cm</text>
+  <line class="ext" x1="390" y1="696" x2="410" y2="696"/><line class="ext" x1="390" y1="895" x2="410" y2="895"/><line class="dim" x1="388" y1="702" x2="388" y2="889"/><rect class="outline" x="278" y="782" width="88" height="32" rx="8"/><text class="dt" x="322" y="805" text-anchor="middle">47 cm</text>
+
+  <!-- Side-panel lower/upper edges and installed height (shown on the right-hand side panel) -->
+  <line class="dim" x1="1000" y1="430" x2="1000" y2="696"/><rect class="outline" x="1015" y="442" width="88" height="30" rx="8"/><text class="tiny" x="1059" y="463" text-anchor="middle">BOTTOM 63</text>
+  <line class="dim" x1="1177" y1="424" x2="1177" y2="702"/><rect class="outline" x="1190" y="544" width="91" height="30" rx="8"/><text class="tiny" x="1235" y="565" text-anchor="middle">TOP 73</text>
+  <line class="dim" x1="1008" y1="608" x2="1148" y2="608"/><rect class="outline" x="1030" y="614" width="108" height="30" rx="8"/><text class="tiny" x="1084" y="635" text-anchor="middle">HEIGHT 41</text>
+  </g>
+  <text class="small" x="700" y="978" text-anchor="middle">Front panel: 137 × 47 cm  ·  Base panel: 137 × 63 cm  ·  Rear panel: 137 × 68 cm</text>
+  <text class="small" x="700" y="999" text-anchor="middle">Side panels (pair): bottom 63 cm · top 73 cm · installed height 41 cm</text>
+  <!-- Base-width comparison: the extra 18 cm section sits above a 45 cm standard base. -->
+  <rect class="compare" x="52" y="1022" width="1296" height="146" rx="16"/>
+  <text class="tag" x="78" y="1053">WIDENED BASE COMPARISON</text>
+  <text class="small" x="78" y="1082">P26-18 base</text><text class="dt" x="78" y="1110">63 cm total</text>
+  <rect x="300" y="1038" width="700" height="31" fill="url(#extra-area)" stroke="#263e52" stroke-width="2"/>
+  <text class="tag" x="650" y="1059" text-anchor="middle">ADDITIONAL AREA · 40%</text>
+  <rect x="300" y="1069" width="700" height="67" fill="#8fa991" stroke="#55745a" stroke-width="2"/>
+  <text class="tag" x="650" y="1110" text-anchor="middle">STANDARD BASE · 45 cm</text>
+  <rect class="outline" x="1030" y="1038" width="112" height="31" rx="2"/><text class="dt" x="1086" y="1059" text-anchor="middle">18 cm</text>
+  <rect class="outline" x="1030" y="1087" width="112" height="31" rx="2"/><text class="dt" x="1086" y="1108" text-anchor="middle">45 cm</text>
+  <text class="small" x="300" y="1156">45 cm standard base + 18 cm extra width = 63 cm · approximately 40% wider</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1280" role="img" aria-labelledby="title desc">
+  <title id="title">P26-18 layered material construction</title>
+  <desc id="desc">Exploded view showing nine material layers, including a 5 millimeter hollow board.</desc>
+  <defs>
+    <linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f7f7f5"/><stop offset="1" stop-color="#eef1f2"/></linearGradient>
+    <pattern id="quilt" width="46" height="46" patternTransform="rotate(45)" patternUnits="userSpaceOnUse"><path d="M0 0H46V46" fill="none" stroke="#e3e5e7" stroke-width="2" opacity=".56"/></pattern>
+    <pattern id="weave" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M0 3H12M0 9H12M3 0V12M9 0V12" stroke="#fff" stroke-width="1" opacity=".14"/></pattern>
+    <pattern id="foam" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="4" cy="5" r="2" fill="#78838b" opacity=".35"/><circle cx="13" cy="13" r="2" fill="#78838b" opacity=".28"/></pattern>
+    <pattern id="board" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M3 5V25M15 5V25M27 5V25" stroke="#a9b1b6" stroke-width="2" opacity=".65"/></pattern>
+    <pattern id="grip" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="6" cy="6" r="2.5" fill="#f7f7f5" opacity=".75"/><circle cx="17" cy="17" r="2.5" fill="#f7f7f5" opacity=".75"/></pattern>
+    <filter id="shadow" x="-10%" y="-20%" width="125%" height="160%"><feDropShadow dx="0" dy="7" stdDeviation="5" flood-color="#132c40" flood-opacity=".12"/></filter>
+    <style>
+      .tag{font:700 20px Arial,sans-serif;letter-spacing:4px;fill:#e96832}.title{font:700 36px Arial,sans-serif;fill:#102940}.label{font:700 27px Arial,sans-serif;fill:#102940}.sub{font:400 19px Arial,sans-serif;fill:#566774}.rule{stroke:#7db7d0;stroke-width:3}.dot{fill:#f17637;stroke:#fff;stroke-width:4}
+    </style>
+  </defs>
+  <rect width="1800" height="1280" fill="url(#bg)"/>
+  <text x="86" y="54" class="tag">P26-18 / MATERIAL CONSTRUCTION</text>
+  <text x="86" y="100" class="title">A layered build for comfort, support and protection</text>
+  <path d="M86 119H1714" stroke="#f17637" stroke-width="4"/>
+
+  <g filter="url(#shadow)">
+    <g transform="translate(0 0)"><path d="M95 157L478 108L842 139L464 192Z" fill="#41474c"/><path d="M95 157L464 192V210L95 175Z" fill="#252b30"/><path d="M464 192L842 139V157L464 210Z" fill="#30363a"/><path d="M95 157L478 108L842 139L464 192Z" fill="url(#quilt)"/></g>
+    <g transform="translate(0 128)"><path d="M95 157L478 108L842 139L464 192Z" fill="#232b31"/><path d="M95 157L464 192V207L95 172Z" fill="#111a20"/><path d="M464 192L842 139V154L464 207Z" fill="#182129"/><path d="M95 157L478 108L842 139L464 192Z" fill="url(#weave)"/></g>
+    <g transform="translate(0 256)"><path d="M95 157L478 108L842 139L464 192Z" fill="#e4e4e0"/><path d="M95 157L464 192V205L95 170Z" fill="#c9ccca"/><path d="M464 192L842 139V152L464 205Z" fill="#d5d8d6"/><path d="M95 157L478 108L842 139L464 192Z" fill="#fff" opacity=".25"/></g>
+    <g transform="translate(0 384)"><path d="M95 157L478 108L842 139L464 192Z" fill="#555d63"/><path d="M95 157L464 192V207L95 172Z" fill="#383f45"/><path d="M464 192L842 139V154L464 207Z" fill="#464e54"/><path d="M95 157L478 108L842 139L464 192Z" fill="url(#weave)"/></g>
+    <g transform="translate(0 512)"><path d="M95 157L478 108L842 139L464 192Z" fill="#c4c9c9"/><path d="M95 157L464 192V207L95 172Z" fill="#aeb5b6"/><path d="M464 192L842 139V154L464 207Z" fill="#b9c0c1"/></g>
+    <g transform="translate(0 640)"><path d="M95 157L478 108L842 139L464 192Z" fill="#eee"/><path d="M95 157L464 192V205L95 170Z" fill="#d9dddf"/><path d="M464 192L842 139V152L464 205Z" fill="#e4e7e8"/></g>
+    <g transform="translate(0 768)"><path d="M95 157L478 108L842 139L464 192Z" fill="#30383d"/><path d="M95 157L464 192V210L95 175Z" fill="#1b242a"/><path d="M464 192L842 139V157L464 210Z" fill="#242d33"/><path d="M95 157L478 108L842 139L464 192Z" fill="url(#foam)"/></g>
+    <g transform="translate(0 896)"><path d="M95 157L478 108L842 139L464 192Z" fill="#b7bec1"/><path d="M95 157L464 192V213L95 178Z" fill="#969fa4"/><path d="M464 192L842 139V160L464 213Z" fill="#a5aeb2"/><path d="M95 157L478 108L842 139L464 192Z" fill="url(#board)"/></g>
+    <g transform="translate(0 1024)"><path d="M95 157L478 108L842 139L464 192Z" fill="#e8e8e4"/><path d="M95 157L464 192V207L95 172Z" fill="#c9cdca"/><path d="M464 192L842 139V154L464 207Z" fill="#d7dbd8"/><path d="M95 157L478 108L842 139L464 192Z" fill="url(#grip)"/></g>
+  </g>
+
+  <g class="labels">
+    <path class="rule" d="M842 139H924L964 155"/><circle class="dot" cx="842" cy="139" r="8"/><text x="988" y="151" class="label">600D Oxford Fabric</text><text x="988" y="179" class="sub">Water-resistant, stain-resistant and easy to clean</text>
+    <path class="rule" d="M842 267H924L964 283"/><circle class="dot" cx="842" cy="267" r="8"/><text x="988" y="279" class="label">PVC / PU Waterproof Coating</text><text x="988" y="307" class="sub">Outer-layer water barrier; odorless comfort</text>
+    <path class="rule" d="M842 395H924L964 411"/><circle class="dot" cx="842" cy="395" r="8"/><text x="988" y="407" class="label">High-Resilience PP Cotton</text><text x="988" y="435" class="sub">Soft, durable cushioning</text>
+    <path class="rule" d="M842 523H924L964 539"/><circle class="dot" cx="842" cy="523" r="8"/><text x="988" y="547" class="label">210D Woven Lining</text>
+    <path class="rule" d="M842 651H924L964 667"/><circle class="dot" cx="842" cy="651" r="8"/><text x="988" y="663" class="label">TPU-Laminated Waterproof Fabric</text><text x="988" y="691" class="sub">Inner-layer water barrier</text>
+    <path class="rule" d="M842 779H924L964 795"/><circle class="dot" cx="842" cy="779" r="8"/><text x="988" y="803" class="label">Non-Woven Fabric</text>
+    <path class="rule" d="M842 907H924L964 923"/><circle class="dot" cx="842" cy="907" r="8"/><text x="988" y="935" class="label">80 GSM · 8 mm Sponge Foam</text><text x="988" y="963" class="sub">Added cushioning comfort</text>
+    <path class="rule" d="M842 1035H924L964 1051"/><circle class="dot" cx="842" cy="1035" r="8"/><text x="988" y="1063" class="label">5 mm Hollow Board</text><text x="988" y="1091" class="sub">Load-bearing support panel</text>
+    <path class="rule" d="M842 1163H924L964 1179"/><circle class="dot" cx="842" cy="1163" r="8"/><text x="988" y="1191" class="label">Anti-Slip Backing</text><text x="988" y="1219" class="sub">Grip dots help keep the cover stable</text>
+  </g>
+</svg>
